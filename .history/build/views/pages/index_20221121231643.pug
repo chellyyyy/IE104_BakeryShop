@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./styles/styles.css")
+        title Document
+    body
+        include ../blocks/mixin.pug
+        include ../blocks/footer.pug
+
+        ul
+            +pet("sang")
+            +pet("asd")
+
+        +button('day kla nut')
+
+        .items 
+            .item 
+                img(src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=936&q=80")
+            h3.itemTitle ten banh
+            
+
+            
