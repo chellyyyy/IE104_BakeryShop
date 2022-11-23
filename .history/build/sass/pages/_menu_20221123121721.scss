@@ -1,0 +1,161 @@
+* {
+    border: NONE;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body {
+    height: auto;
+}
+
+#container .product {
+    height: 1000px;
+}
+
+#container li {
+    list-style: none;
+}
+
+#container #head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#container #head>.span {
+    border: 1px solid #333;
+    width: 70px;
+
+}
+
+#container #paginated-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#container h2 {
+    text-align: center;
+}
+
+#container .product {
+    width: auto;
+    height: auto;
+}
+
+#container .pagination-container {
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    justify-content: center;
+}
+
+#container .pagination-number,
+#container .pagination-button {
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: none;
+    margin: 0.25rem 0.25rem;
+    cursor: pointer;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: .2rem;
+}
+
+#container .pagination-number:hover,
+#container .pagination-button:not(.disabled):hover {
+    background: #fff;
+}
+
+#container .pagination-number.active {
+    color: #fff;
+    background: #0085b6;
+}
+
+#container .hidden {
+    display: none
+}
+
+#container .item {
+    position: relative;
+    width: 30%;
+    height: 30%;
+    margin-top: 30px;
+
+}
+#item {
+    background: #000;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 01px 1px 2px rgb(158, 158, 158);
+}
+
+#container .item>.img {
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 01px 1px 2px rgb(158, 158, 158);
+}
+
+#container .item>.img>img {
+    width: 100%;
+    height: 100%;
+}
+
+#container .rating {
+    display: flex;
+    align-items: center;
+    margin-top: -22px;
+}
+
+#container .rating span {
+    opacity: 0.6;
+}
+
+#container .rate {
+    float: left;
+    height: 46px;
+}
+
+#container .rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+#container label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+#container .rate label:before {
+    content: '★ ';
+}
+
+#container .add_color {
+    color: #ffc700;
+}
+
+#container .icon {
+    // cursor: pointer;
+    right: 0;
+    position: absolute;
+    margin: 10px 10px 0 0;
+    font-size: 30px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+#container .icon>span {
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 10px;
+}

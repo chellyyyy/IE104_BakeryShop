@@ -1,0 +1,169 @@
+.content-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+
+}
+
+.content-header>div {
+    width: 100px;
+    height: 2px;
+    background-color: #333;
+}
+
+.btn-light {
+    border: 1px solid #333;
+}
+
+/* content */
+#content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#content>div {
+    width: 30%;
+}
+
+.sidebar {
+    border-radius: 5px 0 0 5px;
+    background-color: rgb(202, 197, 197);
+    padding: 50px 0;
+}
+
+.sidebar li {
+    list-style: none;
+    padding: 15px 10px;
+    font-weight: 500;
+}
+
+.sidebar li:hover {
+    background-color: white;
+    cursor: pointer;
+    color: bisque;
+}
+
+.sidebar li i {
+    margin-right: 10px
+}
+
+.content-page {
+    border-radius: 0 5px 5px 0;
+    border-top: 2px solid rgb(200, 197, 197);
+    border-bottom: 2px solid rgb(200, 197, 197);
+    border-right: 2px solid rgb(200, 197, 197);
+    padding: 15px;
+}
+
+.content-page>div .header-page {
+    font-weight: 600;
+
+
+}
+
+.content-page>div>input {
+    width: 100%;
+    margin-top: 15px;
+}
+
+input {
+    outline: none;
+    padding: 10px 5px;
+    border: 1px solid #333;
+    border-radius: 5px;
+
+}
+
+.content-page {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.input_bt {
+    margin-top: 15px;
+    display: flex;
+}
+
+.input_bt>input:last-child {
+    width: 70%;
+    margin-left: 5px;
+}
+
+.input_bt>input:first {
+    flex: 1;
+}
+
+.btn-primary {
+    float: right;
+    color: white;
+    margin-top: 20px;
+    width: 200px;
+    background-color: rgb(51, 8, 126)
+}
+
+.payment {
+    padding: 15px;
+    background: bisque;
+    border-radius: 5px;
+}
+
+.payment>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payment>div>p {
+    margin-top: 10px;
+}
+
+
+.payment_h>p,
+.payment_b>p,
+.payment_b>span {
+    font-weight: 600;
+}
+
+.payment_t,
+.payment_b {
+    margin-top: 50px;
+}
+
+.p2 {
+    font-weight: 300;
+}
+
+.img_none {
+    height: 200px;
+    background-color: rgb(202, 197, 197);
+}
+
+.radio-gr {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    margin: 0 !important;
+}
+
+.checkbox {
+    height: 30px;
+    width: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.checkbox-last {
+    margin-left: 20px;
+}
+
+.content-page>div {
+    display: none;
+}
+
+.hide {
+    display: block !important;
+}

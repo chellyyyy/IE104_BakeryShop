@@ -5,9 +5,234 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="/path/to/cdn/font-awesome/all.min.css">
+    <script src="/path/to/cdn/jquery.slim.min.js"></script>
+    <script src="/path/to/jquery.star-rating.js"></script>
+    <title>Menu</title>
   </head>
   <body> 
-    <button class="btn1">sadsada</button>
+    <header id="header">
+      <div class="nav-left">
+        <div class="brand"><img class="brand-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/800px-Google_%22G%22_Logo.svg.png" alt="">
+          <h1 class="brand-heading">Sun Cake</h1>
+        </div>
+      </div>
+      <div class="nav-center">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <div class="sub-nav">Th&#x1EF1;c &dstrok;&#x1A1;n<i class="fa-solid fa-angle-down"></i></div>
+            <ul class="sub-nav-list">
+              <div class="menu-container">
+                <div class="menu-content">
+                  <ul class="menu-list-1">
+                    <li><a href="">B&aacute;nh m&igrave;</a></li>
+                    <li><a href="">B&aacute;nh tr&aacute;i c&acirc;y</a></li>
+                    <li><a href="">Pastry &amp; Pie</a></li>
+                    <li><a href="">Macarons</a></li>
+                    <li><a href="">Cookie</a></li>
+                    <li><a href="">Sandwiches</a></li>
+                  </ul>
+                  <ul class="menu-list-2">
+                    <li><a href="">Donuts</a></li>
+                    <li><a href="">Cupcake</a></li>
+                    <li><a href="">Cloud Cake</a></li>
+                    <li><a href="">Buttercream Cake</a></li>
+                    <li><a href="">Piece Cake</a></li>
+                    <li><a href="">Roll Cake</a></li>
+                    <li><a href="">Brownie</a></li>
+                  </ul>
+                </div>
+                <div class="menu-img"><img src="https://www.tljus.com/wp-content/uploads/2022/11/Thanksgiving_PR-scaled.jpg">
+                  <div class="rectangle"></div>
+                  <h1><a href="#">Xem t&#x1EA5;t c&#x1EA3;</a></h1>
+                  <!-- <hr>-->
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="">Gi&#x1EDB;i thi&#x1EC7;u</a></li>
+          <li class="menu-item">
+            <div class="sub-nav"> Li&ecirc;n h&#x1EC7; </div>
+            <div class="sub-nav-list">
+              <div class="grid-container-contact">
+                <div class="grid-item-contact">
+                  <h1>Th&ocirc;ng tin li&ecirc;n l&#x1EA1;c</h1>
+                </div>
+                <div class="grid-item-contact">
+                  <p><i class="fa-solid fa-envelope"></i>sun_cake@gmail.com</p>
+                  <p><i class="fa-solid fa-phone"></i>0912345678</p>
+                </div>
+                <div class="grid-item-contact">
+                  <h1>&dstrok;&#x1ECB;a ch&#x1EC9; C&#x1EED;a h&agrave;ng</h1>
+                </div>
+                <div class="grid-item-contact"><i class="fa-solid fa-location-dot"></i>                              Khu ph&#x1ED1; 6, P.Linh Trung, Tp.Th&#x1EE7; &Dstrok;&#x1EE9;c, Tp.H&#x1ED3; Ch&iacute; Minh</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search">
+          <input class="input-search" type="text" placeholder="Tìm kiếm">
+          <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="personal"><i class="fa-solid fa-user"></i></div>
+        <div class="cart"><i class="fa-solid fa-cart-shopping"></i><span class="amount">1</span></div>
+      </div>
+    </header>
+    <div class="container">
+      <div id="head">
+        <h2>LOẠI BÁNH</h2>
+        <div class="span"></div>
+      </div>
+      <div id="product" style="margin-top: 100px;">
+        <ul id="paginated-list" aria-live="polite">
+          <li class="item" id="item1">
+            <div class="img"><img src="../../build/assets/Danish_Pastry.png" alt="">
+              <div class="icon"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="title-price" style="display: flex; justify-content: space-between; align-items: center">
+              <p class="title" style="font-weight: 600; width: 50%;">Danish Pastry</p>
+              <p class="price" style="font-weight: 700; font-size:20px">100.000&dstrok;</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN78oxZDqNEPkT2O1EF57n6WCqEjpv3vQaeA_fVH8&amp;s" alt="">
+              <div class="icon"><span>B&aacute;n h&#x1EBF;t</span><i class="fa-solid fa-circle-check"></i></div>
+            </div>
+            <div class="title-price" style="display: flex; justify-content: space-between; align-items: center">
+              <p class="title" style="font-weight: 600; width: 50%;">Danish Pastry</p>
+              <p class="price" style="font-weight: 700; font-size:20px">100.000&dstrok;</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN78oxZDqNEPkT2O1EF57n6WCqEjpv3vQaeA_fVH8&amp;s" alt="">
+              <div class="icon"><span>B&aacute;n h&#x1EBF;t</span><i class="fa-solid fa-circle-check"></i></div>
+            </div>
+            <div class="title-price" style="display: flex; justify-content: space-between; align-items: center">
+              <p class="title" style="font-weight: 600; width: 50%;">Danish Pastry</p>
+              <p class="price" style="font-weight: 700; font-size:20px">100.000&dstrok;</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN78oxZDqNEPkT2O1EF57n6WCqEjpv3vQaeA_fVH8&amp;s" alt="">
+              <div class="icon"><span>B&aacute;n h&#x1EBF;t</span><i class="fa-solid fa-circle-check"></i></div>
+            </div>
+            <div class="title-price" style="display: flex; justify-content: space-between; align-items: center">
+              <p class="title" style="font-weight: 600; width: 50%;">Danish Pastry</p>
+              <p class="price" style="font-weight: 700; font-size:20px">100.000&dstrok;</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN78oxZDqNEPkT2O1EF57n6WCqEjpv3vQaeA_fVH8&amp;s" alt="">
+              <div class="icon"><span>B&aacute;n h&#x1EBF;t</span><i class="fa-solid fa-circle-check"></i></div>
+            </div>
+            <div class="title-price" style="display: flex; justify-content: space-between; align-items: center">
+              <p class="title" style="font-weight: 600; width: 50%;">Danish Pastry</p>
+              <p class="price" style="font-weight: 700; font-size:20px">100.000&dstrok;</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN78oxZDqNEPkT2O1EF57n6WCqEjpv3vQaeA_fVH8&amp;s" alt="">
+              <div class="icon"><span>B&aacute;n h&#x1EBF;t</span><i class="fa-solid fa-circle-check"></i></div>
+            </div>
+            <div class="title-price" style="display: flex; justify-content: space-between; align-items: center">
+              <p class="title" style="font-weight: 600; width: 50%;">Danish Pastry</p>
+              <p class="price" style="font-weight: 700; font-size:20px">100.000&dstrok;</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN78oxZDqNEPkT2O1EF57n6WCqEjpv3vQaeA_fVH8&amp;s" alt="">
+              <div class="icon"><span>B&aacute;n h&#x1EBF;t</span><i class="fa-solid fa-circle-check"></i></div>
+            </div>
+            <div class="title-price" style="display: flex; justify-content: space-between; align-items: center">
+              <p class="title" style="font-weight: 600; width: 50%;">Danish Pastry</p>
+              <p class="price" style="font-weight: 700; font-size:20px">100.000&dstrok;</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN78oxZDqNEPkT2O1EF57n6WCqEjpv3vQaeA_fVH8&amp;s" alt="">
+              <div class="icon"><span>B&aacute;n h&#x1EBF;t</span><i class="fa-solid fa-circle-check"></i></div>
+            </div>
+            <div class="title-price" style="display: flex; justify-content: space-between; align-items: center">
+              <p class="title" style="font-weight: 600; width: 50%;">Danish Pastry</p>
+              <p class="price" style="font-weight: 700; font-size:20px">100.000&dstrok;</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN78oxZDqNEPkT2O1EF57n6WCqEjpv3vQaeA_fVH8&amp;s" alt="">
+              <div class="icon"><span>B&aacute;n h&#x1EBF;t</span><i class="fa-solid fa-circle-check"></i></div>
+            </div>
+            <div class="title-price" style="display: flex; justify-content: space-between; align-items: center">
+              <p class="title" style="font-weight: 600; width: 50%;">Danish Pastry</p>
+              <p class="price" style="font-weight: 700; font-size:20px">100.000&dstrok;</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN78oxZDqNEPkT2O1EF57n6WCqEjpv3vQaeA_fVH8&amp;s" alt="">
+              <div class="icon"><span>B&aacute;n h&#x1EBF;t</span><i class="fa-solid fa-circle-check"></i></div>
+            </div>
+            <div class="title-price" style="display: flex; justify-content: space-between; align-items: center">
+              <p class="title" style="font-weight: 600; width: 50%;">Danish Pastry</p>
+              <p class="price" style="font-weight: 700; font-size:20px">100.000&dstrok;</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN78oxZDqNEPkT2O1EF57n6WCqEjpv3vQaeA_fVH8&amp;s" alt="">
+              <div class="icon"><span>B&aacute;n h&#x1EBF;t</span><i class="fa-solid fa-circle-check"></i></div>
+            </div>
+            <div class="title-price" style="display: flex; justify-content: space-between; align-items: center">
+              <p class="title" style="font-weight: 600; width: 50%;">Danish Pastry</p>
+              <p class="price" style="font-weight: 700; font-size:20px">100.000&dstrok;</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN78oxZDqNEPkT2O1EF57n6WCqEjpv3vQaeA_fVH8&amp;s" alt="">
+              <div class="icon"><span>B&aacute;n h&#x1EBF;t</span><i class="fa-solid fa-circle-check"></i></div>
+            </div>
+            <div class="title-price" style="display: flex; justify-content: space-between; align-items: center">
+              <p class="title" style="font-weight: 600; width: 50%;">Danish Pastry</p>
+              <p class="price" style="font-weight: 700; font-size:20px">100.000&dstrok;</p>
+            </div>
+          </li>
+        </ul>
+        <nav class="pagination-container">
+          <button class="pagination-button" id="prev-button" title="Previous page" aria-label="Previous page">&lt;</button>
+          <div id="pagination-numbers"></div>
+          <button class="pagination-button" id="next-button" title="Next page" aria-label="Next page"></button>&gt;
+        </nav>
+      </div>
+    </div>
   </body>
+  <footer>
+    <div class="footer_top">
+      <div class="footer_top_left">
+        <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/1585/1585267.png"></div><span>Sun Cake</span>
+      </div>
+      <div class="footer_top_right">
+        <ul>
+          <li>TH&#x1EF0;C &Dstrok;&#x1A0;N</li>
+          <li>GI&#x1EDA;I THI&#x1EC6;U</li>
+          <li>LI&Ecirc;N H&#x1EC6;</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <div class="footer_bottom_left"><i class="fa-regular fa-copyright"></i><span>2022 UIT</span></div>
+      <div class="footer_bottom_right">
+        <ul>
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-github"></i></li>
+          <li><i class="fa-brands fa-linkedin"></i></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="../../build/scripts/main.js"></script>
+  <script></script>
 </html>

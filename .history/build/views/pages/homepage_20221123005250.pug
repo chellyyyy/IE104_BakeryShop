@@ -1,0 +1,66 @@
+doctype html
+html(lang="en")
+  include ../blocks/header
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="./style.css")
+    title Document
+  body
+    include ../blocks/header
+    #slide_bar
+      .slide_content
+        h1 B&aacute;nh t&#x1EF1; l&agrave;m
+        p
+          | L&agrave;m t&#x1EEB; nh&#x1EEF;ng nguy&ecirc;n li&#x1EC7;u t&#x1B0;&#x1A1;i s&#x1EA1;ch
+          br
+          |                 B&#x1ED9;t, tr&#x1EE9;ng, s&#x1EEF;a nguy&ecirc;n ch&#x1EA5;t
+          br
+          |                 &Dstrok;&#x1EA3;m b&#x1EA3;o ch&#x1EA5;t l&#x1B0;&#x1EE3;ng
+        input(type='button' value='Xem thêm')
+      .slide_img
+        img(src='https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80' alt='choco')
+    #sale
+      .sale_content b&aacute;n ch&#x1EA1;y
+      .sale_img-container
+        .sale_img-item
+          img(src='https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='choco')
+          p Chocolate Cake
+        .sale_img-item
+          img(src='https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='choco')
+          p Chocolate Cake
+        .sale_img-item
+          img(src='https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='choco')
+          p Chocolate Cake
+        .sale_img-item
+          img(src='https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='choco')
+          p Chocolate Cake
+        .sale_img-item
+          img(src='https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='choco')
+          p Chocolate Cake
+      button.sale_button
+        span Xem th&ecirc;m 
+    #noti
+      .noti_content
+        h1 Nh&#x1EAD;n th&ocirc;ng b&aacute;o
+        input.input_email(type='text' placeholder='Email')
+        button Li&ecirc;n h&#x1EC7; ngay
+    #delivery
+      .deli_content
+        h1 Ph&#x1B0;&#x1A1;ng th&#x1EE9;c v&#x1EAD;n chuy&#x1EC3;n
+        .deli_container
+          .deli_item
+            i.fa-solid.fa-truck-fast
+            p Giao h&agrave;ng
+          .deli_item
+            i.fa-solid.fa-store
+            p t&#x1EA1;i qu&aacute;n
+          .deli_item
+            i.fa-solid.fa-person-walking
+            p mang &dstrok;i
+          .deli_item
+            i.fa-solid.fa-gift
+            p qu&agrave;
+
+    include ../blocks/footer
