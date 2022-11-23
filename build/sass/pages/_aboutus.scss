@@ -38,19 +38,30 @@ li i {
     z-index: 5;
 }
 .box_inside h1 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
     text-align: center;
     text-transform: uppercase;
 }
 .box_inside hr {
     display: block;
-    color: black;
+    background: black;
     width: 50%;
-    size: 300px;
-    text-align: center;
+    width: 95.65px;
+    height: 1.74px;
+    margin: auto;
 }
 .box_inside p {
     text-align: center;
     padding-top: 30px;
+
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    /* or 176% */
+    text-align: center;
+    text-transform: capitalize;
 }
 
 .grid-container {
@@ -71,6 +82,14 @@ li i {
     padding: 0;
     font-size: 30px;
     text-align: left;
+}
+.grid-items h2 {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 66px;
+
+    color: #4B6587;
+    margin-bottom: 20px;
 }
 .grid-items img, p{
     border-radius: 30px;
