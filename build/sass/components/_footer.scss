@@ -33,11 +33,17 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
+    // padding: 0px;
     gap: 20px;
     font-size: 30px;
     color: #4B6587;
     font-weight: bold;
+}
+.footer_top_left .icon{
+    display: inherit;
+    margin: 0;
+    width: 30px;
+    height: 30px;
 }
 .footer_top_right ul{
     display: flex;
@@ -69,10 +75,4 @@ footer {
 }
 li i {
     font-size: 25px;
-}
-
-.icon {
-    display: inherit;
-    width: 30px;
-    height: 30px;
 }

@@ -151,7 +151,7 @@ li {
     top: -9999px;
 }
 
-label {
+.rate label {
     float: right;
     width: 1em;
     overflow: hidden;
@@ -169,7 +169,7 @@ label {
     color: #ffc700;
 }
 
-.icon {
+.item .icon {
     cursor: pointer;
     right: 0;
     position: absolute;

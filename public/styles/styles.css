@@ -373,11 +373,17 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
   gap: 20px;
   font-size: 30px;
   color: #4B6587;
   font-weight: bold;
+}
+
+.footer_top_left .icon {
+  display: inherit;
+  margin: 0;
+  width: 30px;
+  height: 30px;
 }
 
 .footer_top_right ul {
@@ -413,12 +419,6 @@ footer {
 
 li i {
   font-size: 25px;
-}
-
-.icon {
-  display: inherit;
-  width: 30px;
-  height: 30px;
 }
 
 body {
@@ -519,7 +519,8 @@ li i {
   margin-bottom: 20px;
 }
 
-.grid-items img, p {
+.grid-items img,
+.grid-items p {
   border-radius: 30px;
   width: 100%;
   object-fit: cover;
@@ -1269,7 +1270,7 @@ li {
   top: -9999px;
 }
 
-label {
+.rate label {
   float: right;
   width: 1em;
   overflow: hidden;
@@ -1287,7 +1288,7 @@ label {
   color: #ffc700;
 }
 
-.icon {
+.item .icon {
   cursor: pointer;
   right: 0;
   position: absolute;
@@ -1302,6 +1303,285 @@ label {
   font-size: 20px;
   font-weight: 500;
   margin-right: 10px;
+}
+
+* {
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-family: "Montserrat";
+}
+
+.container {
+  margin: 50px 10vh;
+}
+
+.content-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.content-header > h2 {
+  /* Giỏ hàng */
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.content-header > div {
+  width: 99px;
+  height: 2px;
+  background: #000;
+  /* text-align: center; */
+  margin: auto;
+}
+
+.btn-light {
+  cursor: pointer;
+  text-align: center;
+  background-color: #fff;
+  padding: 15px 35px;
+  border: 1px solid #4B6587;
+  border-radius: 5px;
+  /* quay lại MUA hàng */
+  font-weight: 300;
+  font-size: 16.2px;
+  line-height: 20px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #4B6587;
+}
+
+.container > p {
+  /* Chọn hình thức thanh toán */
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 2% 0 1% 0;
+  /* identical to box height */
+  text-transform: capitalize;
+  color: #000000;
+}
+
+/* content */
+#content {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 3%;
+  /* padding: 20px 10%; */
+  justify-content: space-between;
+}
+
+#content .content_main {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar {
+  border-radius: 5px 0 0 5px;
+  background-color: #F1F1F1;
+  padding: 50px 0;
+}
+
+.sidebar li {
+  list-style: none;
+  padding: 15px 10px;
+  font-weight: 500;
+}
+
+.sidebar li:hover {
+  background-color: white;
+  cursor: pointer;
+  color: #B9975B;
+}
+
+#sidebar-ct .active {
+  background-color: white;
+  color: #B9975B;
+}
+
+.sidebar li i {
+  margin-right: 10px;
+}
+
+.content-page {
+  border-radius: 0 5px 5px 0;
+  border-top: 2px solid #F1F1F1;
+  border-bottom: 2px solid #F1F1F1;
+  border-right: 2px solid #F1F1F1;
+  padding: 15px;
+}
+
+.content-page > div .header-page {
+  font-weight: 500;
+  font-size: 16.2px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.content-page p {
+  margin-bottom: 10px;
+}
+
+.content-page > div > input {
+  width: 100%;
+  margin-top: 15px;
+}
+
+input {
+  box-sizing: border-box;
+  width: 371.7px;
+  height: 45px;
+  padding: 10px;
+  background: #FFFFFF;
+  border: 0.9px solid #D1D1D1;
+  border-radius: 5px;
+  /* Số thẻ */
+  font-weight: 300;
+  font-size: 10.8px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #878787;
+}
+
+.input_bt {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn-primary {
+  cursor: pointer;
+  float: right;
+  color: white;
+  margin-top: 20px;
+  background: #4B6587;
+  border-radius: 5px;
+  padding: 10px 30px;
+  /* thanh toán */
+  font-weight: 300;
+  font-size: 16.2px;
+  line-height: 20px;
+  /* identical to box height, or 122% */
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #F0E5CF;
+  border-radius: 5px;
+}
+
+.payment > div {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.payment_h > p,
+.payment_b > p,
+.payment_b > span {
+  /* thanh toán */
+  font-weight: 500;
+  font-size: 16.2px;
+  line-height: 20px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.payment_t {
+  padding: 10px 0;
+  margin: 10px 0;
+  height: 50%;
+}
+
+.payment_h {
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 10px;
+}
+
+.payment_b {
+  border-top: 1px solid #d6d6d6;
+  padding-top: 10px;
+}
+
+p.payment_split {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.p2 {
+  font-weight: 300;
+}
+
+.img_none {
+  height: 200px;
+  background-color: #F1F1F1;
+}
+
+.radio-gr {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  margin: 0 !important;
+}
+
+.checkbox {
+  height: 30px;
+  width: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.checkbox-last {
+  margin-left: 20px;
+}
+
+.content-page > div {
+  display: none;
+}
+
+.hide {
+  display: block !important;
+}
+
+.show-popup {
+  display: flex !important;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(195, 188, 188, 0.5);
 }
 
 * {
