@@ -1,10 +1,11 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira");
 * {
+  border: none;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* font-family: sans-serif; */
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
 }
 
 :root {
@@ -839,13 +840,6 @@ li i {
   color: #000000;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat";
-}
-
 #login_page {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -1116,13 +1110,6 @@ li i {
   /* object-fit: contain; */
 }
 
-* {
-  border: NONE;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat";
-}
-
 body {
   height: auto;
 }
@@ -1303,15 +1290,6 @@ li {
   font-size: 20px;
   font-weight: 500;
   margin-right: 10px;
-}
-
-* {
-  border: none;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  position: relative;
-  font-family: "Montserrat";
 }
 
 .container {
@@ -1584,13 +1562,6 @@ label {
   background-color: rgba(195, 188, 188, 0.5);
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat";
-}
-
 .product-all {
   display: grid;
   grid-template-columns: auto auto;
@@ -1764,17 +1735,6 @@ label {
   text-transform: capitalize;
 }
 
-@font-face {
-  font-family: "Montserrat";
-  src: url(https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira-Light.ttf);
-}
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: Montserrat;
-}
-
 input {
   border: none;
 }
@@ -1819,7 +1779,7 @@ main.grid {
   justify-content: space-between;
 }
 
-section {
+main.grid section {
   width: 100%;
   height: 100%;
 }
@@ -1834,7 +1794,7 @@ aside {
 button.gh {
   cursor: pointer;
   text-align: center;
-  margin-left: 10%;
+  margin-left: 1;
   background-color: #fff;
   padding: 15px 35px;
   border: 1px solid #4B6587;
@@ -1902,7 +1862,7 @@ div.content-product p > b {
   padding-right: 5px;
 }
 
-a {
+a.previous_round {
   text-decoration: none;
   display: inline-block;
   font-size: 30px;
@@ -2066,7 +2026,7 @@ button.coupon {
   text-transform: uppercase;
 }
 
-form {
+.voucher form {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
@@ -2100,9 +2060,214 @@ div.dm {
   padding: 0 10px 0 10px;
 }
 
-div.img {
+li.main-product div.img {
   display: flex;
   padding: 0 0 0 100px;
+}
+
+main.grid {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 3%;
+  padding: 50px 10% 100px 10%;
+  justify-content: space-between;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+}
+
+aside {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+button.gh {
+  cursor: pointer;
+  text-align: center;
+  margin-left: 10%;
+  background-color: #fff;
+  padding: 15px 35px;
+  border: 1px solid #4B6587;
+  border-radius: 5px;
+  /* quay lại MUA hàng */
+  font-weight: 300;
+  font-size: 16.2px;
+  line-height: 20px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #4B6587;
+}
+
+.smalltitle {
+  padding-bottom: 20px;
+}
+
+.userinfo {
+  border: 1px solid #d6d6d6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.button_inside {
+  cursor: pointer;
+  text-align: center;
+  background-color: #fff;
+  padding: 15px 35px;
+  margin-top: 45px;
+  border: 1px solid #4B6587;
+  border-radius: 5px;
+  /* quay lại MUA hàng */
+  font-weight: 300;
+  font-size: 16.2px;
+  line-height: 20px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #4B6587;
+}
+
+.content {
+  font-weight: 200;
+  font-size: 25px;
+  line-height: 40px;
+  /* identical to box height, or 137% */
+  letter-spacing: 0.06em;
+  text-transform: capitalize;
+}
+
+.userdetail {
+  font-size: 18px;
+}
+
+#tile_cart {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+#tile_cart h2 {
+  /* Giỏ hàng */
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#tile_cart hr {
+  width: 99px;
+  height: 2px;
+  background: #000;
+  margin: auto;
+}
+
+div.tien {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.list_cart .tong_cong,
+.list_cart .pvc,
+.tong_thanh_toan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 10px;
+}
+
+.tien span.money {
+  float: right;
+  /* 100.000đ */
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  letter-spacing: 0.055em;
+  text-transform: capitalize;
+}
+
+.tien h6 {
+  float: right;
+  /* Xóa */
+  font-weight: 300;
+  font-size: 10.8px;
+  line-height: 20px;
+  /* identical to box height, or 183% */
+  text-align: right;
+  letter-spacing: 0.06em;
+  text-transform: capitalize;
+  color: #4B6587;
+}
+
+h3.thanh_toan,
+.voucher h3 {
+  /* thanh toán */
+  font-weight: 500;
+  font-size: 16.2px;
+  line-height: 20px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.tong_thanh_toan {
+  font-weight: 500;
+  font-size: 16.2px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 0.06em;
+  text-transform: capitalize;
+}
+
+.bill .list_cart {
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+div.bill,
+div.voucher {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #F0E5CF;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  /* tổng cộng: */
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height, or 122% */
+  letter-spacing: 0.06em;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul.top, ul.bottom {
+  border-bottom: 1px solid #d6d6d6;
+}
+
+button.tc {
+  cursor: pointer;
+  text-align: center;
+  margin: none;
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  border-color: #4B6587;
+  background-color: #4B6587;
+  margin-top: 10px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
