@@ -1,0 +1,106 @@
+footer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 1960px; */
+    /* height: 380px; */
+}
+
+.footer_top {
+    background: #F0E5CF;
+    height: 200px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 50px 200px 0px 200px;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(136, 130, 130, 0.442);
+}
+.footer_bottom {
+    background: #F0E5CF;
+    padding: 0px 200px 50px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    width: 100vw;
+}
+
+
+
+.footer_top_left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // padding: 0px;
+    gap: 20px;
+    font-size: 30px;
+    color: #4B6587;
+    font-weight: bold;
+}
+.footer_top_left .icon{
+    display: inherit;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+}
+.footer_top_right ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+    list-style: none;
+}
+.footer_bottom_left {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+.footer_bottom_right {
+    background: #F0E5CF;
+}
+.footer_bottom_right ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+    list-style: none;
+}
+li i {
+    font-size: 25px;
+}
+
+// Ipad Mini & Ipad Air
+@media only screen and (max-width: 820px) {
+    .footer_top {
+        padding: 5%;
+        height: 100px;
+    }
+    .footer_bottom {
+        padding: 5%;
+    }
+}
+
+// Smartphone
+@media only screen and (max-width: 414px) {
+    .footer_top span {
+        font-size: 20px;
+    }
+    .footer_top ul {
+        gap: 10px;
+    }
+    .footer_top li {
+        width: 50px;
+        text-align: center;
+        font-size: 14px;
+
+    }
+    
+}
