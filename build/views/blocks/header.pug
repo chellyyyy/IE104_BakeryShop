@@ -1,4 +1,5 @@
 header#header
+  input#check(type='checkbox' name='')
   .nav-left
     .brand
       img.brand-img(src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/800px-Google_%22G%22_Logo.svg.png' alt='')
@@ -6,9 +7,9 @@ header#header
   .nav-center
     ul.menu-list
       li.menu-item
-        .sub-nav
-          | Th&#x1EF1;c &dstrok;&#x1A1;n
-          i.fa-solid.fa-angle-down
+        | Th&#x1EF1;c &dstrok;&#x1A1;n
+        i.fa-solid.fa-angle-down
+        // <div class="sub-nav"></div>
         ul.sub-nav-list
           .menu-container
             .menu-content
@@ -48,7 +49,9 @@ header#header
       li.menu-item
         a(href='') Gi&#x1EDB;i thi&#x1EC7;u
       li.menu-item
-        .sub-nav  Li&ecirc;n h&#x1EC7; 
+        | Li&ecirc;n h&#x1EC7;
+        i.fa-solid.fa-angle-down
+        // <div class="sub-nav"></div>
         .sub-nav-list
           .grid-container-contact
             .grid-item-contact
@@ -63,8 +66,9 @@ header#header
             .grid-item-contact
               h1 &dstrok;&#x1ECB;a ch&#x1EC9; C&#x1EED;a h&agrave;ng
             .grid-item-contact
-              i.fa-solid.fa-location-dot
-              |                               Khu ph&#x1ED1; 6, P.Linh Trung, Tp.Th&#x1EE7; &Dstrok;&#x1EE9;c, Tp.H&#x1ED3; Ch&iacute; Minh
+              p
+                i.fa-solid.fa-location-dot
+                |                         Khu ph&#x1ED1; 6, P.Linh Trung, Tp.Th&#x1EE7; &Dstrok;&#x1EE9;c, Tp.H&#x1ED3; Ch&iacute; Minh
   .nav-right
     .search
       input.input-search(type='text' placeholder='Tìm kiếm')
@@ -75,17 +79,6 @@ header#header
     .cart
       i.fa-solid.fa-cart-shopping
       span.amount 1
-  
-  .dropdown-menu.header_button(onclick='myFunction(this)')
-    .bar1
-    .bar2 
-    .bar3
-    ul.dropdown-content
-      li
-        a(href='#') THỰC ĐƠN
-      li
-        a(href='#') GIỚI THIỆU
-      li.dropdown-menu-1 LIÊN HỆ
-        p.dropdown-content-1  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium sit ullam impedit praesentium ea a voluptas laboriosam nihil cum quos tempore, cumque labore, consectetur unde? Quisquam dicta tempora aliquam.
-        
-    //- script(src='./scripts/main.js')
+  .hamburger-menu-container
+    .hamburger-menu
+      div

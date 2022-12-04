@@ -15,6 +15,7 @@
   </head>
   <body> 
     <header id="header">
+      <input id="check" type="checkbox" name="">
       <div class="nav-left">
         <div class="brand"><img class="brand-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/800px-Google_%22G%22_Logo.svg.png" alt="">
           <h1 class="brand-heading">Sun Cake</h1>
@@ -22,8 +23,8 @@
       </div>
       <div class="nav-center">
         <ul class="menu-list">
-          <li class="menu-item">
-            <div class="sub-nav">Th&#x1EF1;c &dstrok;&#x1A1;n<i class="fa-solid fa-angle-down"></i></div>
+          <li class="menu-item">Th&#x1EF1;c &dstrok;&#x1A1;n<i class="fa-solid fa-angle-down"></i>
+            <!-- <div class="sub-nav"></div>-->
             <ul class="sub-nav-list">
               <div class="menu-container">
                 <div class="menu-content">
@@ -53,8 +54,8 @@
             </ul>
           </li>
           <li class="menu-item"><a href="">Gi&#x1EDB;i thi&#x1EC7;u</a></li>
-          <li class="menu-item">
-            <div class="sub-nav"> Li&ecirc;n h&#x1EC7; </div>
+          <li class="menu-item">Li&ecirc;n h&#x1EC7;<i class="fa-solid fa-angle-down"></i>
+            <!-- <div class="sub-nav"></div>-->
             <div class="sub-nav-list">
               <div class="grid-container-contact">
                 <div class="grid-item-contact">
@@ -67,7 +68,9 @@
                 <div class="grid-item-contact">
                   <h1>&dstrok;&#x1ECB;a ch&#x1EC9; C&#x1EED;a h&agrave;ng</h1>
                 </div>
-                <div class="grid-item-contact"><i class="fa-solid fa-location-dot"></i>                              Khu ph&#x1ED1; 6, P.Linh Trung, Tp.Th&#x1EE7; &Dstrok;&#x1EE9;c, Tp.H&#x1ED3; Ch&iacute; Minh</div>
+                <div class="grid-item-contact">
+                  <p><i class="fa-solid fa-location-dot"></i>                        Khu ph&#x1ED1; 6, P.Linh Trung, Tp.Th&#x1EE7; &Dstrok;&#x1EE9;c, Tp.H&#x1ED3; Ch&iacute; Minh</p>
+                </div>
               </div>
             </div>
           </li>
@@ -81,17 +84,10 @@
         <div class="personal"><i class="fa-solid fa-user"></i></div>
         <div class="cart"><i class="fa-solid fa-cart-shopping"></i><span class="amount">1</span></div>
       </div>
-      <div class="dropdown-menu header_button" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"> </div>
-        <div class="bar3"></div>
-        <ul class="dropdown-content">
-          <li><a href="#">THỰC ĐƠN</a></li>
-          <li><a href="#">GIỚI THIỆU</a></li>
-          <li class="dropdown-menu-1">LIÊN HỆ
-            <p class="dropdown-content-1"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore accusantium sit ullam impedit praesentium ea a voluptas laboriosam nihil cum quos tempore, cumque labore, consectetur unde? Quisquam dicta tempora aliquam.</p>
-          </li>
-        </ul>
+      <div class="hamburger-menu-container">
+        <div class="hamburger-menu">
+          <div></div>
+        </div>
       </div>
     </header>
     <div class="container">
