@@ -1888,6 +1888,10 @@ p.payment_split {
   align-items: center;
 }
 
+.radio-gr input {
+  width: 22px;
+}
+
 label {
   margin: 0 !important;
 }
@@ -1929,6 +1933,69 @@ label {
   background-color: rgba(195, 188, 188, 0.5);
 }
 
+@media only screen and (max-width: 820px) {
+  #content {
+    gap: 0;
+  }
+  .container_pay {
+    margin: 50px 3vh;
+  }
+  .radio-gr input {
+    width: 22px;
+  }
+  div.payment_t span {
+    font-size: 22px;
+    padding-top: 5px;
+  }
+  div.payment_b span {
+    font-size: 22px;
+    padding-top: 5px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .container_pay {
+    margin: 50px 3vh;
+  }
+  .btn-light {
+    padding: 7px 10px;
+    margin-bottom: 12px;
+  }
+  .container_pay > p {
+    font-size: 16px;
+  }
+  #content {
+    grid-template-columns: none;
+    grid-template-rows: auto;
+  }
+  #content .content_main {
+    grid-template-columns: none;
+    grid-template-rows: auto;
+    transform: translateX(-0.6%);
+  }
+  .content-page {
+    border-left: 2px solid #F1F1F1;
+  }
+  .content-page input {
+    width: auto;
+  }
+  .sidebar {
+    padding: 0;
+  }
+  .payment {
+    transform: translateX(-0.6%);
+  }
+  p.payment_split {
+    padding-bottom: 10px;
+  }
+  div.payment_t span {
+    font-size: 18px;
+    padding-top: 0;
+  }
+  div.payment_b span {
+    font-size: 18px;
+    padding-top: 0;
+  }
+}
 .product-all {
   display: grid;
   grid-template-columns: 40% 60%;
