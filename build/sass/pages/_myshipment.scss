@@ -125,15 +125,15 @@ div.tien {
     height: 100%;
 }
 
-.list_cart .tong_cong,
-.list_cart .pvc,
-.tong_thanh_toan {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
-    margin-bottom: 10px;
-}
+// .list_cart .tong_cong,
+// .list_cart .pvc,
+// .tong_thanh_toan {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     align-content: center;
+//     margin-bottom: 10px;
+// }
 
 .tien span.money {
     float: right;
@@ -159,7 +159,7 @@ div.tien {
     color: #4B6587;
 }
 
-h3.thanh_toan,
+// h3.thanh_toan,
 .voucher h3 {
     /* thanh toán */
     font-weight: 500;
@@ -169,23 +169,23 @@ h3.thanh_toan,
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-.tong_thanh_toan {
-    font-weight: 500;
-    font-size: 16.2px;
-    line-height: 20px;
-    margin-bottom: 20px;
-    letter-spacing: 0.06em;
-    text-transform: capitalize;
-}
+// .tong_thanh_toan {
+//     font-weight: 500;
+//     font-size: 16.2px;
+//     line-height: 20px;
+//     margin-bottom: 20px;
+//     letter-spacing: 0.06em;
+//     text-transform: capitalize;
+// }
 
-.bill .list_cart {
-    border-top: 1px solid #d6d6d6;
-    border-bottom: 1px solid #d6d6d6;
-    padding: 20px 0;
-    margin: 20px 0;
-}
+// .bill .list_cart {
+//     border-top: 1px solid #d6d6d6;
+//     border-bottom: 1px solid #d6d6d6;
+//     padding: 20px 0;
+//     margin: 20px 0;
+// }
 
-div.bill,
+// div.bill,
 div.voucher {
     display: flex;
     flex-direction: column;
@@ -216,15 +216,15 @@ ul.top, ul.bottom {
 }
 
 
-button.tc {
-    cursor: pointer;
-    text-align: center;
-    margin: none;
-    padding: 20px;
-    border-radius: 5px;
-    color: white;
-    border-color: #4B6587;
-    background-color: #4B6587;
-    margin-top: 10px;
-    width: 100%;
-}
+// button.tc {
+//     cursor: pointer;
+//     text-align: center;
+//     margin: none;
+//     padding: 20px;
+//     border-radius: 5px;
+//     color: white;
+//     border-color: #4B6587;
+//     background-color: #4B6587;
+//     margin-top: 10px;
+//     width: 100%;
+// }

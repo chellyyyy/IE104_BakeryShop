@@ -16,6 +16,7 @@ html(lang="en")
             #tile_cart
                 h2 GIỎ HÀNG
                 hr
+            //- include ../blocks/button_return
             button.gh(type='button', onclick='QUAY_LẠI_MUA_HÀNG()')
                 //- a.previous_round(href='#') &lsaquo;
                 i.fa-solid.fa-chevron-left(style='margin-right: 5px;')
@@ -43,20 +44,21 @@ html(lang="en")
                         div
                             button.button_inside THAY ĐỔI ĐỊA CHỈ           
                 
-            aside 
-                .bill 
-                    div
-                        h3.thanh_toan THANH TOÁN
-                    .list_cart 
-                        .tong_cong Tổng Cộng
-                            span.money 200.000đ
-                        .pvc Phí Vận Chuyển
-                            span.money 10.000đ
-                    div
-                        .tong_thanh_toan Tổng Thanh Toán:
-                            span.money 210.000đ
-                        div
-                            button.tc(type = 'button') TIẾP TỤC THANH TOÁN
+            aside
+                include ../blocks/bill
+                //- .bill 
+                //-     div
+                //-         h3.thanh_toan THANH TOÁN
+                //-     .list_cart 
+                //-         .tong_cong Tổng Cộng
+                //-             span.money 200.000đ
+                //-         .pvc Phí Vận Chuyển
+                //-             span.money 10.000đ
+                //-     div
+                //-         .tong_thanh_toan Tổng Thanh Toán:
+                //-             span.money 210.000đ
+                //-         div
+                //-             button.tc(type = 'button') TIẾP TỤC THANH TOÁN
 
 
 
