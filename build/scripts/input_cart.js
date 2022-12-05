@@ -16,3 +16,20 @@ $('input.input-qty').each(function () {
         $this.attr('value', d).val(d)
     })
 })
+
+// ---------------------------------------------------
+// Tang giam sl_1
+function increment() {
+  document.getElementById('demoInput').stepUp();
+}
+function decrement() {
+  document.getElementById('demoInput').stepDown();
+}
+
+// Tang giam sl_2
+function increment_2() {
+    document.getElementById('Input-2').stepUp();
+  }
+  function decrement_2() {
+    document.getElementById('Input-2').stepDown();
+  }

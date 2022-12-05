@@ -42,9 +42,12 @@ html(lang='en')
                                 i.fas.fa-file-pen
                                 | Ghi ch&uacute;
                         .buttons_added
-                            input.minus.is-form(type='button' value='-')
-                            input.input-qty(aria-label='quantity' max='10' min='1' name='' type='number' value='1')
-                            input.plus.is-form(type='button' value='+')
+                            button.minus.is-form(onclick='decrement()') -
+                            input#demoInput.input-qty(aria-label='quantity' max='10' min='1' name='' type='number' value='1')
+                            button.plus.is-form(onclick='increment()') +
+                            //- input.minus.is-form(type='button' value='-')
+                            //- input.input-qty(aria-label='quantity' max='10' min='1' name='' type='number' value='1')
+                            //- input.plus.is-form(type='button' value='+')
                         .tien
                             div
                                 span.money 100.000&dstrok;
@@ -68,9 +71,9 @@ html(lang='en')
                                 i.fas.fa-file-pen
                                 | Ghi ch&uacute;
                         .buttons_added
-                            input.minus.is-form(type='button' value='-')
-                            input.input-qty(aria-label='quantity' max='10' min='1' name='' type='number' value='1')
-                            input.plus.is-form(type='button' value='+')
+                            button.minus.is-form(onclick='decrement_2()') -
+                            input#Input-2.input-qty(aria-label='quantity' max='10' min='1' name='' type='number' value='1')
+                            button.plus.is-form(onclick='increment_2()') +
                         .tien
                             div
                                 span.money 100.000&dstrok;

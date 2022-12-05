@@ -36,9 +36,9 @@
               <p><i class="fas fa-file-pen"></i>Ghi ch&uacute;</p>
             </div>
             <div class="buttons_added">
-              <input class="minus is-form" type="button" value="-">
-              <input class="input-qty" aria-label="quantity" max="10" min="1" name="" type="number" value="1">
-              <input class="plus is-form" type="button" value="+">
+              <button class="minus is-form" onclick="decrement()">-</button>
+              <input class="input-qty" id="demoInput" aria-label="quantity" max="10" min="1" name="" type="number" value="1">
+              <button class="plus is-form" onclick="increment()">+</button>
             </div>
             <div class="tien">
               <div><span class="money">100.000&dstrok;</span></div>
@@ -56,9 +56,9 @@
               <p><i class="fas fa-file-pen"></i>Ghi ch&uacute;</p>
             </div>
             <div class="buttons_added">
-              <input class="minus is-form" type="button" value="-">
-              <input class="input-qty" aria-label="quantity" max="10" min="1" name="" type="number" value="1">
-              <input class="plus is-form" type="button" value="+">
+              <button class="minus is-form" onclick="decrement_2()">-</button>
+              <input class="input-qty" id="Input-2" aria-label="quantity" max="10" min="1" name="" type="number" value="1">
+              <button class="plus is-form" onclick="increment_2()">+</button>
             </div>
             <div class="tien">
               <div><span class="money">100.000&dstrok;</span></div>

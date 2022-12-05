@@ -14,48 +14,49 @@ html(lang='en')
         title Sản phẩm
     body
         include ../blocks/header
+        button.return(type='button' onclick='QUAY_LẠI_MUA_HÀNG()')
+            //- a.previous_round(href='#')
+            i.fa-solid.fa-chevron-left
+            | QUAY L&#x1EA0;I
+        script.
+            function QUAY_LẠI_MUA_HÀNG() {
+                history.back();
+            }
         .product-all
             .product-1
-                button.return(type='button' onclick='QUAY_LẠI_MUA_HÀNG()')
-                    a.previous_round(href='#')
-                    i.fa-solid.fa-chevron-left
-                    | QUAY L&#x1EA0;I
-                script.
-                    function QUAY_LẠI_MUA_HÀNG() {
-                        history.back();
-                    }
-                
+                                
                 // Slideshow container
                 .slideshow-product
                     // Full-width images with number and caption text
-                    .mySlides.fade
+                    .mySlidesShow.fade
                         img(src='../build/assets/Danish_Pastry.png', alt='Danish Pastry')
-                    //- .mySlides.fade
+                    //- .mySlidesShow.fade
                     //-     img(src='https://kfoods.com/images1/newrecipeicon/danish-pastries_11156.jpg')
-                    //- .mySlides.fade
+                    //- .mySlidesShow.fade
                     //-     img(src='https://www.masterclass.com/cdn-cgi/image/width=828,quality=75,format=webp/https://images.ctfassets.net/3s5io6mnxfqz/1dLqthjXNRPN1HRx0YbpGP/1815925455dfd53f538757b067ff6168/AdobeStock_308816929.jpeg')
-                    //- // Next and previous buttons
+                    
+                    // Next and previous buttons
                     //- a.prev(onclick='plusSlides(-1)') &#x276E;
                     //- a.next(onclick='plusSlides(1)') &#x276F;
                 br
 
                 // The dots/circles
                 //- div(style='text-align:center')
-                //-     span.dot(onclick='currentSlide(1)')
-                //-     span.dot(onclick='currentSlide(2)')
-                //-     span.dot(onclick='currentSlide(3)')
+                //-     span.dot_product(onclick='currentSlide(1)')
+                //-     span.dot_product(onclick='currentSlide(2)')
+                //-     span.dot_product(onclick='currentSlide(3)')
             .product-2
                 .Information
                     h1 Danish pastry
-                    p
-                        | Danish Pastry &dstrok;&#x1EB7;c tr&#x1B0;ng v&#x1EDB;i vi&#x1EC7;c s&#x1EED; d&#x1EE5;ng men n&#x1EDF; (yeast), ngo&agrave;i ra n&oacute; b&eacute;o h&#x1A1;n v&#x1EDB;i tr&#x1EE9;ng, s&#x1EEF;a, &dstrok;&#x1B0;&#x1EDD;ng, nh&#x1B0;ng l&#x1EA1;i &iacute;t b&#x1A1; h&#x1A1;n Puff Pastry. Trong Danish Pastry chia l&agrave;m 2 lo&#x1EA1;i: Croissant Style gi&#x1ED1;ng v&#x1EDB;i Puff Pastry nh&#x1B0;ng c&oacute; d&ugrave;ng men n&#x1EDF;, trong khi &dstrok;&oacute; Brioche Style l&agrave; m&#x1ED9;t phi&ecirc;n b&#x1EA3;n b&eacute;o ng&#x1EAD;y v&#x1EDB;i tr&#x1EE9;ng s&#x1EEF;a &dstrok;&#x1B0;&#x1EDD;ng &dstrok;&#x1EE7; c&#x1EA3;.
+                    p Bánh dai nhẹ như bánh mì nhưng thêm phần tinh tế khi lớp bột tách thành nhiều lớp, tạo cho bánh có độ xốp và lớp vỏ ngoài giòn tan khi nướng xong.
                 .Button
                     .button-1
-                        button(onclick='decrement()') -
-                        input#demoInput(type='number', min='1', max='10', value='1')
-                        button(onclick='increment()') +
+                        button.minus.is-form(onclick='decrement()') -
+                        input#demoInput.input-qty(aria-label='quantity' max='10' min='1' name='' type='number' value='1')
+                        //- input#demoInput(type='number', min='1', max='10', value='1')
+                        button.plus.is-form(onclick='increment()') +
                     button.button-2
                         i.fa-solid.fa-cart-shopping
-                        | Th&ecirc;m v&agrave;o gi&#x1ECF;
+                        span Th&ecirc;m v&agrave;o gi&#x1ECF;
         include ../blocks/footer
-        script(src='../build/scripts/main.js')
+        script(src='../build/scripts/input_cart.js')

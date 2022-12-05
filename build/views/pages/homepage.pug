@@ -25,28 +25,23 @@ html(lang='en')
         img.mySlides(src='https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1026&q=80' alt='choco')
         img.mySlides(src='https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80' alt='choco')
     #sale
-      .sale_content b&aacute;n ch&#x1EA1;y
-      // Slideshow container
+      .sale_content Bán chạy
       .sale_img-container
-        // Full-width images with number and caption text
-        .sale_img-item.fade
-          img(src='https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' style='width:100%')
-          .sale_img-text Chocolate Cake
-        .sale_img-item.fade
-          img(src='https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' style='width:100%')
-          .sale_img-text Chocolate Cake
-        .sale_img-item.fade
-          img(src='https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' style='width:100%')
-        // Next and previous buttons
-        a.prev(onclick='plusSlides(-1)') &#x276E;
-        a.next(onclick='plusSlides(1)') &#x276F;
-      br
-      // The dots/circles
-      div(style='text-align:center')
-        span.dot(onclick='currentSlide(1)')
-        span.dot(onclick='currentSlide(2)')
-        span.dot(onclick='currentSlide(3)')
-
+        .sale_img-item
+          img(src='https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='choco')
+          p Chocolate Cake
+        .sale_img-item
+          img(src='https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='strawberry')
+          p CupCake
+        .sale_img-item
+          img(src='https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='choco')
+          p Chocolate Cake
+        .sale_img-item
+          img(src='https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='choco')
+          p Chocolate Cake
+        .sale_img-item
+          img(src='https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='choco')
+          p Chocolate Cake
       button.sale_button
         span Xem th&ecirc;m 
     #sale
@@ -93,4 +88,4 @@ html(lang='en')
 
     include ../blocks/footer
     script(src='../build/scripts/slideshow.js')
-    script(src='../build/scripts/main.js')
+    //- script(src='../build/scripts/main.js')

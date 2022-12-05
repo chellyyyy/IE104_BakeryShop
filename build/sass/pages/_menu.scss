@@ -60,18 +60,12 @@ li {
     margin-top: 10px;
 }
 .container #product {
-    margin: 10%;
+    margin: 5% 10%;
     width: auto;
     height: auto;
 }
-.container #product .item {
-    margin-bottom: 20px;
-}
 #product .item .img img {
     display: inherit;
-}
-#product .item .img .icon {
-    width: fit-content;
 }
 #product .title-price p {
     width: max-content;
@@ -116,7 +110,7 @@ li {
     position: relative;
     width: 30%;
     height: 100%;
-    margin-top: 30px;
+    margin-top: 5%;
 
 }
 
@@ -178,10 +172,32 @@ li {
     top: 0px;
     display: flex;
     align-items: center;
+    width: fit-content;
 }
 
 .icon>span {
     font-size: 20px;
     font-weight: 500;
     margin-right: 10px;
+}
+
+// Ipad Mini & Ipad Air
+@media (max-width: 920px) {
+    
+}
+
+// Smartphone
+@media only screen and (max-width: 414px) {
+    .container #head h2 {
+        font-size: 25px;
+    }
+    #product .title-price p.price {
+        display: none;
+    }
+    .item .icon,
+    .icon > span,
+    .icon > i {
+        font-size: 10px;
+        margin: 0;
+    }
 }
