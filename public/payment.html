@@ -88,7 +88,7 @@
   </header>
   <div class="container_pay">
     <div class="content-header">
-      <h2>GI&#x1ECE; H&Agrave;NG</h2>
+      <h2>GIỎ HÀNG</h2>
       <div class="under_line"></div>
     </div>
     <button class="btn btn-light" type="button" onclick="QUAY_LẠI_MUA_HÀNG()"><i class="fa-solid fa-chevron-left" style="margin-right: 5px;"></i>QUAY LẠI</button>
@@ -98,7 +98,7 @@
       }
     </script>
     <p>ch&#x1ECD;n h&igrave;nh th&#x1EE9;c thanh to&aacute;n</p>
-    <div id="content">
+    <div class="payment" id="content">
       <div class="content_main">
         <div class="sidebar">
           <ul id="sidebar-ct">
@@ -164,17 +164,14 @@
           <button class="btn btn-primary" type="button">THANH TO&Aacute;N</button>
         </div>
       </div>
-      <div class="payment">
-        <div class="payment_h">
-          <p>THANH TO&Aacute;N</p>
+      <div class="bill"> 
+        <h3 class="thanh_toan">THANH TOÁN</h3>
+        <div class="list_cart">
+          <div class="bill_content">Tổng Cộng:<span class="money">200.000đ</span></div>
+          <div class="bill_content">Phí Vận Chuyển:<span class="money">10.000đ</span></div>
         </div>
-        <div class="payment_t">
-          <p class="payment_split">T&#x1ED4;NG C&#x1ED8;NG:<span>200.000&dstrok;</span></p>
-          <p class="payment_split">PH&Iacute; V&#x1EAC;N CHUY&#x1EC2;N:<span>10.000&dstrok;</span></p>
-        </div>
-        <div class="payment_b">
-          <p class="payment_split">T&#x1ED4;NG THANH TO&Aacute;N: <span>210.000&dstrok;</span></p>
-        </div>
+        <div class="tong_thanh_toan bill_content">Tổng Thanh Toán:<span class="money">210.000đ    </span></div>
+        <button class="tc" type="button">TIẾP TỤC THANH TOÁN</button>
       </div>
     </div>
   </div>

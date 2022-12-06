@@ -2,11 +2,13 @@ div.bill {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    // width: 100%;
+    height: max-content;
     
-    padding: 20px;
+    padding: 8%;
     background-color: #F0E5CF;
     border-radius: 5px;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
 
     /* tổng cộng: */
     font-weight: 300;
@@ -61,3 +63,27 @@ div.bill {
     margin-top: 10px;
     width: 100%;
 }
+
+// Ipad Mini & Ipad Air
+// @media only screen and (max-width: 820px){
+//     div.bill_content span {
+//         font-size: 22px;
+//         padding-top: 5px;
+//     }
+// }
+
+// // Smartphone
+// @media only screen and (max-width: 414px) {
+//     .bill {
+//         transform: translateX(-0.6%);
+//     }
+
+//     p.bill_content {
+//         padding-bottom: 10px;
+//     }
+
+//     div.bill_content span.money {
+//         font-size: 18px;
+//         padding-top: 0;
+//     }
+// }

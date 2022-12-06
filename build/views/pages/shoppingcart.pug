@@ -10,103 +10,99 @@ html(lang='en')
         script(src='https://kit.fontawesome.com/yourcode.js')
         script(src='../build/scripts/input_cart.js')
     body
-        // Content
-        nav
-            #tile_cart
-                h2 GI&#x1ECE; H&Agrave;NG
-                hr
-            button.gh(type='button' onclick='QUAY_LẠI_MUA_HÀNG()')
-                //- a.previous_round(href='#')
-                i.fa-solid.fa-chevron-left(style='margin-right: 5px;')
-                | QUAY L&#x1EA0;I
-            script.
-                function QUAY_LẠI_MUA_HÀNG() {
-                    history.back();
-                }
-        main.grid
-            section
-                ul
-                    li.main-product
-                        .img-product
-                            img(src='../build/assets/Danish_Pastry.png')
-                        .content-product
-                            p
-                                b Danish Pastry
-                            p
-                                i.fas.fa-calendar-days
-                                | 04/11/2022
-                            p
-                                i.fas.fa-clock
-                                | 10 AM
-                            p
-                                i.fas.fa-file-pen
-                                | Ghi ch&uacute;
-                        .buttons_added
-                            button.minus.is-form(onclick='decrement()') -
-                            input#demoInput.input-qty(aria-label='quantity' max='10' min='1' name='' type='number' value='1')
-                            button.plus.is-form(onclick='increment()') +
-                            //- input.minus.is-form(type='button' value='-')
-                            //- input.input-qty(aria-label='quantity' max='10' min='1' name='' type='number' value='1')
-                            //- input.plus.is-form(type='button' value='+')
-                        .tien
-                            div
-                                span.money 100.000&dstrok;
-                            div
-                                h6
-                                    | X&oacute;a
-                                    i.fas.fa-trash-can
-                    li.main-product
-                        .img-product
-                            img(src='../build/assets/Danish_Pastry.png')
-                        .content-product
-                            p
-                                b Danish Pastry
-                            p
-                                i.fas.fa-calendar-days
-                                | 04/11/2022
-                            p
-                                i.fas.fa-clock
-                                | 3 PM - 8 PM
-                            p
-                                i.fas.fa-file-pen
-                                | Ghi ch&uacute;
-                        .buttons_added
-                            button.minus.is-form(onclick='decrement_2()') -
-                            input#Input-2.input-qty(aria-label='quantity' max='10' min='1' name='' type='number' value='1')
-                            button.plus.is-form(onclick='increment_2()') +
-                        .tien
-                            div
-                                span.money 100.000&dstrok;
-                            div
-                                h6
-                                    | X&oacute;a
-                                    i.fas.fa-trash-can
-            aside
-                .bill
-                    div
-                        h3.thanh_toan THANH TO&Aacute;N
-                    .list_cart
-                        .tong_cong
-                            | T&#x1ED5;ng C&#x1ED9;ng:
-                            span.money 200.000&dstrok;
-                        .pvc
-                            | Ph&iacute; V&#x1EAD;n Chuy&#x1EC3;n:
-                            span.money 10.000&dstrok;
-                    div
-                        .tong_thanh_toan
-                            | T&#x1ED5;ng Thanh To&aacute;n:
-                            span.money 210.000&dstrok;
+        include ../blocks/header
+        .container_pay
+            .content-header
+                h2 GIỎ HÀNG
+                div.under_line
+            include ../blocks/button_return
+
+            //- CONTENT MAIN
+            main.grid
+                section
+                    ul
+                        li.main-product
+                            .img-product
+                                img(src='../build/assets/Danish_Pastry.png')
+                            .content-product
+                                p
+                                    b Danish Pastry
+                                p
+                                    i.fas.fa-calendar-days
+                                    | 04/11/2022
+                                p
+                                    i.fas.fa-clock
+                                    | 10 AM
+                                p
+                                    i.fas.fa-file-pen
+                                    | Ghi ch&uacute;
+                            .buttons_added
+                                button.minus.is-form(onclick='decrement()') -
+                                input#demoInput.input-qty(aria-label='quantity' max='10' min='1' name='' type='number' value='1')
+                                button.plus.is-form(onclick='increment()') +
+                                //- input.minus.is-form(type='button' value='-')
+                                //- input.input-qty(aria-label='quantity' max='10' min='1' name='' type='number' value='1')
+                                //- input.plus.is-form(type='button' value='+')
+                            .tien
+                                div
+                                    span.money 100.000&dstrok;
+                                div
+                                    h6
+                                        | X&oacute;a
+                                        i.fas.fa-trash-can
+                        li.main-product
+                            .img-product
+                                img(src='../build/assets/Danish_Pastry.png')
+                            .content-product
+                                p
+                                    b Danish Pastry
+                                p
+                                    i.fas.fa-calendar-days
+                                    | 04/11/2022
+                                p
+                                    i.fas.fa-clock
+                                    | 3 PM - 8 PM
+                                p
+                                    i.fas.fa-file-pen
+                                    | Ghi ch&uacute;
+                            .buttons_added
+                                button.minus.is-form(onclick='decrement_2()') -
+                                input#Input-2.input-qty(aria-label='quantity' max='10' min='1' name='' type='number' value='1')
+                                button.plus.is-form(onclick='increment_2()') +
+                            .tien
+                                div
+                                    span.money 100.000&dstrok;
+                                div
+                                    h6
+                                        | X&oacute;a
+                                        i.fas.fa-trash-can
+                aside
+                    include ../blocks/bill
+                    //- .bill
+                    //-     div
+                    //-         h3.thanh_toan THANH TO&Aacute;N
+                    //-     .list_cart
+                    //-         .tong_cong
+                    //-             | T&#x1ED5;ng C&#x1ED9;ng:
+                    //-             span.money 200.000&dstrok;
+                    //-         .pvc
+                    //-             | Ph&iacute; V&#x1EAD;n Chuy&#x1EC3;n:
+                    //-             span.money 10.000&dstrok;
+                    //-     div
+                    //-         .tong_thanh_toan
+                    //-             | T&#x1ED5;ng Thanh To&aacute;n:
+                    //-             span.money 210.000&dstrok;
+                    //-         div
+                    //-             button.tc(tyle='button') TI&#x1EBE;P T&#x1EE4;C THANH TO&Aacute;N
+                    .voucher
                         div
-                            button.tc(tyle='button') TI&#x1EBE;P T&#x1EE4;C THANH TO&Aacute;N
-                .voucher
-                    div
-                        h3
-                            i.fas.fa-ticket
-                            | VOUCHER
-                    div
-                        form
-                            input.coupon(type='text' name='Coupon' placeholder='Nhập mã Coupon')
-                            div
-                                button.coupon(type='button') &Aacute;P D&#x1EE4;NG
+                            h3
+                                i.fas.fa-ticket
+                                | VOUCHER
+                        div
+                            form
+                                input.coupon(type='text' name='Coupon' placeholder='Nhập mã Coupon')
+                                div
+                                    button.coupon(type='button') &Aacute;P D&#x1EE4;NG
 
         include ../blocks/footer

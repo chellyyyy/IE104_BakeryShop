@@ -1,49 +1,5 @@
-
-
-.container_pay {
-    margin: 50px 10vh;
-}
-
-.content-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-
-.content-header>h2 {
-    /* Giỏ hàng */
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 44px;
-
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.content-header>div {
-    width: 99px;
-    height: 2px;
-
-    background: #000;
-    /* text-align: center; */
-    margin: auto;
-}
-.container_pay>p {
-    /* Chọn hình thức thanh toán */
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
-    margin: 2% 0 1% 0;
-    /* identical to box height */
-    text-transform: capitalize;
-
-    color: #000000;
-}
-
 /* content */
-#content {
+.payment {
     display: grid;
     grid-template-columns: 70% 30%;
     gap: 3%;
@@ -154,54 +110,58 @@
     color: #FFFFFF;
 }
 
-.payment {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+// .payment {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
     
-    padding: 20px;
-    background-color: #F0E5CF;
-    border-radius: 5px;    
-}
+//     padding: 20px;
+//     background-color: #F0E5CF;
+//     border-radius: 5px;    
+// }
 
-.payment>div {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    flex-direction: column;
-}
+// .payment>div {
+//     display: flex;
+//     position: relative;
+//     justify-content: space-between;
+//     flex-direction: column;
+// }
 
-.payment_h>p,
-.payment_b>p,
-.payment_b>span {
-    /* thanh toán */
-    font-weight: 500;
-    font-size: 16.2px;
-    line-height: 20px;
+// .payment_h>p,
+// .payment_b>p,
+// .payment_b>span {
+//     /* thanh toán */
+//     font-weight: 500;
+//     font-size: 16.2px;
+//     line-height: 20px;
 
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-}
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+// }
 
-.payment_t {
-    padding: 10px 0;
-    margin: 10px 0;
-    height: 50%;
-}
-.payment_h {
-    border-bottom: 1px solid #d6d6d6;
-    padding-bottom: 10px;
-}
-.payment_b {
-    border-top: 1px solid #d6d6d6;
-    padding-top: 10px;
-}
+// .payment_t {
+//     padding: 10px 0;
+//     margin: 10px 0;
+//     height: 50%;
+// }
+// .payment_h {
+//     border-bottom: 1px solid #d6d6d6;
+//     padding-bottom: 10px;
+// }
+// .payment_b {
+//     border-top: 1px solid #d6d6d6;
+//     padding-top: 10px;
+// }
 
-p.payment_split {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
+// p.payment_split {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     align-content: center;
+// }
+
+.container_pay #content .content_main ~ .bill button.tc {
+    display: none;
 }
 
 .p2 {
@@ -266,28 +226,28 @@ label {
 
 // Ipad Mini & Ipad Air
 @media only screen and (max-width: 820px){
-    #content {
-        gap: 0;
-    }
+    // #content {
+    //     gap: 0;
+    // }
 
-    .container_pay {
-        margin: 50px 3vh;
-    }
+    // .container_pay {
+    //     margin: 50px 3vh;
+    // }
 
     .radio-gr input {
         width: 22px;
 
     }
 
-    div.payment_t span {
-        font-size: 22px;
-        padding-top: 5px;
-    }
+    // div.payment_t span {
+    //     font-size: 22px;
+    //     padding-top: 5px;
+    // }
 
-    div.payment_b span {
-        font-size: 22px;
-        padding-top: 5px;
-    }
+    // div.payment_b span {
+    //     font-size: 22px;
+    //     padding-top: 5px;
+    // }
 }
 
 // Smartphone
@@ -305,7 +265,7 @@ label {
         font-size: 16px;
     }
 
-    #content {
+    #content .payment {
         grid-template-columns: none;
         grid-template-rows: auto;
     }
@@ -327,21 +287,21 @@ label {
     .sidebar {
         padding: 0;
     }
-    .payment {
-        transform: translateX(-0.6%);
-    }
+    // .payment {
+    //     transform: translateX(-0.6%);
+    // }
 
-    p.payment_split {
-        padding-bottom: 10px;
-    }
+    // p.payment_split {
+    //     padding-bottom: 10px;
+    // }
 
-    div.payment_t span {
-        font-size: 18px;
-        padding-top: 0;
-    }
+    // div.payment_t span {
+    //     font-size: 18px;
+    //     padding-top: 0;
+    // }
 
-    div.payment_b span {
-        font-size: 18px;
-        padding-top: 0;
-    }
+    // div.payment_b span {
+    //     font-size: 18px;
+    //     padding-top: 0;
+    // }
 }

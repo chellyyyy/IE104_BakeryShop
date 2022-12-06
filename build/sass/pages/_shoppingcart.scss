@@ -52,8 +52,9 @@ main.grid {
     display: grid;
     grid-template-columns: 70% 30%;
     gap: 3%;
-    padding: 20px 10%;
+    // padding: 20px 10%;
     justify-content: space-between;
+    margin-top: 2%;
 }
 
 main.grid section {
@@ -99,6 +100,7 @@ li.main-product {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    // align-items: center;
     padding: 20px 30px;
 }
 
@@ -148,14 +150,14 @@ a.previous_round {
     font-size: 30px;
 }
 
-.list_cart .tong_cong,
-.list_cart .pvc,
-.tong_thanh_toan {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
-}
+// .list_cart .tong_cong,
+// .list_cart .pvc,
+// .tong_thanh_toan {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     align-content: center;
+// }
 
 .tien span.money {
     float: right;
@@ -185,7 +187,7 @@ ul.top, ul.bottom {
     border-bottom: 1px solid #d6d6d6;
 }
 
-h3.thanh_toan,
+// h3.thanh_toan,
 .voucher h3 {
     /* thanh toán */
     font-weight: 500;
@@ -195,23 +197,23 @@ h3.thanh_toan,
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-.tong_thanh_toan {
-    font-weight: 500;
-    font-size: 16.2px;
-    line-height: 20px;
+// .tong_thanh_toan {
+//     font-weight: 500;
+//     font-size: 16.2px;
+//     line-height: 20px;
 
-    letter-spacing: 0.06em;
-    text-transform: capitalize;
-}
+//     letter-spacing: 0.06em;
+//     text-transform: capitalize;
+// }
 
-.bill .list_cart {
-    border-top: 1px solid #d6d6d6;
-    border-bottom: 1px solid #d6d6d6;
-    padding: 10px 0;
-    margin: 10px 0;
-}
+// .bill .list_cart {
+//     border-top: 1px solid #d6d6d6;
+//     border-bottom: 1px solid #d6d6d6;
+//     padding: 10px 0;
+//     margin: 10px 0;
+// }
 
-div.bill,
+// div.bill,
 div.voucher {
     display: flex;
     flex-direction: column;
@@ -220,7 +222,7 @@ div.voucher {
     padding: 20px;
     background-color: #F0E5CF;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-top: 5%;
 
     /* tổng cộng: */
     font-weight: 300;
@@ -296,6 +298,7 @@ button.tc {
 input.coupon {
     border:none;
     background-color: #F0E5CF;
+    width: 70%;
 }
 
 button.coupon {

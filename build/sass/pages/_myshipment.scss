@@ -2,13 +2,13 @@
 //     overflow-x: hidden;
 // }
 
-main.grid { 
-    display: grid;
-    grid-template-columns: 70% 30%;
-    gap: 3%;
-    padding: 50px 10% 100px 10%;
-    justify-content: space-between;
-}
+// main.grid { 
+//     display: grid;
+//     grid-template-columns: 70% 30%;
+//     gap: 3%;
+//     padding: 50px 10% 100px 10%;
+    // justify-content: space-between;
+// }
 
 main.grid section {
     width: 100%;
@@ -57,7 +57,7 @@ button.gh {
     justify-content: space-between;    
     align-items: center;
     padding: 20px 30px;
-    
+    gap: 3%;
 }
 
 .button_inside {
@@ -186,24 +186,24 @@ div.tien {
 // }
 
 // div.bill,
-div.voucher {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+// div.voucher {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
     
-    padding: 20px;
-    background-color: #F0E5CF;
-    border-radius: 5px;
-    margin-bottom: 10px;
+//     padding: 20px;
+//     background-color: #F0E5CF;
+//     border-radius: 5px;
+//     margin-bottom: 10px;
 
-    /* tổng cộng: */
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 20px;
-    /* identical to box height, or 122% */
-    letter-spacing: 0.06em;
-    text-transform: capitalize;
-}
+//     /* tổng cộng: */
+//     font-weight: 300;
+//     font-size: 15px;
+//     line-height: 20px;
+//     /* identical to box height, or 122% */
+//     letter-spacing: 0.06em;
+//     text-transform: capitalize;
+// }
 
 a {
     text-decoration: none;

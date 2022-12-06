@@ -86,56 +86,49 @@
         </div>
       </div>
     </header>
-    <nav>
-      <div id="tile_cart">
+    <div class="container_pay">
+      <div class="content-header">
         <h2>GIỎ HÀNG</h2>
-        <hr>
+        <div class="under_line"></div>
       </div>
-      <button class="gh" type="button" onclick="QUAY_LẠI_MUA_HÀNG()"><i class="fa-solid fa-chevron-left" style="margin-right: 5px;"></i>QUAY LẠI</button>
+      <button class="btn btn-light" type="button" onclick="QUAY_LẠI_MUA_HÀNG()"><i class="fa-solid fa-chevron-left" style="margin-right: 5px;"></i>QUAY LẠI</button>
       <script>
         function QUAY_LẠI_MUA_HÀNG() {
-        history.back();
+            history.back();
         }
-        
       </script>
-    </nav>
-    <main class="grid">
-      <section> 
-        <p class="smalltitle">Địa Chỉ Nhận Hàng:</p>
-        <ul> 
-          <li class="userinfo">
-            <div>
-              <p class="content"> Người nhận: </p>
-              <div class="userdetail"><span>Họ Và Tên</span></div>
-              <p class="content"> Địa chỉ:</p>
-              <div class="userdetail"><span>Phường Linh Trung, Thủ Đức, Thành Phố Hồ Chí Minh</span></div>
-              <p class="content"> SĐT: </p>
-              <div class="userdetail"><span>09123456789  </span></div>
-            </div>
-            <div>
-              <button class="button_inside">THAY ĐỔI ĐỊA CHỈ           </button>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <aside>
-        <div class="bill"> 
-          <div>
+      <p>Địa Chỉ Nhận Hàng:</p>
+      <div class="payment" id="content">
+        <section> 
+          <ul> 
+            <li class="userinfo">
+              <div>
+                <p class="content"> Người nhận: </p>
+                <div class="userdetail"><span>Họ Và Tên</span></div>
+                <p class="content"> Địa chỉ:</p>
+                <div class="userdetail"><span>Phường Linh Trung, Thủ Đức, Thành Phố Hồ Chí Minh</span></div>
+                <p class="content"> SĐT: </p>
+                <div class="userdetail"><span>09123456789  </span></div>
+              </div>
+              <div>
+                <button class="button_inside">THAY ĐỔI ĐỊA CHỈ           </button>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <aside>
+          <div class="bill"> 
             <h3 class="thanh_toan">THANH TOÁN</h3>
-          </div>
-          <div class="list_cart">
-            <div class="bill_content">Tổng Cộng<span class="money">200.000đ</span></div>
-            <div class="bill_content">Phí Vận Chuyển<span class="money">10.000đ</span></div>
-          </div>
-          <div>
-            <div class="tong_thanh_toan bill_content">Tổng Thanh Toán:<span class="money">210.000đ</span></div>
-            <div>
-              <button class="tc" type="button">TIẾP TỤC THANH TOÁN</button>
+            <div class="list_cart">
+              <div class="bill_content">Tổng Cộng:<span class="money">200.000đ</span></div>
+              <div class="bill_content">Phí Vận Chuyển:<span class="money">10.000đ</span></div>
             </div>
+            <div class="tong_thanh_toan bill_content">Tổng Thanh Toán:<span class="money">210.000đ    </span></div>
+            <button class="tc" type="button">TIẾP TỤC THANH TOÁN</button>
           </div>
-        </div>
-      </aside>
-    </main>
+        </aside>
+      </div>
+    </div>
     <footer>
       <div class="footer_top">
         <div class="footer_top_left">

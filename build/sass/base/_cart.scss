@@ -1,0 +1,64 @@
+.container_pay {
+    margin: 5% 10% 8% 10%;
+}
+
+.content-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.content-header>h2 {
+    /* Giỏ hàng */
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content-header>div {
+    width: 99px;
+    height: 2px;
+
+    background: #000;
+    /* text-align: center; */
+    margin: auto;
+}
+
+.container_pay>p {
+    /* Chọn hình thức thanh toán */
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    margin: 2% 0 1% 0;
+    /* identical to box height */
+    text-transform: capitalize;
+
+    color: #000000;
+}
+
+
+// Ipad Mini & Ipad Air
+@media only screen and (max-width: 820px){
+
+}
+
+// Smartphone
+@media only screen and (max-width: 414px) {
+    .container_pay {
+        margin: 50px 3vh;
+    }
+
+    .btn-light {
+        padding: 7px 10px;
+        margin-bottom: 12px;
+    }
+
+    .container_pay > p {
+        font-size: 16px;
+    }
+}

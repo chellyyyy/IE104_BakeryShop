@@ -12,85 +12,35 @@ html(lang="en")
     body
         
         include ../blocks/header
-        nav
-            #tile_cart
+        .container_pay
+            .content-header
                 h2 GIỎ HÀNG
-                hr
-            //- include ../blocks/button_return
-            button.gh(type='button', onclick='QUAY_LẠI_MUA_HÀNG()')
-                //- a.previous_round(href='#') &lsaquo;
-                i.fa-solid.fa-chevron-left(style='margin-right: 5px;')
-                | QUAY LẠI
-            script.
-                function QUAY_LẠI_MUA_HÀNG() {
-                history.back();
-                }
+                div.under_line
+            include ../blocks/button_return
 
-        main.grid
-            section 
-                p.smalltitle Địa Chỉ Nhận Hàng:
-                ul 
-                    li.userinfo
-                        div
-                            p.content  Người nhận: 
-                            div.userdetail
-                                span Họ Và Tên
-                            p.content  Địa chỉ:
-                            div.userdetail
-                                span Phường Linh Trung, Thủ Đức, Thành Phố Hồ Chí Minh
-                            p.content  SĐT: 
-                            div.userdetail
-                                span 09123456789  
-                        div
-                            button.button_inside THAY ĐỔI ĐỊA CHỈ           
-                
-            aside
-                include ../blocks/bill
-                //- .bill 
-                //-     div
-                //-         h3.thanh_toan THANH TOÁN
-                //-     .list_cart 
-                //-         .tong_cong Tổng Cộng
-                //-             span.money 200.000đ
-                //-         .pvc Phí Vận Chuyển
-                //-             span.money 10.000đ
-                //-     div
-                //-         .tong_thanh_toan Tổng Thanh Toán:
-                //-             span.money 210.000đ
-                //-         div
-                //-             button.tc(type = 'button') TIẾP TỤC THANH TOÁN
+            //- CONTENT MAIN
+            p Địa Chỉ Nhận Hàng:
+            #content.payment
+                section 
+                    
+                    ul 
+                        li.userinfo
+                            div
+                                p.content  Người nhận: 
+                                div.userdetail
+                                    span Họ Và Tên
+                                p.content  Địa chỉ:
+                                div.userdetail
+                                    span Phường Linh Trung, Thủ Đức, Thành Phố Hồ Chí Minh
+                                p.content  SĐT: 
+                                div.userdetail
+                                    span 09123456789  
+                            div
+                                button.button_inside THAY ĐỔI ĐỊA CHỈ           
+                    
+                aside
+                    include ../blocks/bill
 
-
-
-
-
-
-
-        //- .section
-        //-     .bodyleft
-        //-         .bodyleft_top
-        //-             button.button Quay lại
-        //-             h2 Địa Chỉ Đơn Hàng
-        //-         .addressbox
-        //-             .addressbox_left
-        //-                 h3 Người nhận:
-        //-                 p Someone
-        //-                 h4 Địa chỉ:
-        //-                 p phường Linh Trung, Thủ Đức, HCM
-        //-                 h4 SĐT:
-        //-                 p 0912345678
-        //-             .addressbox_right
-        //-                 button.button THAY ĐỔI ĐỊA CHỈ
-        //-         button.bigbutton THÊM ĐỊA CHỈ
-        //-     .bodyright
-        //-         h2 THANH TOÁN
-        //-         h3 Tổng cộng 
-        //-         span 200.000
-        //-         h3 Phí vận chuyển 
-        //-         span 30.000
-        //-         h3 Tổng Thanh Toán 
-        //-         span 230.000
-        //-         button.buttonright TIẾP TỤC THANH TOÁN
         include ../blocks/footer
         
         
