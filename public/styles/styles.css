@@ -1334,7 +1334,7 @@ li i {
 }
 
 /* form_title */
-#login_page form.login-form .form_title {
+#login_page div.login-form .form_title {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1347,7 +1347,7 @@ li i {
   flex-grow: 0;
 }
 
-#login_page form.login-form h1 {
+#login_page div.login-form h1 {
   /* Chào mừng */
   font-weight: 500;
   font-size: 48px;
@@ -1360,7 +1360,7 @@ li i {
   flex-grow: 0;
 }
 
-#login_page form.login-form h2 {
+#login_page div.login-form h2 {
   /* Điền thông tin của bạn bên dưới */
   font-weight: 500;
   font-size: 18px;

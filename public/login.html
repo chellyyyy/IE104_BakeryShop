@@ -88,7 +88,7 @@
     </header>
     <div id="login_page">
       <section>
-        <form class="login-form" action="" method="post">
+        <div class="login-form">
           <div class="form_title">
             <h1>Ch&agrave;o m&#x1EEB;ng</h1>
             <h2>&Dstrok;i&#x1EC1;n th&ocirc;ng tin c&#x1EE7;a b&#x1EA1;n b&ecirc;n d&#x1B0;&#x1EDB;i </h2>
@@ -96,30 +96,31 @@
           <div class="form_input">
             <div class="input-box">
               <p>Email</p>
-              <input type="text" placeholder="cakeshop@gmail.com">
+              <input type="text" id="lemail" placeholder="Email">
             </div>
             <div class="input-box">
-              <p>M&#x1EAD;t kh&#x1EA9;u</p>
-              <input type="password" placeholder="*******">
+              <p>Mật khẩu</p>
+              <input type="password" id="lpassword" placeholder="*******">
             </div>
             <div class="form_forget">
               <div class="input-remember">
-                <input type="checkbox" name="remember" value="Pass">
+                <input type="checkbox" id="checkbox" name="remember" value="Pass">
                 <label for="password">Ghi nh&#x1EDB;</label>
               </div>
-              <p><a href="">Qu&ecirc;n m&#x1EAD;t kh&#x1EA9;u</a></p>
+              <p><a href="#">Quên mật khẩu</a></p>
             </div>
             <div class="form_button">
-              <button class="button-login" type="submit">&Dstrok;&abreve;ng nh&#x1EAD;p</button>
-              <button class="button-login_gg" type="submit"><img src="https://1000logos.net/wp-content/uploads/2016/11/New-Google-Logo.jpg">&Dstrok;&abreve;ng nh&#x1EAD;p b&#x1EB1;ng Google</button>
+              <button class="button-login" id="login">Đăng nhập</button>
+              <button class="button-login_gg" type="submit"><img src="https://1000logos.net/wp-content/uploads/2016/11/New-Google-Logo.jpg">Đăng nhập bằng Google</button>
             </div>
-            <h3>B&#x1EA1;n ch&#x1B0;a c&oacute; t&agrave;i kho&#x1EA3;n? <a href="">&Dstrok;&abreve;ng k&iacute;</a></h3>
+            <h3>Bạn chưa có tài khoản? <a href="signin.html">Đăng kí</a></h3>
           </div>
-        </form>
+        </div>
       </section>
       <aside>
         <div class="bg_img"></div>
       </aside>
     </div>
   </body>
+  <script src="../build/scripts/fbase.js" type="module"></script>
 </html>

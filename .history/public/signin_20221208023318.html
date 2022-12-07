@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Đăng ký</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </head>
+  <body>
+    <header id="header">
+      <input id="check" type="checkbox" name="">
+      <div class="nav-left">
+        <div class="brand"><img class="brand-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/800px-Google_%22G%22_Logo.svg.png" alt="">
+          <h1 class="brand-heading">Sun Cake</h1>
+        </div>
+      </div>
+      <div class="nav-center">
+        <ul class="menu-list">
+          <li class="menu-item">Th&#x1EF1;c &dstrok;&#x1A1;n<i class="fa-solid fa-angle-down"></i>
+            <!-- <div class="sub-nav"></div>-->
+            <ul class="sub-nav-list">
+              <div class="menu-container">
+                <div class="menu-content">
+                  <ul class="menu-list-1">
+                    <li><a href="">B&aacute;nh m&igrave;</a></li>
+                    <li><a href="">B&aacute;nh tr&aacute;i c&acirc;y</a></li>
+                    <li><a href="">Pastry &amp; Pie</a></li>
+                    <li><a href="">Macarons</a></li>
+                    <li><a href="">Cookie</a></li>
+                    <li><a href="">Sandwiches</a></li>
+                  </ul>
+                  <ul class="menu-list-2">
+                    <li><a href="">Donuts</a></li>
+                    <li><a href="">Cupcake</a></li>
+                    <li><a href="">Cloud Cake</a></li>
+                    <li><a href="">Buttercream Cake</a></li>
+                    <li><a href="">Piece Cake</a></li>
+                    <li><a href="">Roll Cake</a></li>
+                    <li><a href="">Brownie</a></li>
+                  </ul>
+                </div>
+                <div class="menu-img"><img src="https://www.tljus.com/wp-content/uploads/2022/11/Thanksgiving_PR-scaled.jpg">
+                  <div class="rectangle"></div><a href="#">Xem t&#x1EA5;t c&#x1EA3;</a>
+                  <!-- <hr>-->
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="">Gi&#x1EDB;i thi&#x1EC7;u</a></li>
+          <li class="menu-item">Li&ecirc;n h&#x1EC7;<i class="fa-solid fa-angle-down"></i>
+            <!-- <div class="sub-nav"></div>-->
+            <div class="sub-nav-list">
+              <div class="grid-container-contact">
+                <div class="grid-item-contact">
+                  <h1>Th&ocirc;ng tin li&ecirc;n l&#x1EA1;c</h1>
+                </div>
+                <div class="grid-item-contact">
+                  <p><i class="fa-solid fa-envelope"></i>sun_cake@gmail.com</p>
+                  <p><i class="fa-solid fa-phone"></i>0912345678</p>
+                </div>
+                <div class="grid-item-contact">
+                  <h1>&dstrok;&#x1ECB;a ch&#x1EC9; C&#x1EED;a h&agrave;ng</h1>
+                </div>
+                <div class="grid-item-contact">
+                  <p><i class="fa-solid fa-location-dot"></i>                        Khu ph&#x1ED1; 6, P.Linh Trung, Tp.Th&#x1EE7; &Dstrok;&#x1EE9;c, Tp.H&#x1ED3; Ch&iacute; Minh</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search">
+          <input class="input-search" type="text" placeholder="Tìm kiếm">
+          <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="personal"><i class="fa-solid fa-user"></i></div>
+        <div class="cart"><i class="fa-solid fa-cart-shopping"></i><span class="amount">1</span></div>
+      </div>
+      <div class="hamburger-menu-container">
+        <div class="hamburger-menu">
+          <div></div>
+        </div>
+      </div>
+    </header>
+    <div id="login_page">
+      <section>
+        <form class="login-form">
+          <div class="form_title">
+            <h1>Chào mừng</h1>
+            <h2>Điền thông tin của bạn bên dưới</h2>
+          </div>
+          <div class="form_input">
+            <div class="input-box">
+              <p>Email</p>
+              <input type="text" id="email" placeholder="cakeshop@gmail.com">
+            </div>
+            <div class="input-box">
+              <p>Tên</p>
+              <input type="text" id="username" placeholder="Cake Shop">
+            </div>
+            <div class="input-box">
+              <p>Mật khẩu</p>
+              <input type="password" id="password" placeholder="*******">
+            </div>
+            <div class="form_button">
+              <button class="button-login" id="signup">Đăng ký</button>
+              <button class="button-login_gg" id="submit" type="submit"><img src="https://1000logos.net/wp-content/uploads/2016/11/New-Google-Logo.jpg">Đăng ký bằng Google</button>
+            </div>
+            <h3>Bạn đã có tài khoản? <a href="login.html">Đăng nhập</a></h3>
+          </div>
+        </form>
+      </section>
+      <aside>
+        <div class="bg_img"></div>
+      </aside>
+    </div>
+    <!-- <script src="../build/scripts/firebase.js" type="module"></script> -->
+    <script type=""
+  </body>
+</html>
