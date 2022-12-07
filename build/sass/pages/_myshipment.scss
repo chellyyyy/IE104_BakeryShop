@@ -228,3 +228,14 @@ ul.top, ul.bottom {
 //     margin-top: 10px;
 //     width: 100%;
 // }
+
+//Smartphone
+@media only screen and (max-width: 414px) {
+    .payment {
+        grid-template-columns: none;
+        grid-template-rows: auto;
+        // transform: translateX(-3%);
+    }
+
+    
+}

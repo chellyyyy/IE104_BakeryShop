@@ -296,3 +296,11 @@
         display: none;
     }
 }
+
+// Smartphone
+@media only screen and (max-width: 414px) {
+    #login_page section {
+        margin: auto 10%;
+    }
+    
+}
