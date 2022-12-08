@@ -19,63 +19,15 @@ const app = initializeApp(firebaseConfig);
 const database = getDatabase();
 const auth = getAuth();
 
-
-function isEmptyOrSpaces(str){
-    return str === null || str.match(/^ *$/) !== null;
-}
-
-function spaceValidation(){
-    if(isEmptyOrSpaces(email.value) || isEmptyOrSpaces(username.value) || isEmptyOrSpaces(password.value)){
-        alert('ko dc de trong');
-        return false;
-    }
-}
-
 //EMAIL VALIDATION
 function ValidateEmail() {
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)){
-        return (true)
-    }
-        alert("You have entered an invalid email address!")
-        return (false)
-    
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value))
+  {
+    return (true)
+  }
+    alert("You have entered an invalid email address!")
+    return (false)
 }
-
-
-//SIGNUP----------------------------
-document.getElementById('signup').addEventListener('click',() => {
-    var email = document.getElementById('email').value;
-    var password = document.getElementById('password').value;
-    var username = document.getElementById('username').value;
-
-    if(ValidateEmail()==false){
-        return;
-    }
-    if(spaceValidation()==false){
-        return;
-    }
-    createUserWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
-            // Signed in 
-            const user = userCredential.user;
-
-            set(ref(database, 'UserList/' + user.uid),{
-                username: username,
-                email: email
-            })
-            alert('done');
-            window.location='login.html';
-            // ...
-        })
-        .catch((error) => {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-
-            alert('errorMassage');
-            // ..
-        });
-
-});
 
 //LOGIN--------------------------------
 // document.getElementById('login').addEventListener('click',() => {

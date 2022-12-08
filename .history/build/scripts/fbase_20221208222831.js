@@ -25,10 +25,10 @@ function isEmptyOrSpaces(str){
 }
 
 function spaceValidation(){
-    if(isEmptyOrSpaces(email.value) || isEmptyOrSpaces(username.value) || isEmptyOrSpaces(password.value)){
+    if(isEmptyOrSpaces(email.value) || isEmptyOrSpaces(username.value) || isEmptyOrSpaces(pass.value)){
         alert('ko dc de trong');
         return false;
-    }
+        
 }
 
 //EMAIL VALIDATION
@@ -48,12 +48,14 @@ document.getElementById('signup').addEventListener('click',() => {
     var password = document.getElementById('password').value;
     var username = document.getElementById('username').value;
 
-    if(ValidateEmail()==false){
-        return;
-    }
-    if(spaceValidation()==false){
-        return;
-    }
+
+    
+
+    // if(ValidateEmail()==false){
+    //     return;
+    // }
+    
+    
     createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             // Signed in 
@@ -64,7 +66,6 @@ document.getElementById('signup').addEventListener('click',() => {
                 email: email
             })
             alert('done');
-            window.location='login.html';
             // ...
         })
         .catch((error) => {

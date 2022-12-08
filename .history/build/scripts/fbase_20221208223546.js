@@ -64,7 +64,6 @@ document.getElementById('signup').addEventListener('click',() => {
                 email: email
             })
             alert('done');
-            window.location='login.html';
             // ...
         })
         .catch((error) => {

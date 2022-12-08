@@ -22,14 +22,7 @@ const auth = getAuth();
 
 function isEmptyOrSpaces(str){
     return str === null || str.match(/^ *$/) !== null;
-}
-
-function spaceValidation(){
-    if(isEmptyOrSpaces(email.value) || isEmptyOrSpaces(username.value) || isEmptyOrSpaces(password.value)){
-        alert('ko dc de trong');
-        return false;
-    }
-}
+  }
 
 //EMAIL VALIDATION
 function ValidateEmail() {
@@ -38,7 +31,6 @@ function ValidateEmail() {
     }
         alert("You have entered an invalid email address!")
         return (false)
-    
 }
 
 
@@ -51,7 +43,7 @@ document.getElementById('signup').addEventListener('click',() => {
     if(ValidateEmail()==false){
         return;
     }
-    if(spaceValidation()==false){
+    if(isEmptyOrSpaces()==false){
         return;
     }
     createUserWithEmailAndPassword(auth, email, password)
@@ -64,7 +56,6 @@ document.getElementById('signup').addEventListener('click',() => {
                 email: email
             })
             alert('done');
-            window.location='login.html';
             // ...
         })
         .catch((error) => {

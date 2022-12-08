@@ -24,12 +24,7 @@ function isEmptyOrSpaces(str){
     return str === null || str.match(/^ *$/) !== null;
 }
 
-function spaceValidation(){
-    if(isEmptyOrSpaces(email.value) || isEmptyOrSpaces(username.value) || isEmptyOrSpaces(password.value)){
-        alert('ko dc de trong');
-        return false;
-    }
-}
+function spaceValidation()
 
 //EMAIL VALIDATION
 function ValidateEmail() {
@@ -48,12 +43,14 @@ document.getElementById('signup').addEventListener('click',() => {
     var password = document.getElementById('password').value;
     var username = document.getElementById('username').value;
 
-    if(ValidateEmail()==false){
-        return;
-    }
-    if(spaceValidation()==false){
-        return;
-    }
+
+    
+
+    // if(ValidateEmail()==false){
+    //     return;
+    // }
+    
+    
     createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             // Signed in 
@@ -64,7 +61,6 @@ document.getElementById('signup').addEventListener('click',() => {
                 email: email
             })
             alert('done');
-            window.location='login.html';
             // ...
         })
         .catch((error) => {
