@@ -390,6 +390,46 @@
   font-size: 26px;
 }
 
+.personal:hover .sub-nav-list {
+  display: block;
+  color: #000;
+}
+
+.personal .sub-nav-list {
+  /* // position: absolute; */
+  width: max-content;
+  /* height: 400px; */
+  padding: 3%;
+  right: 10%;
+  /* // top: 60px; */
+  background: #FFFFFF;
+  box-shadow: 0px 3.59775px 3.59775px rgba(0, 0, 0, 0.25);
+}
+
+.personal .sub-nav-list .account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.personal .sub-nav-list .account img {
+  width: 40%;
+}
+.personal .sub-nav-list .account .account_button .log_out {
+  display: none;
+}
+.personal .sub-nav-list .account .account_button .log_in {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+}
+.personal .sub-nav-list .account .account_button button {
+  background: #4B6587;
+  color: #fff;
+  padding: 2%;
+  border-radius: 5px;
+}
+
 .cart {
   font-size: 20px;
   position: relative;
@@ -1538,7 +1578,7 @@ li i {
 }
 
 /* form footer */
-#login_page form.login-form h3 {
+#login_page div.login-form h3 {
   /* Bạn chưa có tài khoản? */
   font-weight: 400;
   font-size: 16px;
@@ -1548,7 +1588,7 @@ li i {
   color: #4B6587;
 }
 
-#login_page form.login-form h3 > a {
+#login_page div.login-form h3 > a {
   /* Đăng ký */
   font-weight: 600;
   font-size: 16px;
