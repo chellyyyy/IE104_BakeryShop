@@ -58,15 +58,15 @@ html(lang='en')
                         .title-price(style='display: flex; justify-content: space-between; align-items: center')
                             p.title(style='font-weight: 600; width: 50%;') Danish Pastry
                             p.price(style='font-weight: 700; font-size:20px') 100.000&dstrok;
-                    //- li.item
-                    //-     .img
-                    //-         img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN78oxZDqNEPkT2O1EF57n6WCqEjpv3vQaeA_fVH8&s', alt='')
-                    //-         .icon
-                    //-             span B&aacute;n h&#x1EBF;t
-                    //-             i.fa-solid.fa-circle-check
-                    //-     .title-price(style='display: flex; justify-content: space-between; align-items: center')
-                    //-         p.title(style='font-weight: 600; width: 50%;') Danish Pastry
-                    //-         p.price(style='font-weight: 700; font-size:20px') 100.000&dstrok;
+                    li.item
+                        .img
+                            img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN78oxZDqNEPkT2O1EF57n6WCqEjpv3vQaeA_fVH8&s', alt='')
+                            .icon
+                                span B&aacute;n h&#x1EBF;t
+                                i.fa-solid.fa-circle-check
+                        .title-price(style='display: flex; justify-content: space-between; align-items: center')
+                            p.title(style='font-weight: 600; width: 50%;') Danish Pastry
+                            p.price(style='font-weight: 700; font-size:20px') 100.000&dstrok;
                     //- li.item
                     //-     .img
                     //-         img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN78oxZDqNEPkT2O1EF57n6WCqEjpv3vQaeA_fVH8&s', alt='')
@@ -145,9 +145,7 @@ html(lang='en')
                     #pagination-numbers
                     button#next-button.pagination-button(title='Next page', aria-label='Next page')
                     | &gt;
-        script(src='../build/scripts/menu.js' type='module')
-        //- script.
-        //-     document.getElementById('paginated-list').innerHTML += '<h1>asdsadsad</h1>';
+        script(src='../build/scripts/menu.js')
     include ../blocks/footer
     script(src='../build/scripts/main.js')
       
