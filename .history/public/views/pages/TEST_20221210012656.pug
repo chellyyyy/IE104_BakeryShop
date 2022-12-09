@@ -1,0 +1,36 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  // Boxicons
+  link(href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet')
+  // My CSS
+
+  
+
+    //- script(src='../build/scripts/addproduct.js')
+  
+  script(src='https://kit.fontawesome.com/64d58efce2.js' crossorigin='anonymous')
+        title Document
+  body
+    .form_input
+        .input-box
+            p ID
+            input(type='number' id='id_pro')
+        .input-box
+            p Tên
+            input(type='text' id='name_pro' placeholder='Bánh')
+        .input-box
+            p Giá
+            input(type='number' id='price_pro' placeholder='50')
+        .input-box
+            p Hình ảnh
+            input(type='text' id='pic_pro' placeholder='https://...')
+        .input-box
+            p Mô tả
+            input(type='text' id='desc_pro')
+        
+        .form_button
+            button.button-login#I Thêm
+                //- button.button-login(id='Insbtn') Thêm
+    script(src='./scripts/admin.js' type='module')
