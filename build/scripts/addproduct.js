@@ -112,6 +112,6 @@ function DeleteData(){
 
 // -Assign Events to Btns-
 insBtn.addEventListener('click', InsertData);
-selBtn.addEventListener('click', SelectData);
-updBtn.addEventListener('click', UpdateData);
-delBtn.addEventListener('click', DeleteData);
+// selBtn.addEventListener('click', SelectData);
+// updBtn.addEventListener('click', UpdateData);
+// delBtn.addEventListener('click', DeleteData);
