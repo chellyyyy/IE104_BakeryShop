@@ -207,11 +207,33 @@ submit.addEventListener('click', RegisterUser);
 
 
 
+// INSERT PRODUCT--------------------------------
+// -References-
+var name = document.getElementById("name_pro");
+var price = document.getElementById("price_pro");
+// var pic = document.getElementById("pic_pro");
+var desc = document.getElementById("desc_pro");
 
+var insBtn = document.getElementById("Insbtn"); 
+var selBtn = document.getElementById("Selbtn"); 
+var updBtn = document.getElementById("Updbtn"); 
+var delBtn = document.getElementById("Delbtn");
 
+// -Insert data-
+function InsertData(){
+  set(ref(db, "TheCakes/"+ name.value),{
+    NameOfCake: name.value,
+    PriceOfCake: price.value,
+    // pic: pic.value,
+    Descript: desc.value
+  })
+  .then(() =>{
+    alert("Thành công!");
+  })
+  .catch((error)=>{
+    alert("Không thành công, sản phẩm " + error);
+  });
+}
 
-
-
-
-
-
+// -Assign Events to Btns-
+insBtn.addEventListener('click', InsertData);
