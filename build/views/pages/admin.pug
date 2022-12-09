@@ -6,7 +6,8 @@ head
   link(href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet')
   // My CSS
   link(rel='stylesheet' href='./styles/styles.css')
-  script(src='../build/scripts/addtoadmin.js')
+    //- script(src='../build/scripts/addproduct.js')
+  script(src='../build/scripts/admin.js' type='module')
   title Admin SunCake
 body
     #admin
@@ -100,14 +101,14 @@ body
                     .order
                         .head
                             h3 Thông tin người dùng
-                            i.bx.bx-plus
-                            i.bx.bx-filter
+                            i.bx.bx-search
+                            //- i.bx.bx-filter
                         table
                             thead
                                 tr
                                     th Người dùng
                                     th Email
-                                    th Chỉnh sửa
+                                    th Chi tiết
                             tbody#account
                                 //- tr
                                 //-     td
@@ -148,12 +149,16 @@ body
                     .todo
                         .head
                             h3 Thông tin Sản phẩm
-                            i.bx.bx-plus
-                            i.bx.bx-filter
+                            a.button(href='#popup_product')
+                                i.bx.bx-plus
+                            //- i.bx.bx-filter
                         ul.todo-list#product
-                            //- li.completed
-                            //-     p Todo List
-                            //-     i.bx.bx-dots-vertical-rounded
+                            li.completed
+                                p Todo List
+                                i.bx.bx-dots-vertical-rounded
+                                    ul.list_items
+                                        li.item Giá cả: 50đ
+                                        li.item Mô tả: 
                             //- li.completed
                             //-     p Todo List
                             //-     i.bx.bx-dots-vertical-rounded
@@ -166,21 +171,47 @@ body
                             //- li.not-completed
                             //-     p Todo List
                             //-     i.bx.bx-dots-vertical-rounded
+
+                            //- POP UP
+                            #popup_product.overlay
+                                .popup_content
+                                    a.close(href='#') &times;
+                                    .form_title
+                                        h2 Điền thông tin của sản phẩm bên dưới
+                                    .form_input
+                                        .input-box
+                                            p ID
+                                            input(type='number' id='id_pro')
+                                        .input-box
+                                            p Tên
+                                            input(type='text' id='name_pro' placeholder='Bánh')
+                                        .input-box
+                                            p Giá
+                                            input(type='number' id='price_pro' placeholder='50')
+                                        .input-box
+                                            p Hình ảnh
+                                            input(type='text' id='pic_pro' placeholder='https://...')
+                                        .input-box
+                                            p Mô tả
+                                            input(type='text' id='desc_pro')
+                                        
+                                        .form_button
+                                            button.button-login(id = 'Insbtn') Thêm
             // MAIN
         // CONTENT
-    script(src='../build/scripts/admin.js' type='module')
-script.
-    var indexInit = 0
-    document.querySelector("#sidebar .side-menu").querySelectorAll("li").forEach((item, index) => {
-        item.addEventListener("click", (e) => {
-            console.log(indexInit);
-            document.querySelector("#sidebar .side-menu").querySelectorAll("li")[indexInit].classList.remove("active")
-            item.classList.add("active");
-            console.log(index);
-            indexInit = index
-            Page(index)
+    
+//- script.
+//-     var indexInit = 0
+//-     document.querySelector("#sidebar .side-menu").querySelectorAll("li").forEach((item, index) => {
+//-         item.addEventListener("click", (e) => {
+//-             console.log(indexInit);
+//-             document.querySelector("#sidebar .side-menu").querySelectorAll("li")[indexInit].classList.remove("active")
+//-             item.classList.add("active");
+//-             console.log(index);
+//-             indexInit = index
+//-             Page(index)
 
-        })
-    })
+//-         })
+//-     })
 
     
