@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Boxicons-->
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+  <!-- My CSS-->
+  <link rel="stylesheet" href="./styles/styles.css">
+  
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <title>Admin SunCake</title>
+</head>
+<body>
+  <div id="admin">
+    <!-- SIDEBAR.-->
+    <section id="sidebar"><a class="brand" href="#"><i class="bx bxs-smile"></i><span class="text">Admin</span></a>
+      <ul class="side-menu top">
+        <li class="active"><a href="#"><i class="bx bxs-dashboard"></i><span class="text">Dashboard</span></a></li>
+      </ul>
+      <ul class="side-menu bottom">
+        <li><a href="#"><i class="bx bxs-cog"></i><span class="text">Cài đặt</span></a></li>
+        <li id="adminLogout"><a class="logout" href="#"><i class="bx bxs-log-out-circle"></i><span class="text">Đăng xuất</span></a></li>
+      </ul>
+    </section>
+    <!-- SIDEBAR-->
+    <!-- CONTENT-->
+    <section id="content">
+      <!-- NAVBAR-->
+      <nav>
+        <form action="#">
+          <div class="form-input">
+            <input type="search" placeholder="Tìm kiếm...">
+            <button class="search-btn" type="submit"><i class="bx bx-search"></i></button>
+          </div>
+        </form><a class="profile" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Zj3MiSvzX1mJqYZsepbx_DQILWlJOKPqZ8m984Gu0-Z_Zv4OAJi5FLY4JJlEXlgLpjY&amp;usqp=CAU"></a>
+      </nav>
+      <!-- NAVBAR-->
+      <!-- MAIN-->
+      <main>
+        <div class="head-title">
+          <div class="left">
+            <h1>Dashboard</h1>
+            <ul class="breadcrumb">
+              <li><a href="#">Dashboard</a></li>
+              <li><i class="bx bx-chevron-right"></i></li>
+              <li><a class="active" href="#">Home</a></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="box-info">
+          <li><i class="bx bxs-calendar-check"></i><span class="text">
+              <h3>1020</h3>
+              <p>Đơn hàng</p></span></li>
+          <li><i class="bx bxs-group"></i><span class="text">
+              <h3>2834</h3>
+              <p>Khách hàng</p></span></li>
+          <li><i class="bx bxs-dollar-circle"></i><span class="text">
+              <h3>2 tỷ VNĐ</h3>
+              <p>Tổng thanh toán</p></span></li>
+        </ul>
+        <div class="table-data">
+          <div class="order">
+            <div class="head">
+              <h3>Thông tin người dùng</h3><i class="bx bx-search"></i>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Người dùng</th>
+                  <th>Email</th>
+                  <th>Xóa</th>
+                </tr>
+              </thead>
+              <tbody id="account"></tbody>
+            </table>
+          </div>
+          <div class="todo">
+            <div class="head">
+              <h3>Thông tin Sản phẩm</h3><a class="button" href="#popup_product"><i class="bx bx-plus"></i></a>
+            </div>
+            <ul class="todo-list" id="product">
+              <div class="overlay" id="popup_product">
+                <div class="popup_content"><a class="close" href="#">&times;</a>
+                  <div class="form_title">
+                    <h2>Điền thông tin của sản phẩm bên dưới</h2>
+                  </div>
+                  <div class="form_input">
+                    <div class="input-box">
+                      <p>ID</p>
+                      <input type="number" id="id_pro">
+                    </div>
+                    <div class="input-box">
+                      <p>Tên</p>
+                      <input type="text" id="name_pro" placeholder="Bánh">
+                    </div>
+                    <div class="input-box">
+                      <p>Giá</p>
+                      <input type="number" id="price_pro" placeholder="50">
+                    </div>
+                    <div class="input-box">
+                      <p>Hình ảnh</p>
+                      <input type="text" id="pic_pro" placeholder="https://...">
+                    </div>
+                    <div class="input-box">
+                      <p>Mô tả</p>
+                      <input type="text" id="desc_pro">
+                    </div>
+                    <div class="form_button">
+                      <button class="button-login" id="Insbtn">Thêm</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </main>
+      <!-- MAIN-->
+    </section>
+    <!-- CONTENT-->
+  </div>
+</body>
