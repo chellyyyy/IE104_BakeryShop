@@ -41,8 +41,8 @@ body
                     a(href='#')
                         i.bx.bxs-cog
                         span.text Cài đặt
-                li#adminLogout
-                    a.logout(href='#')
+                li
+                    a.logout(href='#' id='adminLogout')
                         i.bx.bxs-log-out-circle
                         span.text Đăng xuất
         // SIDEBAR
@@ -167,7 +167,7 @@ body
                                 i.bx.bx-dots-vertical-rounded
             // MAIN
         // CONTENT
-    script(src='../build/scripts/admin.js' type='module')
+    script(src='../build/scripts/homepage.js' type='module')
 script.
     var indexInit = 0
     document.querySelector("#sidebar .side-menu").querySelectorAll("li").forEach((item, index) => {

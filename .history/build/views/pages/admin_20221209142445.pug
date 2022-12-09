@@ -41,8 +41,8 @@ body
                     a(href='#')
                         i.bx.bxs-cog
                         span.text Cài đặt
-                li#adminLogout
-                    a.logout(href='#')
+                li
+                    a.logout(href='#' id='adminLogout')
                         i.bx.bxs-log-out-circle
                         span.text Đăng xuất
         // SIDEBAR
@@ -167,7 +167,6 @@ body
                                 i.bx.bx-dots-vertical-rounded
             // MAIN
         // CONTENT
-    script(src='../build/scripts/admin.js' type='module')
 script.
     var indexInit = 0
     document.querySelector("#sidebar .side-menu").querySelectorAll("li").forEach((item, index) => {
@@ -182,4 +181,19 @@ script.
         })
     })
 
-    
+    document.getElementById('logoutbtn').addEventListener('click', ()=> {
+    signOut(auth).then(() => {
+        // Sign-out successful.
+        // localStorage.setItem('uid','');
+        
+        
+        window.location='login.html';
+        
+        // trả về toast nêu đăng xuất thành công
+        
+      }).catch((error) => {
+        
+        // An error happened.
+        // window.alert(error);
+    });
+})
