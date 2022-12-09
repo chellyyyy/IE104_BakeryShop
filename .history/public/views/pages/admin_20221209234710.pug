@@ -12,7 +12,7 @@ head
   title Admin SunCake
 body
     #admin
-        // SIDEBAR
+        // SIDEBAR.
         section#sidebar
             a.brand(href='#')
                 i.bx.bxs-smile
@@ -78,7 +78,7 @@ body
                             li
                                 i.bx.bx-chevron-right
                             li
-                                a.active(href='#') Home
+                                a.active(href='#' id='test') Home
                     //- a.btn-download(href='#')
                     //-     i.bx.bxs-cloud-download
                     //-     span.text Download PDF
@@ -198,7 +198,8 @@ body
                                             input(type='text' id='desc_pro')
                                         
                                         .form_button
-                                            button.button-login(id = 'Insbtn') Thêm
+                                            //- button.button-login(id='Insbtn') Thêm
+                                            button.button-login(id='Insbtn') Thêm
             // MAIN
         // CONTENT
     script(src='./scripts/admin.js' type='module')

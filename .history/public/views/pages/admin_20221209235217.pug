@@ -12,7 +12,7 @@ head
   title Admin SunCake
 body
     #admin
-        // SIDEBAR
+        // SIDEBAR.
         section#sidebar
             a.brand(href='#')
                 i.bx.bxs-smile
@@ -78,7 +78,7 @@ body
                             li
                                 i.bx.bx-chevron-right
                             li
-                                a.active(href='#') Home
+                                a.active(href='#' id='test') Home
                     //- a.btn-download(href='#')
                     //-     i.bx.bxs-cloud-download
                     //-     span.text Download PDF
@@ -177,7 +177,7 @@ body
                             //- POP UP
                             #popup_product.overlay
                                 .popup_content
-                                    a.close(href='#') &times;
+                                    a.close(href='#' id=) &times;
                                     .form_title
                                         h2 Điền thông tin của sản phẩm bên dưới
                                     .form_input
@@ -198,10 +198,12 @@ body
                                             input(type='text' id='desc_pro')
                                         
                                         .form_button
-                                            button.button-login(id = 'Insbtn') Thêm
+                                            button.button-login(id='Insbtn') Thêm
+                                            
             // MAIN
         // CONTENT
     script(src='./scripts/admin.js' type='module')
+    script(src='./scripts/test.js' type='module')
 //- script.
 //-     var indexInit = 0
 //-     document.querySelector("#sidebar .side-menu").querySelectorAll("li").forEach((item, index) => {
