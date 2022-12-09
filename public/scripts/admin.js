@@ -58,7 +58,7 @@ get(child(dbref, `UserList/`))
           <p>${e.username}</p>
         </td>
         <td>${e.email}</td>
-        <td><i class="bx bx-dots-vertical-rounded"></i></td>
+        <td><button id = "Delbtn">x</button></td>
       </tr>
       `         
     })
@@ -79,7 +79,7 @@ get(child(dbref, `TheCakes/`))
       document.getElementById('product').innerHTML += 
       `
       <li class="completed">
-        <p>${e.NameOfCake}</p><i class="bx bx-dots-vertical-rounded"></i>
+        <p>${e.NameOfCake}</p><button id = "Delbtn">x</button>
       </li>
       `         
     })
@@ -181,4 +181,4 @@ function DeleteData(){
 insBtn.addEventListener('click', InsertData);
 // selBtn.addEventListener('click', SelectData);
 // updBtn.addEventListener('click', UpdateData);
-// delBtn.addEventListener('click', DeleteData);
+delBtn.addEventListener('click', DeleteData);
