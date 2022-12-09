@@ -20,23 +20,23 @@ body
                     a(href='#')
                         i.bx.bxs-dashboard
                         span.text Dashboard
-                li
-                    a(href='#')
-                        i.bx.bxs-shopping-bag-alt
-                        span.text Sản phẩm
-                li
-                    a(href='#')
-                        i.bx.bxs-doughnut-chart
-                        span.text Thống kê
-                li
-                    a(href='#')
-                        i.bx.bxs-message-dots
-                        span.text Tin nhắn
-                li
-                    a(href='#')
-                        i.bx.bxs-group
-                        span.text Khách hàng
-            ul.side-menu
+                //- li
+                //-     a(href='#')
+                //-         i.bx.bxs-shopping-bag-alt
+                //-         span.text Sản phẩm
+                //- li
+                //-     a(href='#')
+                //-         i.bx.bxs-doughnut-chart
+                //-         span.text Thống kê
+                //- li
+                //-     a(href='#')
+                //-         i.bx.bxs-message-dots
+                //-         span.text Tin nhắn
+                //- li
+                //-     a(href='#')
+                //-         i.bx.bxs-group
+                //-         span.text Khách hàng
+            ul.side-menu.bottom
                 li
                     a(href='#')
                         i.bx.bxs-cog
@@ -99,72 +99,73 @@ body
                 .table-data
                     .order
                         .head
-                            h3 Đơn hàng hiện tại
-                            i.bx.bx-search
+                            h3 Thông tin người dùng
+                            i.bx.bx-plus
                             i.bx.bx-filter
                         table
                             thead
                                 tr
                                     th Người dùng
-                                    th Ngày đặt
-                                    th Trạng thái
-                            tbody
-                                tr
-                                    td
-                                        //- img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Zj3MiSvzX1mJqYZsepbx_DQILWlJOKPqZ8m984Gu0-Z_Zv4OAJi5FLY4JJlEXlgLpjY&usqp=CAU')
-                                        p John Doe
-                                    td 01-10-2021
-                                    td
-                                        span.status.completed Completed
-                                tr
-                                    td
-                                        //- img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Zj3MiSvzX1mJqYZsepbx_DQILWlJOKPqZ8m984Gu0-Z_Zv4OAJi5FLY4JJlEXlgLpjY&usqp=CAU')
-                                        p John Doe
-                                    td 01-10-2021
-                                    td
-                                        span.status.pending Pending
-                                tr
-                                    td
-                                        //- img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Zj3MiSvzX1mJqYZsepbx_DQILWlJOKPqZ8m984Gu0-Z_Zv4OAJi5FLY4JJlEXlgLpjY&usqp=CAU')
-                                        p John Doe
-                                    td 01-10-2021
-                                    td
-                                        span.status.process Process
-                                tr
-                                    td
-                                        //- img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Zj3MiSvzX1mJqYZsepbx_DQILWlJOKPqZ8m984Gu0-Z_Zv4OAJi5FLY4JJlEXlgLpjY&usqp=CAU')
-                                        p John Doe
-                                    td 01-10-2021
-                                    td
-                                        span.status.pending Pending
-                                tr
-                                    td
-                                        //- img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Zj3MiSvzX1mJqYZsepbx_DQILWlJOKPqZ8m984Gu0-Z_Zv4OAJi5FLY4JJlEXlgLpjY&usqp=CAU')
-                                        p John Doe
-                                    td 01-10-2021
-                                    td
-                                        span.status.completed Completed
+                                    th Email
+                                    th Chỉnh sửa
+                            tbody#account
+                                //- tr
+                                //-     td
+                                //-         //- img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Zj3MiSvzX1mJqYZsepbx_DQILWlJOKPqZ8m984Gu0-Z_Zv4OAJi5FLY4JJlEXlgLpjY&usqp=CAU')
+                                //-         p John Doe
+                                //-     td 01-10-2021
+                                //-     td
+                                //-         //- span.status.completed Completed
+                                //-         i.bx.bx-dots-vertical-rounded
+                                //- tr
+                                //-     td
+                                //-         //- img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Zj3MiSvzX1mJqYZsepbx_DQILWlJOKPqZ8m984Gu0-Z_Zv4OAJi5FLY4JJlEXlgLpjY&usqp=CAU')
+                                //-         p John Doe
+                                //-     td 01-10-2021
+                                //-     td
+                                //-         span.status.pending Pending
+                                //- tr
+                                //-     td
+                                //-         //- img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Zj3MiSvzX1mJqYZsepbx_DQILWlJOKPqZ8m984Gu0-Z_Zv4OAJi5FLY4JJlEXlgLpjY&usqp=CAU')
+                                //-         p John Doe
+                                //-     td 01-10-2021
+                                //-     td
+                                //-         span.status.process Process
+                                //- tr
+                                //-     td
+                                //-         //- img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Zj3MiSvzX1mJqYZsepbx_DQILWlJOKPqZ8m984Gu0-Z_Zv4OAJi5FLY4JJlEXlgLpjY&usqp=CAU')
+                                //-         p John Doe
+                                //-     td 01-10-2021
+                                //-     td
+                                //-         span.status.pending Pending
+                                //- tr
+                                //-     td
+                                //-         //- img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Zj3MiSvzX1mJqYZsepbx_DQILWlJOKPqZ8m984Gu0-Z_Zv4OAJi5FLY4JJlEXlgLpjY&usqp=CAU')
+                                //-         p John Doe
+                                //-     td 01-10-2021
+                                //-     td
+                                //-         span.status.completed Completed
                     .todo
                         .head
-                            h3 Chi tiết
+                            h3 Thông tin Sản phẩm
                             i.bx.bx-plus
                             i.bx.bx-filter
-                        ul.todo-list
-                            li.completed
-                                p Todo List
-                                i.bx.bx-dots-vertical-rounded
-                            li.completed
-                                p Todo List
-                                i.bx.bx-dots-vertical-rounded
-                            li.not-completed
-                                p Todo List
-                                i.bx.bx-dots-vertical-rounded
-                            li.completed
-                                p Todo List
-                                i.bx.bx-dots-vertical-rounded
-                            li.not-completed
-                                p Todo List
-                                i.bx.bx-dots-vertical-rounded
+                        ul.todo-list#product
+                            //- li.completed
+                            //-     p Todo List
+                            //-     i.bx.bx-dots-vertical-rounded
+                            //- li.completed
+                            //-     p Todo List
+                            //-     i.bx.bx-dots-vertical-rounded
+                            //- li.not-completed
+                            //-     p Todo List
+                            //-     i.bx.bx-dots-vertical-rounded
+                            //- li.completed
+                            //-     p Todo List
+                            //-     i.bx.bx-dots-vertical-rounded
+                            //- li.not-completed
+                            //-     p Todo List
+                            //-     i.bx.bx-dots-vertical-rounded
             // MAIN
         // CONTENT
     script(src='../build/scripts/admin.js' type='module')
