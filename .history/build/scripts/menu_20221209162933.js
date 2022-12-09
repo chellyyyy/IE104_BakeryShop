@@ -20,9 +20,25 @@ const db = getDatabase();
 const auth = getAuth();
 const dbref = ref(db);
 
+//THÊM SẢN PHẨM VÀO MENU
+// let menu = document.getElementById('paginated-list').innerHTML;
 
 
-//## LẤY DATA SẢN PHẨM TỪ DATABASE VÀ THÊM VÀO MENU
+document.getElementById('paginated-list').innerHTML += `
+          <li class="item">
+            <div class="img"><img src="https://img.freepik.com/premium-vector/abstract-background-gradients-colorful-elegant-concept_222229-3381.jpg?w=2000" alt="">
+              <div class="icon"><span>B&aacute;n h&#x1EBF;t</span><i class="fa-solid fa-circle-check"></i></div>
+            </div>
+            <div class="title-price" style="display: flex; justify-content: space-between; align-items: center">
+              <p class="title" style="font-weight: 600; width: 50%;">Danish Pastry</p>
+              <p class="price" style="font-weight: 700; font-size:20px">100.000&dstrok;</p>
+            </div>
+          </li>
+`;
+
+
+
+//## LẤY DATA SẢN PHẨM TỪ DATABASE
 get(child(dbref, `TheCakes/`))
 .then((snapshot)=>{
     var cakeData = []; //Data của sản phẩm lấy từ database
@@ -39,7 +55,7 @@ get(child(dbref, `TheCakes/`))
       </div>
       <div class="title-price" style="display: flex; justify-content: space-between; align-items: center">
         <p class="title" style="font-weight: 600; width: 50%;">${e.NameOfCake}</p>
-        <p class="price" style="font-weight: 700; font-size:20px">${e.PriceOfCake}đ</p>
+        <p class="price" style="font-weight: 700; font-size:20px">${e.PriceOfCake}</p>
       </div>
     </li>
       `         
