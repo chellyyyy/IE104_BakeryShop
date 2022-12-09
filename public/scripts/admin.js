@@ -58,7 +58,7 @@ get(child(dbref, `UserList/`))
           <p>${e.username}</p>
         </td>
         <td>${e.email}</td>
-        <td><button id = "Delbtn">x</button></td>
+        <td><button id = "Delbtn" class = "status completed">x</button></td>
       </tr>
       `         
     })
