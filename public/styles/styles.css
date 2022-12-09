@@ -1499,14 +1499,14 @@ li i {
 }
 #admin .list_items {
   display: none;
-  flex-direction: column;
-  background: white;
-}
-#admin .list_items .item {
-  background: white !important;
 }
 #admin i.bx.bx-dots-vertical-rounded:focus .list_items {
   display: flex;
+  flex-direction: column;
+  background: white;
+}
+#admin i.bx.bx-dots-vertical-rounded:focus .list_items .item {
+  background: white !important;
 }
 #admin .overlay {
   position: fixed;

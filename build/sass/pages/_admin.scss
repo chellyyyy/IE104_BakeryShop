@@ -515,16 +515,15 @@
     // more information
     .list_items {
         display: none;
-        
+    }
+    i.bx.bx-dots-vertical-rounded:focus .list_items {
+        display: flex;
         flex-direction: column;
         background: white;
         .item {
             background: white !important;
             
         }
-    }
-    i.bx.bx-dots-vertical-rounded:focus .list_items {
-        display: flex;
     }
 
 
