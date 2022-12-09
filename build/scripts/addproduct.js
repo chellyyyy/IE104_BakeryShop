@@ -23,6 +23,7 @@ const dbref = ref(db);
 
 // INSERT PRODUCT--------------------------------
 // -References-
+var id = document.getElementById("id_pro");
 var name = document.getElementById("name_pro");
 var price = document.getElementById("price_pro");
 var pic = document.getElementById("pic_pro");
@@ -35,7 +36,7 @@ var delBtn = document.getElementById("Delbtn");
 
 // -Insert data-
 function InsertData(){
-set(ref(db, "TheCakes/"+ name.value),{
+set(ref(db, "TheCakes/"+ id.value),{
     NameOfCake: name.value,
     PriceOfCake: price.value,
     PicOfCake: pic.value,
@@ -56,10 +57,10 @@ set(ref(db, "TheCakes/"+ name.value),{
 // -Select data-
 function SelectData(){
     const dbref = ref(db);
-    get(child(dbref, "TheCakes/"+ name.value))
+    get(child(dbref, "TheCakes/"+ id.value))
     .then((snapshot)=>{
         if(snapshot.exists()){
-            // name.value = snapshot.val().NameOfCake;
+            name.value = snapshot.val().NameOfCake;
             price.value = snapshot.val().PriceOfCake;
             pic.value = snapshot.val().PicOfCake;
             desc.value = snapshot.val().Descript;
@@ -75,8 +76,8 @@ function SelectData(){
 
 // -Update data-
 function UpdateData(){
-    update(ref(db, "TheCakes/"+ name.value),{
-        // NameOfCake: name.value,
+    update(ref(db, "TheCakes/"+ id.value),{
+        NameOfCake: name.value,
         PriceOfCake: price.value,
         PicOfCake: pic.value,
         Descript: desc.value
@@ -95,7 +96,7 @@ function UpdateData(){
 
 // -Delete data-
 function DeleteData(){
-    remove(ref(db, "TheCakes/"+ name.value),{
+    remove(ref(db, "TheCakes/"+ id.value),{
     })
     .then(() =>{
         alert("Xóa thành công!");
