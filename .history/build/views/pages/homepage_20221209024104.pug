@@ -1,0 +1,94 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='./styles/styles.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css', integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==', crossorigin='anonymous', referrerpolicy='no-referrer')
+    link(href='https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira', rel='stylesheet')
+    link(rel='stylesheet' type='text/css' href='https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css')
+    title Home Page
+  body
+    include ../blocks/header
+    #slide_bar
+      .slide_content
+        h1 Bánh tự làm
+        p
+          | Làm từ những nguyên liệu tươi sạch
+          br
+          | Bột, trứng, sữa nguyên chất
+          br
+          | Đảm bảo chất lượng
+        input(type='button' value='Xem thêm')
+      .slide_img
+        img.mySlides(src='https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80' alt='choco')
+        img.mySlides(src='https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1026&q=80' alt='choco')
+        img.mySlides(src='https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80' alt='choco')
+    #sale
+      .sale_content Bán chạy
+      .sale_img-container
+        .sale_img-item
+          img(src='https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='choco')
+          p Chocolate Cake
+        .sale_img-item
+          img(src='https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='strawberry')
+          p CupCake
+        .sale_img-item
+          img(src='https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='choco')
+          p Chocolate Cake
+        .sale_img-item
+          img(src='https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='choco')
+          p Chocolate Cake
+        .sale_img-item
+          img(src='https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='choco')
+          p Chocolate Cake
+      button.sale_button
+        span Xem thêm
+    #sale
+      .sale_content Sản phẩm mới
+      .sale_img-container
+        .sale_img-item
+          img(src='https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='choco')
+          p Chocolate Cake
+        .sale_img-item
+          img(src='https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='choco')
+          p Chocolate Cake
+        .sale_img-item
+          img(src='https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='choco')
+          p Chocolate Cake
+        .sale_img-item
+          img(src='https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='choco')
+          p Chocolate Cake
+        .sale_img-item
+          img(src='https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' alt='choco')
+          p Chocolate Cake
+      button.sale_button
+        span Xem thêm
+    #noti
+      .noti_content
+        h1 Nhận thông báo
+        input.input_email(type='text' placeholder='Email')
+        button Li&ecirc;n h&#x1EC7; ngay
+    #delivery
+      .deli_content
+        h1 Ph&#x1B0;&#x1A1;ng th&#x1EE9;c v&#x1EAD;n chuy&#x1EC3;n
+        .deli_container
+          .deli_item
+            i.fa-solid.fa-truck-fast
+            p Giao h&agrave;ng
+          .deli_item
+            i.fa-solid.fa-store
+            p t&#x1EA1;i qu&aacute;n
+          .deli_item
+            i.fa-solid.fa-person-walking
+            p mang &dstrok;i
+          .deli_item
+            i.fa-solid.fa-gift
+            p qu&agrave;
+
+    include ../blocks/footer
+    script(src='../build/scripts/slideshow.js')
+    script(src='../build/scripts/homepage.js' type='module')
+    script(type='text/javascript' src='https://cdn.jsdelivr.net/npm/toastify-js')
+    //- script(src='../build/scripts/main.js')

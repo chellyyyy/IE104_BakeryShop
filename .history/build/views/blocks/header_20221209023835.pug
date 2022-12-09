@@ -1,0 +1,96 @@
+header#header
+  input#check(type='checkbox' name='')
+  .nav-left
+    .brand
+      img.brand-img(src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/800px-Google_%22G%22_Logo.svg.png' alt='')
+      h1.brand-heading Sun Cake
+  .nav-center(id='navmid')
+    ul.menu-list
+      li.menu-item
+        | Th&#x1EF1;c &dstrok;&#x1A1;n
+        i.fa-solid.fa-angle-down
+        // <div class="sub-nav"></div>
+        ul.sub-nav-list
+          .menu-container
+            .menu-content
+              ul.menu-list-1
+                li
+                  a(href='') Bánh mì
+                li
+                  a(href='') B&aacute;nh tr&aacute;i c&acirc;y
+                li
+                  a(href='') Pastry &amp; Pie
+                li
+                  a(href='') Macarons
+                li
+                  a(href='') Cookie
+                li
+                  a(href='') Sandwiches
+              ul.menu-list-2
+                li
+                  a(href='') Donuts
+                li
+                  a(href='') Cupcake
+                li
+                  a(href='') Cloud Cake
+                li
+                  a(href='') Buttercream Cake
+                li
+                  a(href='') Piece Cake
+                li
+                  a(href='') Roll Cake
+                li
+                  a(href='') Brownie
+            .menu-img
+              img(src='https://www.tljus.com/wp-content/uploads/2022/11/Thanksgiving_PR-scaled.jpg')
+              .rectangle
+              a(href='#') Xem tất cả
+              // <hr>
+      li.menu-item
+        a(href='aboutus.html') Giới thiệu
+      li.menu-item
+        | Liên hệ
+        i.fa-solid.fa-angle-down
+        // <div class="sub-nav"></div>
+        .sub-nav-list
+          .grid-container-contact
+            .grid-item-contact
+              h1 Thông tin liên lạc
+            .grid-item-contact
+              p
+                i.fa-solid.fa-envelope
+                | sun_cake@gmail.com
+              p
+                i.fa-solid.fa-phone
+                | 0912345678
+            .grid-item-contact
+              h1 Địa chỉ cửa hàng
+            .grid-item-contact
+              p
+                i.fa-solid.fa-location-dot
+                | Khu phố 6, P.Linh Trung, Tp.Thủ Đức, Tp.Hồ Chí Minh
+  .nav-right
+    .search(id='loginsearch')
+      input.input-search(type='text' placeholder='Tìm kiếm')
+      .search-icon
+        i.fa-solid.fa-magnifying-glass
+    .personal(id='loginpage')
+      i.fa-solid.fa-user
+      .sub-nav-list
+          .account
+            img(src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Zj3MiSvzX1mJqYZsepbx_DQILWlJOKPqZ8m984Gu0-Z_Zv4OAJi5FLY4JJlEXlgLpjY&usqp=CAU", alt="")
+            p.navlink(id='Username') Tên
+            a(href='myshipment.html')
+              p.navlink(id='userinfo') Chỉnh sửa thông tin
+            .account_button
+              button.log_out.navlink Đăng xuất
+              .log_in
+                button.navlink(id='loginbtn') Đăng nhập
+                button.navlink(id='signupbtn') Đăng ký
+                button.navlink(id='logoutbtn') Đăng xuất
+    .cart(id='logincart')
+      i.fa-solid.fa-cart-shopping
+      span.amount 1
+  .hamburger-menu-container
+    .hamburger-menu
+      div
