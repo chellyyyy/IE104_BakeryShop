@@ -66,9 +66,9 @@ li {
 }
 #product .item .img img {
     display: inherit;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    width: 240px;
-    height: 240px;
 }
 #product .title-price p {
     width: max-content;
@@ -110,17 +110,22 @@ li {
 }
 
 .item {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* grid-template-rows: 80% 20%; */
     width: 30%;
+    height: 100%;
     margin-top: 5%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
 
-.item > .img {
+.item>.img {
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 01px 1px 2px rgb(158, 158, 158);
 }
-
 
 .rating {
     display: flex;

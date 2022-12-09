@@ -37,3 +37,51 @@ document.getElementById('adminLogout').addEventListener('click', ()=> {
         // window.alert(error);
     });
 })
+
+// ADD INFORMATION USER
+//## LẤY DATA NGƯỜI DÙNG TỪ DATABASE VÀ THÊM VÀO ADMIN
+get(child(dbref, `UserList/`))
+.then((snapshot)=>{
+    var userData = []; //Data của sản phẩm lấy từ database
+    snapshot.forEach(childSnapshot => {
+        userData.push(childSnapshot.val());
+    });
+
+    userData.forEach((e)=>{
+      document.getElementById('account').innerHTML += 
+      `
+      <tr>
+        <td>
+          <p>${e.username}</p>
+        </td>
+        <td>${e.email}</td>
+        <td><i class="bx bx-dots-vertical-rounded"></i></td>
+      </tr>
+      `         
+    })
+})
+.catch(()=>{
+  alert("LỖI" + error);
+});
+
+
+//## LẤY DATA SẢN PHẨM TỪ DATABASE VÀ THÊM VÀO Admin
+get(child(dbref, `TheCakes/`))
+.then((snapshot)=>{
+    var cakeData = []; //Data của sản phẩm lấy từ database
+    snapshot.forEach(childSnapshot => {
+        cakeData.push(childSnapshot.val());
+    });
+
+    cakeData.forEach((e)=>{
+      document.getElementById('product').innerHTML += 
+      `
+      <li class="completed">
+        <p>${e.NameOfCake}</p><i class="bx bx-dots-vertical-rounded"></i>
+      </li>
+      `         
+    })
+})
+.catch(()=>{
+  alert("LỖI" + error);
+});

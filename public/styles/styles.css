@@ -67,6 +67,11 @@
   font-family: "Montserrat";
 }
 
+a {
+  text-decoration: none;
+  color: #4B6587;
+}
+
 :root {
   --height-header: 60px;
 }
@@ -1042,6 +1047,9 @@ li i {
 }
 #admin a {
   text-decoration: none;
+}
+#admin .bx {
+  cursor: pointer;
 }
 #admin li {
   list-style: none;
@@ -2233,9 +2241,9 @@ li {
 
 #product .item .img img {
   display: inherit;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  width: 240px;
-  height: 240px;
 }
 
 #product .title-price p {
@@ -2277,9 +2285,15 @@ li {
 }
 
 .item {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* grid-template-rows: 80% 20%; */
   width: 30%;
+  height: 100%;
   margin-top: 5%;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
 
 .item > .img {
