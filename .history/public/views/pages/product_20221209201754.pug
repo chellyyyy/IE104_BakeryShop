@@ -1,0 +1,62 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet', href='./styles/styles.css')
+        link(href='https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira', rel='stylesheet')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css', integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==', crossorigin='anonymous', referrerpolicy='no-referrer')
+        link(rel='stylesheet', href='//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css')
+        script(src='https://code.jquery.com/jquery-1.12.4.js')
+        script(src='https://code.jquery.com/ui/1.12.1/jquery-ui.js')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css', integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==', crossorigin='anonymous', referrerpolicy='no-referrer')
+        title Sản phẩm
+    body
+        include ../blocks/header
+        button.return(type='button' onclick='QUAY_LẠI_MUA_HÀNG()')
+            //- a.previous_round(href='#')
+            i.fa-solid.fa-chevron-left
+            | QUAY L&#x1EA0;I
+        script.
+            function QUAY_LẠI_MUA_HÀNG() {
+                history.back();
+            }
+        .product-all
+            .product-1
+                                
+                // Slideshow container
+                .slideshow-product
+                    // Full-width images with number and caption text
+                    .mySlidesShow.fade
+                        img(src='../build/assets/Danish_Pastry.png', alt='Danish Pastry')
+                    //- .mySlidesShow.fade
+                    //-     img(src='https://kfoods.com/images1/newrecipeicon/danish-pastries_11156.jpg')
+                    //- .mySlidesShow.fade
+                    //-     img(src='https://www.masterclass.com/cdn-cgi/image/width=828,quality=75,format=webp/https://images.ctfassets.net/3s5io6mnxfqz/1dLqthjXNRPN1HRx0YbpGP/1815925455dfd53f538757b067ff6168/AdobeStock_308816929.jpeg')
+                    
+                    // Next and previous buttons
+                    //- a.prev(onclick='plusSlides(-1)') &#x276E;
+                    //- a.next(onclick='plusSlides(1)') &#x276F;
+                br
+
+                // The dots/circles
+                //- div(style='text-align:center')
+                //-     span.dot_product(onclick='currentSlide(1)')
+                //-     span.dot_product(onclick='currentSlide(2)')
+                //-     span.dot_product(onclick='currentSlide(3)')
+            .product-2
+                .Information
+                    h1 Danish pastry
+                    p Bánh dai nhẹ như bánh mì nhưng thêm phần tinh tế khi lớp bột tách thành nhiều lớp, tạo cho bánh có độ xốp và lớp vỏ ngoài giòn tan khi nướng xong.
+                .Button
+                    .button-1
+                        button.minus.is-form(onclick='decrement()') -
+                        input#demoInput.input-qty(aria-label='quantity' max='10' min='1' name='' type='number' value='1')
+                        //- input#demoInput(type='number', min='1', max='10', value='1')
+                        button.plus.is-form(onclick='increment()') +
+                    button.button-2
+                        i.fa-solid.fa-cart-shopping
+                        span Th&ecirc;m v&agrave;o gi&#x1ECF;
+        include ../blocks/footer
+        script(src='./scripts/input_cart.js')
