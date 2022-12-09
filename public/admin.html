@@ -6,7 +6,7 @@
   <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
   <!-- My CSS-->
   <link rel="stylesheet" href="./styles/styles.css">
-  <script src="../build/scripts/admin.js" type="module"></script>
+  <script src="../build/scripts/addtoadmin.js"></script>
   <title>Admin SunCake</title>
 </head>
 <body>
@@ -60,14 +60,14 @@
         <div class="table-data">
           <div class="order">
             <div class="head">
-              <h3>Thông tin người dùng</h3><i class="bx bx-search"></i>
+              <h3>Thông tin người dùng</h3><i class="bx bx-plus"></i><i class="bx bx-filter"></i>
             </div>
             <table>
               <thead>
                 <tr>
                   <th>Người dùng</th>
                   <th>Email</th>
-                  <th>Chi tiết</th>
+                  <th>Chỉnh sửa</th>
                 </tr>
               </thead>
               <tbody id="account"></tbody>
@@ -75,49 +75,9 @@
           </div>
           <div class="todo">
             <div class="head">
-              <h3>Thông tin Sản phẩm</h3><a class="button" href="#popup_product"><i class="bx bx-plus"></i></a>
+              <h3>Thông tin Sản phẩm</h3><i class="bx bx-plus"></i><i class="bx bx-filter"></i>
             </div>
-            <ul class="todo-list" id="product">
-              <li class="completed">
-                <p>Todo List</p><i class="bx bx-dots-vertical-rounded">
-                  <ul class="list_items">
-                    <li class="item">Giá cả: 50đ</li>
-                    <li class="item">Mô tả: </li>
-                  </ul></i>
-              </li>
-              <div class="overlay" id="popup_product">
-                <div class="popup_content"><a class="close" href="#">&times;</a>
-                  <div class="form_title">
-                    <h2>Điền thông tin của sản phẩm bên dưới</h2>
-                  </div>
-                  <div class="form_input">
-                    <div class="input-box">
-                      <p>ID</p>
-                      <input type="number" id="id_pro">
-                    </div>
-                    <div class="input-box">
-                      <p>Tên</p>
-                      <input type="text" id="name_pro" placeholder="Bánh">
-                    </div>
-                    <div class="input-box">
-                      <p>Giá</p>
-                      <input type="number" id="price_pro" placeholder="50">
-                    </div>
-                    <div class="input-box">
-                      <p>Hình ảnh</p>
-                      <input type="text" id="pic_pro" placeholder="https://...">
-                    </div>
-                    <div class="input-box">
-                      <p>Mô tả</p>
-                      <input type="text" id="desc_pro">
-                    </div>
-                    <div class="form_button">
-                      <button class="button-login" id="Insbtn">Thêm</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </ul>
+            <ul class="todo-list" id="product"></ul>
           </div>
         </div>
       </main>
@@ -125,5 +85,19 @@
     </section>
     <!-- CONTENT-->
   </div>
-  <script src="../build/scripts/admin.js" type="module"></script>
+  <script src="./scripts/admin.js" type="module"></script>
 </body>
+<script>
+  var indexInit = 0
+  document.querySelector("#sidebar .side-menu").querySelectorAll("li").forEach((item, index) => {
+      item.addEventListener("click", (e) => {
+          console.log(indexInit);
+          document.querySelector("#sidebar .side-menu").querySelectorAll("li")[indexInit].classList.remove("active")
+          item.classList.add("active");
+          console.log(index);
+          indexInit = index
+          Page(index)
+  
+      })
+  })
+</script>
