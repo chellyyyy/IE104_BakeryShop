@@ -2431,6 +2431,7 @@ li {
 }
 #product .title-price p a {
   color: black;
+  text-transform: capitalize;
 }
 #product .title-price p a:hover {
   color: #4B6587;
