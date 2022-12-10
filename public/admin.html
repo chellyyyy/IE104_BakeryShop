@@ -29,7 +29,7 @@
         <form action="#">
           <div class="form-input">
             <input type="search" placeholder="Tìm kiếm...">
-            <button class="search-btn" type="submit"><i class="bx bx-search"></i></button>
+            <button class="search-btn" id="test" type="submit"><i class="bx bx-search"></i></button>
           </div>
         </form><a class="profile" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Zj3MiSvzX1mJqYZsepbx_DQILWlJOKPqZ8m984Gu0-Z_Zv4OAJi5FLY4JJlEXlgLpjY&amp;usqp=CAU"></a>
       </nav>
@@ -60,7 +60,8 @@
         <div class="table-data">
           <div class="order">
             <div class="head">
-              <h3>Thông tin người dùng</h3><i class="bx bx-search"></i>
+              <h3>Thông tin người dùng</h3>
+              <button id="Search"><i class="bx bx-search"></i></button>
             </div>
             <table>
               <thead>
@@ -107,6 +108,20 @@
                   <div class="form_button">
                     <button class="button-login" id="Isnbtn">Thêm</button>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div class="overlay" id="popup_del">
+              <div class="popup_content">
+                <div class="form_title">
+                  <h2>Xóa sản phẩm</h2>
+                </div>
+                <div class="btncontainer">
+                  <div class="form_button">
+                    <button class="button-confirm" id="Yesbtn">Đồng ý</button>
+                  </div>
+                  <div class="form_button"><a href="#">
+                      <button class="button-confirm" id="Nobtn">Từ chối</button></a></div>
                 </div>
               </div>
             </div>
