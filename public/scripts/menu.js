@@ -36,8 +36,24 @@ get(child(dbref, `TheCakes/`))
       <li class="item">
         <div class="img"><img src="${e.PicOfCake}" alt="${e.NameOfCake}"></div>
         <div class="title-price" style="display: flex; justify-content: space-between; align-items: center">
-          <p class="title" style="font-weight: 600; width: 50%;">${e.NameOfCake}</p>
-          <p class="price" style="font-weight: 700; font-size:20px">${e.PriceOfCake}.000đ</p>
+          <p class="title" style="font-weight: 600; width: 50%;"> <a href="#more_info-${e.ID}">${e.NameOfCake}</a></p>
+          <p class="price" style="font-weight: 700; font-size:20px">${e.PriceOfCake}.000&dstrok;</p>
+        </div>
+        <div class="overlay" id="more_info-${e.ID}">
+          <div class="popup_content"><a class="close" href="#">&times;</a>
+            <div class="product-all">
+              <div class="product-1"><img src="${e.PicOfCake}" alt="${e.NameOfCake}"></div>
+              <div class="product-2">
+                <div class="Information">
+                  <h1>${e.NameOfCake}</h1>
+                  <p>${e.Descript}</p>
+                </div>
+                <div class="Button">
+                  <button class="button-2"><i class="fa-solid fa-cart-shopping"></i><span>Thêm vào giỏ hàng</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </li>
       `         

@@ -18,20 +18,39 @@ html(lang='en')
     body 
         include ../blocks/header
 
-        .container
+        .container-menu
             #head
-                h2 LOẠI BÁNH
+                h2 Thực đơn
                 .span
             #product
                 ul#paginated-list(aria-live='polite')
                     //- li.item
                     //-     .img
-                    //-         img(src='../build/assets/Danish_Pastry.png', alt='Danish Pastry')
+                    //-         img(src='assets/Danish_Pastry.png', alt='Danish Pastry')
                     //-         //- .icon
                     //-         //-     i.fa-regular.fa-heart
                     //-     .title-price(style='display: flex; justify-content: space-between; align-items: center')
-                    //-         p.title(style='font-weight: 600; width: 50%;') Danish Pastry
+                    //-         p.title(style='font-weight: 600; width: 50%;') 
+                    //-             a(href='#more_info-1') Danish Pastry
                     //-         p.price(style='font-weight: 700; font-size:20px') 100.000&dstrok;
+                    //-     #more_info-1.overlay
+                    //-         .popup_content
+                    //-             a.close(href='#') &times;
+                    //-             .product-all
+                    //-                 .product-1
+                    //-                         img(src='assets/Danish_Pastry.png', alt='Danish Pastry')
+                    //-                 .product-2
+                    //-                     .Information
+                    //-                         h1 Danish pastry
+                    //-                         p Bánh dai nhẹ như bánh mì nhưng thêm phần tinh tế khi lớp bột tách thành nhiều lớp, tạo cho bánh có độ xốp và lớp vỏ ngoài giòn tan khi nướng xong.
+                    //-                     .Button
+                    //-                         .button-1
+                    //-                             button.minus.is-form(onclick='decrement()') -
+                    //-                             input#demoInput.input-qty(aria-label='quantity' max='10' min='1' name='' type='number' value='1')
+                    //-                             button.plus.is-form(onclick='increment()') +
+                    //-                         button.button-2
+                    //-                             i.fa-solid.fa-cart-shopping
+                    //-                             span Thêm vào giỏ hàng
                         //- .rating
                         //-     .rate
                         //-         label(for='star1', title='text')
@@ -150,4 +169,6 @@ html(lang='en')
         //-     document.getElementById('paginated-list').innerHTML += '<h1>asdsadsad</h1>';
     include ../blocks/footer
     script(src='./scripts/main.js')
+    //- Chỉnh nút + -
+    //- script(src='./scripts/input_cart.js')
       

@@ -7,7 +7,6 @@
 
 a {
     text-decoration: none;
-    color: #4B6587;
 }
 
 :root {
@@ -47,6 +46,9 @@ a {
     color: #4B6587;
     letter-spacing: 3px;
     font-size: 24px;
+    a {
+        color: #4B6587;
+    }
 }
 
 
@@ -273,6 +275,7 @@ a {
     line-height: var(--height-header);
     padding:0 18px;
     font-size: 22px;
+    color: #000;
 }
 .search {
     position: relative;

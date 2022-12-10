@@ -103,6 +103,7 @@ var delBtn = document.getElementById("Delbtn");
 // -Insert data-
 function InsertData(){
     set(ref(db, "TheCakes/"+ id.value),{
+        ID: id.value,
         NameOfCake: name.value,
         PriceOfCake: price.value,
         PicOfCake: pic.value,

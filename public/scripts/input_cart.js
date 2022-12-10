@@ -30,6 +30,8 @@ function decrement() {
 function increment_2() {
     document.getElementById('Input-2').stepUp();
   }
-  function decrement_2() {
-    document.getElementById('Input-2').stepDown();
-  }
+function decrement_2() {
+  document.getElementById('Input-2').stepDown();
+}
+
+// ---------------------------------------------------
