@@ -35,7 +35,7 @@ html(lang="en")
                                 p.content  SĐT: 
                                 div.userdetail
                                     span 09123456789  
-                            div
+                            a(href = "#popup_address")
                                 button.button_inside THAY ĐỔI ĐỊA CHỈ           
                     
                 aside
@@ -51,6 +51,24 @@ html(lang="en")
                         a(href = "payment.html") 
                             button.tc(type = 'button') TIẾP TỤC THANH TOÁN
 
+                //- POP UP
+                #popup_address.overlay
+                    .popup_content
+                        a.close(href='#') &times;
+                        .form_title
+                            h2 Điền thông tin địa chỉ bên dưới
+                        .form_input
+                            .input-box
+                                p Người nhận
+                                input(type='text' id='name_user' placeholder='SunCake')
+                            .input-box
+                                p Địa chỉ
+                                input(type='text' id='add_user' placeholder='Khu phố 6, P.Linh Trung, Tp.Thủ Đức, Tp.Hồ Chí Minh')
+                            .input-box
+                                p Số điện thoại
+                                input(type='number' id='phone_user' placeholder='09123456789')                         
+                            .form_button
+                                button.button-login#Isnbtn Hoàn tất
         include ../blocks/footer
         
         

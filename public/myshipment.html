@@ -123,10 +123,8 @@
                 <div class="userdetail"><span>Phường Linh Trung, Thủ Đức, Thành Phố Hồ Chí Minh</span></div>
                 <p class="content"> SĐT: </p>
                 <div class="userdetail"><span>09123456789  </span></div>
-              </div>
-              <div>
-                <button class="button_inside">THAY ĐỔI ĐỊA CHỈ           </button>
-              </div>
+              </div><a href="#popup_address">
+                <button class="button_inside">THAY ĐỔI ĐỊA CHỈ           </button></a>
             </li>
           </ul>
         </section>
@@ -141,6 +139,30 @@
               <button class="tc" type="button">TIẾP TỤC THANH TOÁN</button></a>
           </div>
         </aside>
+        <div class="overlay" id="popup_address">
+          <div class="popup_content"><a class="close" href="#">&times;</a>
+            <div class="form_title">
+              <h2>Điền thông tin địa chỉ bên dưới</h2>
+            </div>
+            <div class="form_input">
+              <div class="input-box">
+                <p>Người nhận</p>
+                <input type="text" id="name_user" placeholder="SunCake">
+              </div>
+              <div class="input-box">
+                <p>Địa chỉ</p>
+                <input type="text" id="add_user" placeholder="Khu phố 6, P.Linh Trung, Tp.Thủ Đức, Tp.Hồ Chí Minh">
+              </div>
+              <div class="input-box">
+                <p>Số điện thoại</p>
+                <input type="number" id="phone_user" placeholder="09123456789">
+              </div>
+              <div class="form_button">
+                <button class="button-login" id="Isnbtn">Hoàn tất</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <footer>

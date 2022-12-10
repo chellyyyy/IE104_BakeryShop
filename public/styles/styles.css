@@ -3304,6 +3304,10 @@ button.gh {
   text-transform: uppercase;
   color: #4B6587;
 }
+.button_inside:hover {
+  background: #4B6587;
+  color: white;
+}
 
 .content {
   font-weight: 200;
@@ -3375,6 +3379,122 @@ div.tien {
   line-height: 20px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.container_pay {
+  /* form_input */
+  /* form_button */
+}
+.container_pay .overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.container_pay .overlay:target {
+  visibility: visible;
+  opacity: 1;
+  z-index: 9999;
+}
+.container_pay .popup_content {
+  margin: 10% auto auto;
+  padding: 3%;
+  background: #fff;
+  border-radius: 5px;
+  width: 40%;
+  position: relative;
+}
+.container_pay .popup_content h2 {
+  font-weight: 500;
+  font-size: 18px;
+}
+.container_pay .popup_content .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.container_pay .popup_content .close:hover {
+  color: #4B6587;
+}
+.container_pay .form_input {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  gap: 24px;
+  margin: 5% 0 0;
+}
+.container_pay .form_input .input-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.container_pay .form_input .input-box p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #4B6587;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.container_pay .form_input .input-box input {
+  /* Input */
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  background: #FFFFFF;
+  border: 1px solid #D7D7D7;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  /* CakeShop@gmail.com */
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.container_pay .form_button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+}
+.container_pay .form_button button.button-login {
+  cursor: pointer;
+  padding: 12px 24px;
+  width: 100%;
+  height: 100%;
+  background: #4B6587;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+  border: none;
+  border-radius: 8px;
+  /* Thêm */
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
 }
 
 @media only screen and (max-width: 414px) {
