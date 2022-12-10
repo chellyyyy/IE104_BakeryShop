@@ -1415,19 +1415,7 @@ li i {
   grid-gap: 16px;
   margin-bottom: 24px;
 }
-#admin #content main .table-data .head2 {
-  display: flex;
-  align-items: center;
-  grid-gap: 16px;
-  margin-bottom: 24px;
-  flex-direction: column;
-}
 #admin #content main .table-data .head h3 {
-  margin-right: auto;
-  font-size: 24px;
-  font-weight: 600;
-}
-#admin #content main .table-data .head2 h3 {
   margin-right: auto;
   font-size: 24px;
   font-weight: 600;

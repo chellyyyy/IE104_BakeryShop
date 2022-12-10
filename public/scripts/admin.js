@@ -78,7 +78,7 @@ get(child(dbref, `TheCakes/`))
       document.getElementById('product').innerHTML += 
       `
       <li class="completed">
-        <p>${e.NameOfCake}</p><button id = "Delbtn">x</button>
+        <p id='name_pro'>${e.NameOfCake}</p><button id = "Delbtn">x</button>
       </li>
       `         
     })
@@ -102,22 +102,22 @@ var delBtn = document.getElementById("Delbtn");
 
 // -Insert data-
 function InsertData(){
-set(ref(db, "TheCakes/"+ id.value),{
-    NameOfCake: name.value,
-    PriceOfCake: price.value,
-    PicOfCake: pic.value,
-    Descript: desc.value
-})
-.then(() =>{
-    alert("Thành công!");
-    name.value = "";
-    price.value = "";
-    pic.value = "";
-    desc.value = "";
-})
-.catch((error)=>{
-    alert("Không thành công, lỗi " + error);
-});
+    set(ref(db, "TheCakes/"+ id.value),{
+        NameOfCake: name.value,
+        PriceOfCake: price.value,
+        PicOfCake: pic.value,
+        Descript: desc.value
+    })
+    .then(() =>{
+        alert("Thành công!");
+        name.value = "";
+        price.value = "";
+        pic.value = "";
+        desc.value = "";
+    })
+    .catch((error)=>{
+        alert("Không thành công, lỗi " + error);
+    });
 }
 
 // -Select data-
@@ -134,7 +134,7 @@ function SelectData(){
         else{
             alert("Không tìm thấy!");
         }
-        })
+    })
     .catch((error)=>{
         alert("Không thành công, lỗi " + error);
     });
@@ -158,11 +158,11 @@ function UpdateData(){
     .catch((error)=>{
         alert("Không thành công, lỗi " + error);
     });
-    }
+}
 
 // -Delete data-
 function DeleteData(){
-    remove(ref(db, "TheCakes/"+ id.value),{
+    remove(ref(db, "TheCakes/"+ id.name),{
     })
     .then(() =>{
         alert("Xóa thành công!");
@@ -174,13 +174,13 @@ function DeleteData(){
     .catch((error)=>{
         alert("Không thành công, lỗi " + error);
     });
-    }
+}
 
 // -Assign Events to Btns-
 // insBtn.addEventListener('click', InsertData);
-
 // selBtn.addEventListener('click', SelectData);
 // updBtn.addEventListener('click', UpdateData);
 // delBtn.addEventListener('click', DeleteData);
 
 document.getElementById('Isnbtn').addEventListener('click', InsertData);
+document.getElementById('Delbtn').addEventListener('click', DeleteData);
