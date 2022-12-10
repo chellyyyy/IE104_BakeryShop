@@ -207,7 +207,6 @@ function DeleteUser(){
 // delBtn.addEventListener('click', DeleteData);
 
 document.getElementById('Isnbtn').addEventListener('click', InsertData);
-document.getElementById('Yesbtn').addEventListener('click', DeleteData);
 // document.getElementById('Delbtn').addEventListener('click', DeleteData);
 // User
 // document.getElementById('Deluser').addEventListener('click', DeleteUser);

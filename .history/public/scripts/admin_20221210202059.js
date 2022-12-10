@@ -207,7 +207,6 @@ function DeleteUser(){
 // delBtn.addEventListener('click', DeleteData);
 
 document.getElementById('Isnbtn').addEventListener('click', InsertData);
-document.getElementById('Yesbtn').addEventListener('click', DeleteData);
 // document.getElementById('Delbtn').addEventListener('click', DeleteData);
 // User
 // document.getElementById('Deluser').addEventListener('click', DeleteUser);
@@ -223,7 +222,7 @@ document.getElementById('Yesbtn').addEventListener('click', DeleteData);
 //     alert('22')
 // })
 
-
+document.getElementById('Yesbtn').addEventListener('click', DeleteData);
 
 
 // var x = document.querySelectorAll('.detect');
@@ -235,9 +234,9 @@ document.getElementById('Yesbtn').addEventListener('click', DeleteData);
 
 
 
-// function sleep(ms) {
-//     return new Promise(resolve => setTimeout(resolve, ms));
-// }
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
 
 
 
