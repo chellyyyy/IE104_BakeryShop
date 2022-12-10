@@ -54,10 +54,10 @@ get(child(dbref, `UserList/`))
       `
       <tr>
         <td>
-          <p>${e.username}</p>
+          <p id = "username">${e.username}</p>
         </td>
-        <td>${e.email}</td>
-        <td><button id = "Delbtn" class = "status completed">x</button></td>
+        <td id = "email">${e.email}</td>
+        <td><button id = "Deluser" class = "status completed">x</button></td>
       </tr>
       `         
     })
@@ -160,16 +160,25 @@ function UpdateData(){
     });
 }
 
-// -Delete data-
+// -Delete data Product-
 function DeleteData(){
     remove(ref(db, "TheCakes/"+ id.name),{
     })
     .then(() =>{
         alert("Xóa thành công!");
-        name.value = "";
-        price.value = "";
-        pic.value = "";
-        desc.value = "";
+    })
+    .catch((error)=>{
+        alert("Không thành công, lỗi " + error);
+    });
+}
+// -Delete data User-
+var user = document.getElementById("username");
+var mail = document.getElementById("email");
+function DeleteUser(){
+    remove(ref(db, "UserList/"+ id.user),{
+    })
+    .then(() =>{
+        alert("Xóa thành công!");
     })
     .catch((error)=>{
         alert("Không thành công, lỗi " + error);
@@ -184,3 +193,5 @@ function DeleteData(){
 
 document.getElementById('Isnbtn').addEventListener('click', InsertData);
 document.getElementById('Delbtn').addEventListener('click', DeleteData);
+// User
+document.getElementById('Deluser').addEventListener('click', DeleteUser);
