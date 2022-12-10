@@ -22,10 +22,10 @@ body
                     a(href='#')
                         i.bx.bxs-dashboard
                         span.text Dashboard
-                //- li
-                //-     a(href='#')
-                //-         i.bx.bxs-shopping-bag-alt
-                //-         span.text Sản phẩm
+                li
+                    a(href='homepage.html')
+                        i.bx.bxs-cake
+                        span.text Trang chủ
                 //- li
                 //-     a(href='#')
                 //-         i.bx.bxs-doughnut-chart
@@ -97,20 +97,20 @@ body
                         i.bx.bxs-dollar-circle
                         span.text
                             h3 2 tỷ VNĐ
-                            p Tổng thanh toán
+                            p Lợi nhuận
                 .table-data
                     .order
                         .head
                             h3 Thông tin người dùng
-                            button#Search
-                                i.bx.bx-search
+                            //- button#Search
+                            i.bx.bx-search
                             //- i.bx.bx-filter
                         table
                             thead
                                 tr
                                     th Người dùng
                                     th Email
-                                    th Xóa
+                                    th Chi tiết
                             tbody#account
                                 //- tr
                                 //-     td
@@ -207,7 +207,8 @@ body
                                     h2 Xóa sản phẩm
                                 .btncontainer
                                     .form_button
-                                        button.button-confirm#Yesbtn Đồng ý
+                                        a(href='#')
+                                            button.button-confirm#Yesbtn Đồng ý
                                     .form_button
                                         a(href='#')
                                             button.button-confirm#Nobtn Từ chối
