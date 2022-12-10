@@ -129,6 +129,9 @@ div.content-product p {
     letter-spacing: 0.06em;
     text-transform: capitalize;
     margin: 3%;
+    i {
+        font-size: 15px;
+    }
 }
 div.content-product p > b {
     font-weight: 500;
@@ -181,6 +184,9 @@ a.previous_round {
     text-transform: capitalize;
 
     color: #4B6587;
+    i {
+        font-size: 15px;
+    }
 }
 
 // ul.top, ul.bottom {

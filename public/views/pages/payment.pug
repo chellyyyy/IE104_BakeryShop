@@ -85,23 +85,17 @@ body
                             | trong th&#x1EDD;i gian s&#x1EDB;m nh&#x1EA5;t.
                     button.btn.btn-primary(type='button') THANH TO&Aacute;N
             
-            include ../blocks/bill
-            //- .payment
-            //-     .payment_h
-            //-         p THANH TO&Aacute;N
-            //-     .payment_t
-            //-         p.payment_split
-            //-             | T&#x1ED4;NG C&#x1ED8;NG:
-            //-             span 200.000&dstrok;
-            //-         p.payment_split
-            //-             | PH&Iacute; V&#x1EAC;N CHUY&#x1EC2;N:
-            //-             span 10.000&dstrok;
-            //-     .payment_b
-            //-         p.payment_split
-            //-             | T&#x1ED4;NG THANH TO&Aacute;N: 
-            //-             span 210.000&dstrok;
+            .bill 
+                h3.thanh_toan THANH TOÁN
+                .list_cart
+                    .bill_content Tổng Cộng:
+                        span.money 200.000đ
+                    .bill_content Phí Vận Chuyển:
+                        span.money 10.000đ
+                .tong_thanh_toan.bill_content Tổng Thanh Toán:
+                    span.money 210.000đ
     .popup
-        img(src='../build/assets/popup.jpg' alt='ERR')
+        img(src='assets/popup.jpg' alt='ERR')
 include ../blocks/footer
 //- script(src='../../build/scripts/main.js')
 script.

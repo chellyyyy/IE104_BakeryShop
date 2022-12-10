@@ -1732,6 +1732,7 @@ li i {
 
 #slide_bar .slide_content input {
   /* display: flex; */
+  cursor: pointer;
   justify-content: center;
   align-items: center;
   padding: 10px 30px;
@@ -3006,6 +3007,9 @@ div.content-product p {
   text-transform: capitalize;
   margin: 3%;
 }
+div.content-product p i {
+  font-size: 15px;
+}
 
 div.content-product p > b {
   font-weight: 500;
@@ -3049,6 +3053,9 @@ a.previous_round {
   letter-spacing: 0.06em;
   text-transform: capitalize;
   color: #4B6587;
+}
+.tien h6 i {
+  font-size: 15px;
 }
 
 .voucher h3 {

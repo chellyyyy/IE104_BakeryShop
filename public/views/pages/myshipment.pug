@@ -39,7 +39,17 @@ html(lang="en")
                                 button.button_inside THAY ĐỔI ĐỊA CHỈ           
                     
                 aside
-                    include ../blocks/bill
+                    .bill 
+                        h3.thanh_toan THANH TOÁN
+                        .list_cart
+                            .bill_content Tổng Cộng:
+                                span.money 200.000đ
+                            .bill_content Phí Vận Chuyển:
+                                span.money 10.000đ
+                        .tong_thanh_toan.bill_content Tổng Thanh Toán:
+                            span.money 210.000đ 
+                        a(href = "payment.html") 
+                            button.tc(type = 'button') TIẾP TỤC THANH TOÁN
 
         include ../blocks/footer
         

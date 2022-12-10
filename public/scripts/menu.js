@@ -47,6 +47,7 @@ get(child(dbref, `TheCakes/`))
                 <div class="Information">
                   <h1>${e.NameOfCake}</h1>
                   <p>${e.Descript}</p>
+                  <p>${e.PriceOfCake}.000&dstrok;</p>
                 </div>
                 <div class="Button">
                   <button class="button-2"><i class="fa-solid fa-cart-shopping"></i><span>Thêm vào giỏ hàng</span></button>
