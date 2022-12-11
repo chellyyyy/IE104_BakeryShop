@@ -1533,6 +1533,9 @@ li i {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #admin .overlay:target {
   visibility: visible;
@@ -1540,7 +1543,6 @@ li i {
   z-index: 9999;
 }
 #admin #popup_product .popup_content {
-  margin: 3.5% auto auto;
   padding: 3%;
   background: #fff;
   border-radius: 5px;
@@ -1548,7 +1550,6 @@ li i {
   position: relative;
 }
 #admin #popup_del .popup_content {
-  margin: 15% auto auto;
   padding: 3%;
   background: #fff;
   border-radius: 5px;
@@ -2555,6 +2556,9 @@ li {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container-menu #paginated-list .overlay:target {
   visibility: visible;
@@ -2562,7 +2566,7 @@ li {
   z-index: 9999;
 }
 .container-menu #paginated-list .popup_content {
-  margin: 10% auto auto;
+  margin-top: 60px;
   padding: 3%;
   background: #fff;
   border-radius: 5px;
@@ -2802,6 +2806,9 @@ li {
   line-height: 16px;
   text-transform: capitalize;
   color: #878787;
+}
+.content-page input:checked {
+  color: #4B6587;
 }
 
 .input_bt {
@@ -3429,6 +3436,9 @@ div.tien {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container_pay .overlay:target {
   visibility: visible;
@@ -3436,7 +3446,7 @@ div.tien {
   z-index: 9999;
 }
 .container_pay .popup_content {
-  margin: 10% auto auto;
+  margin-top: 60px;
   padding: 3%;
   background: #fff;
   border-radius: 5px;

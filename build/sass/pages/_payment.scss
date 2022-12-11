@@ -20,7 +20,7 @@
 }
 
 .sidebar li {
-    list-style: none;
+    list-style: none;   
     padding: 15px 10px;
     font-weight: 500;
 }
@@ -82,6 +82,9 @@
     text-transform: capitalize;
 
     color: #878787;
+    &:checked {
+        color: #4B6587;
+    }
 }
 
 .input_bt {

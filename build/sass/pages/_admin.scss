@@ -546,6 +546,10 @@
         visibility: hidden;
         // display: block;
         opacity: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .overlay:target {
         visibility: visible;
@@ -553,7 +557,7 @@
         z-index: 9999;
     }
     #popup_product .popup_content {
-        margin: 3.5% auto auto;
+        // margin: 3.5% auto auto;
         padding: 3%;
         background: #fff;
         border-radius: 5px;
@@ -564,7 +568,7 @@
 
     //Popup confirm xóa sản phẩm
     #popup_del .popup_content {
-        margin: 15% auto auto;
+        // margin: 15% auto auto;
         padding: 3%;
         background: #fff;
         border-radius: 5px;

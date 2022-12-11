@@ -248,6 +248,10 @@ div.tien {
         visibility: hidden;
         // display: block;
         opacity: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .overlay:target {
         visibility: visible;
@@ -255,7 +259,7 @@ div.tien {
         z-index: 9999;
     }
     .popup_content {
-        margin: 10% auto auto;
+        margin-top: 60px;
         padding: 3%;
         background: #fff;
         border-radius: 5px;
