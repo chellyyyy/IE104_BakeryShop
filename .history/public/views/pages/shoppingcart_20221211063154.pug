@@ -1,0 +1,74 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==' crossorigin='anonymous' referrerpolicy='no-referrer')
+        link(rel='stylesheet' href='./styles/styles.css')
+        title Gi&#x1ECF; h&agrave;ng
+        //- script(src='https://kit.fontawesome.com/yourcode.js')
+        //- script(src='scripts/input_cart.js')
+    body
+        include ../blocks/header
+        .container_pay
+            .content-header
+                h2 GIỎ HÀNG
+                div.under_line
+            include ../blocks/button_return
+
+            //- CONTENT MAIN
+            main.grid
+                section
+                    ul#containerCart
+                        //- li.main-product
+                        //-     .img-product
+                        //-         img(src='assets/Danish_Pastry.png')
+                        //-     .content-product
+                        //-         p
+                        //-             b Danish Pastry
+                        //-         p
+                        //-             i.fas.fa-calendar-days
+                        //-             | 04/11/2022
+                        //-         p
+                        //-             i.fas.fa-clock
+                        //-             | 10 AM
+                        //-         p
+                        //-             i.fas.fa-file-pen
+                        //-             | Ghi chú
+                        //-     .buttons_added
+                        //-         button.minus.is-form(onclick='decrement()') -
+                        //-         input#demoInput.input-qty(aria-label='quantity' max='10' min='1' name='' type='number' value='1')
+                        //-         button.plus.is-form(onclick='increment()') +
+
+
+                                //- input.minus.is-form(type='button' value='-')
+                                //- input.input-qty(aria-label='quantity' max='10' min='1' name='' type='number' value='1')
+                                //- input.plus.is-form(type='button' value='+')
+                            
+                aside
+                    .bill 
+                        h3.thanh_toan THANH TOÁN
+                        .list_cart
+                            .bill_content Tổng Cộng:
+                                span#noship.money đ
+                            .bill_content Phí Vận Chuyển:
+                                span.money 10.000đ
+                        .tong_thanh_toan.bill_content Tổng Thanh Toán:
+                            span.money 210.000đ 
+                        a(href = "myshipment.html") 
+                            button.tc(type = 'button') TIẾP TỤC THANH TOÁN
+                    .voucher
+                        div
+                            h3
+                                i.fas.fa-ticket
+                                | VOUCHER
+                        div
+                            form
+                                input.coupon(type='text' name='Coupon' placeholder='Nhập mã Coupon')
+                                div
+                                    button.coupon(type='button') &Aacute;P D&#x1EE4;NG
+
+        include ../blocks/footer
+        script(src='./scripts/navbar.js' type='module')
+        script(src='./scripts/shoppingcart.js' type='module')

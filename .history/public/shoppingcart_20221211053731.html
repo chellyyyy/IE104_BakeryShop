@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Gi&#x1ECF; h&agrave;ng</title>
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <script src="scripts/input_cart.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <input id="check" type="checkbox" name="">
+      <div class="nav-left">
+        <div class="brand"><img class="brand-img" src="assets/logo.png" alt="">
+          <h1 class="brand-heading"><a href="homepage.html">Sun Cake</a></h1>
+        </div>
+      </div>
+      <div class="nav-center" id="navmid">
+        <ul class="menu-list">
+          <li class="menu-item">Thực đơn<i class="fa-solid fa-angle-down"></i>
+            <!-- <div class="sub-nav"></div>-->
+            <ul class="sub-nav-list">
+              <div class="menu-container">
+                <div class="menu-content">
+                  <ul class="menu-list-1">
+                    <li>Bánh mì</li>
+                    <li>Bánh trái cây</li>
+                    <li>Pastry &amp; Pie</li>
+                    <li>Macarons</li>
+                    <li>Cookie</li>
+                    <li>Sandwiches</li>
+                  </ul>
+                  <ul class="menu-list-2">
+                    <li>Donuts</li>
+                    <li>Cupcake</li>
+                    <li>Cloud Cake</li>
+                    <li>Buttercream Cake</li>
+                    <li>Piece Cake</li>
+                    <li>Roll Cake</li>
+                    <li>Brownie</li>
+                  </ul>
+                </div>
+                <div class="menu-img"><img src="https://www.tljus.com/wp-content/uploads/2022/11/Thanksgiving_PR-scaled.jpg">
+                  <div class="rectangle"></div><a href="menu.html">Xem tất cả</a>
+                  <!-- <hr>-->
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="aboutus.html">Giới thiệu</a></li>
+          <li class="menu-item">Liên hệ<i class="fa-solid fa-angle-down"></i>
+            <!-- <div class="sub-nav"></div>-->
+            <div class="sub-nav-list">
+              <div class="grid-container-contact">
+                <div class="grid-item-contact">
+                  <h1>Thông tin liên lạc</h1>
+                </div>
+                <div class="grid-item-contact">
+                  <p><i class="fa-solid fa-envelope"></i>sun_cake@gmail.com</p>
+                  <p><i class="fa-solid fa-phone"></i>0912345678</p>
+                </div>
+                <div class="grid-item-contact">
+                  <h1>Địa chỉ cửa hàng</h1>
+                </div>
+                <div class="grid-item-contact">
+                  <p><i class="fa-solid fa-location-dot"></i>Khu phố 6, P.Linh Trung, Tp.Thủ Đức, Tp.Hồ Chí Minh</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search" id="loginsearch">
+          <input class="input-search" type="text" placeholder="Tìm kiếm">
+          <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="personal" id="loginpage"><i class="fa-solid fa-user"></i>
+          <div class="sub-nav-list">
+            <div class="account"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Zj3MiSvzX1mJqYZsepbx_DQILWlJOKPqZ8m984Gu0-Z_Zv4OAJi5FLY4JJlEXlgLpjY&amp;usqp=CAU" alt="">
+              <p class="navlink" id="Username">Tên</p><a href="myshipment.html">
+                <p class="navlink" id="userinfo">Chỉnh sửa thông tin</p></a>
+              <div class="account_button">
+                <button class="log_out navlink">Đăng xuất</button>
+                <div class="log_in">
+                  <button class="navlink" id="loginbtn">Đăng nhập</button>
+                  <button class="navlink" id="signupbtn">Đăng ký</button>
+                  <button class="navlink" id="logoutbtn">Đăng xuất</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><a class="cart" id="logincart" href="shoppingcart.html"><i class="fa-solid fa-cart-shopping"></i><span class="amount" id="counter"></span></a>
+      </div>
+      <div class="hamburger-menu-container">
+        <div class="hamburger-menu">
+          <div></div>
+        </div>
+      </div>
+    </header>
+    <div class="container_pay">
+      <div class="content-header">
+        <h2>GIỎ HÀNG</h2>
+        <div class="under_line"></div>
+      </div>
+      <button class="btn btn-light" type="button" onclick="QUAY_LẠI_MUA_HÀNG()"><i class="fa-solid fa-chevron-left" style="margin-right: 5px;"></i>QUAY LẠI</button>
+      <script>
+        function QUAY_LẠI_MUA_HÀNG() {
+            history.back();
+        }
+      </script>
+      <main class="grid">
+        <section>
+          <ul id="containerCart">
+            <li class="main-product">
+              <div class="img-product"><img src="assets/Danish_Pastry.png"></div>
+              <div class="content-product">
+                <p><b>Danish Pastry</b></p>
+                <p><i class="fas fa-calendar-days"></i>04/11/2022</p>
+                <p><i class="fas fa-clock"></i>10 AM</p>
+                <p><i class="fas fa-file-pen"></i>Ghi chú</p>
+              </div>
+              <div class="buttons_added">
+                <button class="minus is-form" onclick="decrement()">-</button>
+                <input class="input-qty" id="demoInput" aria-label="quantity" max="10" min="1" name="" type="number" value="1">
+                <button class="plus is-form" onclick="increment()">+</button>
+              </div>
+              <div class="tien">
+                <div><span class="money">100.000&dstrok;</span></div>
+                <div>
+                  <h6>X&oacute;a<i class="fas fa-trash-can"></i></h6>
+                </div>
+              </div>
+            </li>
+            
+          </ul>
+        </section>
+        <aside>
+          <div class="bill"> 
+            <h3 class="thanh_toan">THANH TOÁN</h3>
+            <div class="list_cart">
+              <div class="bill_content">Tổng Cộng:<span class="money">200.000đ</span></div>
+              <div class="bill_content">Phí Vận Chuyển:<span class="money">10.000đ</span></div>
+            </div>
+            <div class="tong_thanh_toan bill_content">Tổng Thanh Toán:<span class="money">210.000đ </span></div><a href="myshipment.html"> 
+              <button class="tc" type="button">TIẾP TỤC THANH TOÁN</button></a>
+          </div>
+          <div class="voucher">
+            <div>
+              <h3><i class="fas fa-ticket"></i>VOUCHER</h3>
+            </div>
+            <div>
+              <form>
+                <input class="coupon" type="text" name="Coupon" placeholder="Nhập mã Coupon">
+                <div>
+                  <button class="coupon" type="button">&Aacute;P D&#x1EE4;NG</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </aside>
+      </main>
+    </div>
+    <footer>
+      <div class="footer_top"><a class="footer_top_left" href="homepage.html">
+          <div class="icon"><img src="assets/logo.png"></div><span>Sun Cake</span></a>
+        <div class="footer_top_right">
+          <ul>
+            <li> <a href="menu.html">THỰC ĐƠN</a></li>
+            <li><a href="aboutus.html">GIỚI THIỆU</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="footer_bottom_left"><i class="fa-regular fa-copyright"></i><span>2022 UIT</span></div>
+        <div class="footer_bottom_right">
+          <ul>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-github"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/navbar.js" type="module"></script>
+  </body>
+</html>

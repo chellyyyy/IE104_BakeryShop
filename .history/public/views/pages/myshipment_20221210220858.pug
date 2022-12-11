@@ -1,0 +1,74 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='stylesheet', href='./styles/styles.css')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css', integrity='sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==', crossorigin='anonymous', referrerpolicy='no-referrer')
+        //- link(href='https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira', rel='stylesheet')
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css')
+        title My Shipment
+    body
+        
+        include ../blocks/header
+        .container_pay
+            .content-header
+                h2 GIỎ HÀNG
+                div.under_line
+            include ../blocks/button_return
+
+            //- CONTENT MAIN
+            p Địa Chỉ Nhận Hàng:
+            #content.payment
+                section 
+                    
+                    ul 
+                        li.userinfo
+                            div
+                                p.content  Người nhận: 
+                                div.userdetail
+                                    span#Fullname Họ Và Tên
+                                p.content  Địa chỉ:
+                                div.userdetail
+                                    span.address Phường Linh Trung, Thủ Đức, Thành Phố Hồ Chí Minh
+                                p.content  SĐT: 
+                                div.userdetail
+                                    span.phone 09123456789  
+                            a(href = "#popup_address")
+                                button.button_inside THAY ĐỔI ĐỊA CHỈ           
+                    
+                aside
+                    .bill 
+                        h3.thanh_toan THANH TOÁN
+                        .list_cart
+                            .bill_content Tổng Cộng:
+                                span.money 200.000đ
+                            .bill_content Phí Vận Chuyển:
+                                span.money 10.000đ
+                        .tong_thanh_toan.bill_content Tổng Thanh Toán:
+                            span.money 210.000đ 
+                        a(href = "payment.html") 
+                            button.tc(type = 'button') TIẾP TỤC THANH TOÁN
+
+                //- POP UP
+                #popup_address.overlay
+                    .popup_content
+                        a.close(href='#') &times;
+                        .form_title
+                            h2 Điền thông tin địa chỉ bên dưới
+                        .form_input
+                            .input-box
+                                p Người nhận
+                                input(type='text' id='name_user' placeholder='SunCake')
+                            .input-box
+                                p Địa chỉ
+                                input(type='text' id='add_user' placeholder='Khu phố 6, P.Linh Trung, Tp.Thủ Đức, Tp.Hồ Chí Minh')
+                            .input-box
+                                p Số điện thoại
+                                input(type='number' id='phone_user' placeholder='09123456789')                         
+                            .form_button
+                                button.button-login#Isnbtn Hoàn tất
+        include ../blocks/footer
+        script(src='./scripts/myshipment.js' type='module')
+        

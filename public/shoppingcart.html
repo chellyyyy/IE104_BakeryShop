@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Gi&#x1ECF; h&agrave;ng</title>
-    <script src="https://kit.fontawesome.com/yourcode.js"></script>
-    <script src="scripts/input_cart.js"></script>
   </head>
   <body>
     <header id="header">
@@ -93,7 +91,7 @@
               </div>
             </div>
           </div>
-        </div><a class="cart" id="logincart" href="shoppingcart.html"><i class="fa-solid fa-cart-shopping"></i><span class="amount">1</span></a>
+        </div><a class="cart" id="logincart" href="shoppingcart.html"><i class="fa-solid fa-cart-shopping"></i><span class="amount" id="counter"></span></a>
       </div>
       <div class="hamburger-menu-container">
         <div class="hamburger-menu">
@@ -114,57 +112,16 @@
       </script>
       <main class="grid">
         <section>
-          <ul>
-            <li class="main-product">
-              <div class="img-product"><img src="assets/Danish_Pastry.png"></div>
-              <div class="content-product">
-                <p><b>Danish Pastry</b></p>
-                <p><i class="fas fa-calendar-days"></i>04/11/2022</p>
-                <p><i class="fas fa-clock"></i>10 AM</p>
-                <p><i class="fas fa-file-pen"></i>Ghi ch&uacute;</p>
-              </div>
-              <div class="buttons_added">
-                <button class="minus is-form" onclick="decrement()">-</button>
-                <input class="input-qty" id="demoInput" aria-label="quantity" max="10" min="1" name="" type="number" value="1">
-                <button class="plus is-form" onclick="increment()">+</button>
-              </div>
-              <div class="tien">
-                <div><span class="money">100.000&dstrok;</span></div>
-                <div>
-                  <h6>X&oacute;a<i class="fas fa-trash-can"></i></h6>
-                </div>
-              </div>
-            </li>
-            <li class="main-product">
-              <div class="img-product"><img src="../build/assets/Danish_Pastry.png"></div>
-              <div class="content-product">
-                <p><b>Danish Pastry</b></p>
-                <p><i class="fas fa-calendar-days"></i>04/11/2022</p>
-                <p><i class="fas fa-clock"></i>3 PM - 8 PM</p>
-                <p><i class="fas fa-file-pen"></i>Ghi ch&uacute;</p>
-              </div>
-              <div class="buttons_added">
-                <button class="minus is-form" onclick="decrement_2()">-</button>
-                <input class="input-qty" id="Input-2" aria-label="quantity" max="10" min="1" name="" type="number" value="1">
-                <button class="plus is-form" onclick="increment_2()">+</button>
-              </div>
-              <div class="tien">
-                <div><span class="money">100.000&dstrok;</span></div>
-                <div>
-                  <h6>X&oacute;a<i class="fas fa-trash-can"></i></h6>
-                </div>
-              </div>
-            </li>
-          </ul>
+          <ul id="containerCart"></ul>
         </section>
         <aside>
           <div class="bill"> 
             <h3 class="thanh_toan">THANH TOÁN</h3>
             <div class="list_cart">
-              <div class="bill_content">Tổng Cộng:<span class="money">200.000đ</span></div>
-              <div class="bill_content">Phí Vận Chuyển:<span class="money">10.000đ</span></div>
+              <div class="bill_content">Tổng Cộng:<span class="money" id="noship"></span></div>
+              <div class="bill_content">Phí Vận Chuyển:<span class="money">10000đ</span></div>
             </div>
-            <div class="tong_thanh_toan bill_content">Tổng Thanh Toán:<span class="money">210.000đ </span></div><a href="myshipment.html"> 
+            <div class="tong_thanh_toan bill_content">Tổng Thanh Toán:<span class="money" id="withship"></span></div><a href="myshipment.html"> 
               <button class="tc" type="button">TIẾP TỤC THANH TOÁN</button></a>
           </div>
           <div class="voucher">
@@ -206,5 +163,7 @@
         </div>
       </div>
     </footer>
+    <script src="./scripts/navbar.js" type="module"></script>
+    <script src="./scripts/shoppingcart.js" type="module"></script>
   </body>
 </html>

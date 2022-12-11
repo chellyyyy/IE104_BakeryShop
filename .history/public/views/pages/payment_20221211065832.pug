@@ -1,0 +1,134 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Gi&#x1ECF; h&agrave;ng
+  //<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css')
+  link(rel='stylesheet', href='./styles/styles.css')
+body
+    include ../blocks/header
+    .container_pay
+        .content-header
+            h2 GIỎ HÀNG
+            div.under_line
+        include ../blocks/button_return
+        //- button.btn.btn-light(style='opacity:0.7' type='button' onclick='QUAY_LẠI_MUA_HÀNG()')
+        //-     i.fa-solid.fa-chevron-left(style='margin-right: 5px;')
+        //-     | QUAY L&#x1EA0;I
+        //- script.
+        //-     function QUAY_LẠI_MUA_HÀNG() {
+        //-         history.back();
+        //-     }
+        p ch&#x1ECD;n h&igrave;nh th&#x1EE9;c thanh to&aacute;n
+        #content.payment
+            .content_main
+                .sidebar
+                    ul#sidebar-ct
+                        li.creddit.active
+                            i.fa-sharp.fa-solid.fa-credit-card
+                            | TH&#x1EBA; NG&Acirc;N H&Agrave;NG
+                        li.cash
+                            i.fa-solid.fa-sack-dollar
+                            | TI&#x1EC0;N M&#x1EB6;T
+                        li.wallet
+                            i.fa-solid.fa-wallet
+                            | V&Iacute; &Dstrok;I&#x1EC6;N T&#x1EEC;
+                        li.banking
+                            i.fa-solid.fa-building-columns
+                            | BANKING
+                .content-page
+                    #content-page1
+                        p.header-page TH&#x1EBA; NG&Acirc;N H&Agrave;NG
+                        input(type='text' placeholder='Số Thẻ')
+                        input(type='text' placeholder='Tiền Thẻ')
+                        .input_bt
+                            input(type='text' placeholder='Hạn Thẻ (MM/YY)')
+                            input(type='text' placeholder='CVV')
+                    #content-page2
+                        p.header-page TI&#x1EC0;N M&#x1EB6;T
+                        p(style='font-weight: 300;')
+                            | L&agrave; Ph&#x1B0;&#x1A1;ng Th&#x1EE9;c Thanh To&aacute;n B&#x1EB1;ng Ti&#x1EC1;n M&#x1EB7;t Tr&#x1EF1;c Ti&#x1EBF;p Khi Nh&#x1EAD;n
+                            | H&agrave;ng
+                        .img_none
+                    #content-page3
+                        p.header-page V&Iacute; &Dstrok;I&#x1EC6;N T&#x1EEC;
+                        .radio-gr
+                            input.checkbox(type='checkbox' name='vehicle1' value='HTML')
+                            label(for='html') Momo
+                            br
+                            input.checkbox.checkbox-last(type='checkbox' name='vehicle1' value='CSS')
+                            label(for='css') ZaloPay
+                            br
+                        p
+                            | Sau khi ho&agrave;n t&#x1EA5;t &dstrok;&#x1A1;n h&agrave;ng th&#x1EF1;c hi&#x1EC7;n chuy&#x1EC3;n s&#x1ED1; ti&#x1EC1;n t&#x1B0;&#x1A1;ng &#x1EE9;ng c&#x1EA7;n thanh to&aacute;n v&#x1EDB;i n&#x1ED9;i dung: SC #t&ecirc;n
+                            | ng&#x1B0;&#x1EDD;i nh&#x1EAD;n
+                        p Th&ocirc;ng tin t&agrave;i kho&#x1EA3;n:
+                        p S&#x1ED1; TK: 0912345678
+                        p Ch&#x1EE7; TK: CUA HANG SUN CAKE
+                        p.rs
+                            | Sau khi shop nh&#x1EAD;n &dstrok;&#x1B0;&#x1EE3;c s&#x1ED1; ti&#x1EC1;n chuy&#x1EC3;n kho&#x1EA3;n, ch&uacute;ng t&ocirc;i s&#x1EBD; ch&#x1EE7; &dstrok;&#x1ED9;ng li&ecirc;n h&#x1EC7; t&#x1EDB;i b&#x1EA1;n
+                            | trong th&#x1EDD;i gian s&#x1EDB;m nh&#x1EA5;t.
+                    #content-page4
+                        p.header-page T&Agrave;I KHO&#x1EA2;N NG&Acirc;N H&Agrave;NG
+                        p
+                            | Sau khi ho&agrave;n t&#x1EA5;t &dstrok;&#x1A1;n h&agrave;ng th&#x1EF1;c hi&#x1EC7;n chuy&#x1EC3;n s&#x1ED1; ti&#x1EC1;n t&#x1B0;&#x1A1;ng &#x1EE9;ng c&#x1EA7;n thanh to&aacute;n v&#x1EDB;i n&#x1ED9;i dung: SC #t&ecirc;n
+                            | ng&#x1B0;&#x1EDD;i nh&#x1EAD;n
+                        p Th&ocirc;ng tin t&agrave;i kho&#x1EA3;n:
+                        p Ng&acirc;n H&agrave;ng Vietcombank - SAI GON - TRU SO CN
+                        p S&#x1ED1; TK: 102633****
+                        p Ch&#x1EE7; TK: CUA HANG SUN CAKE
+                        p.rs
+                            | Sau khi shop nh&#x1EAD;n &dstrok;&#x1B0;&#x1EE3;c s&#x1ED1; ti&#x1EC1;n chuy&#x1EC3;n kho&#x1EA3;n, ch&uacute;ng t&ocirc;i s&#x1EBD; ch&#x1EE7; &dstrok;&#x1ED9;ng li&ecirc;n h&#x1EC7; t&#x1EDB;i b&#x1EA1;n
+                            | trong th&#x1EDD;i gian s&#x1EDB;m nh&#x1EA5;t.
+                    button.btn.btn-primary(type='button') THANH TO&Aacute;N
+            
+            .bill 
+                h3.thanh_toan THANH TOÁN
+                .list_cart
+                    .bill_content Tổng Cộng:
+                        span#noship.money 
+                    .bill_content Phí Vận Chuyển:
+                        span.money 10000đ
+                .tong_thanh_toan.bill_content Tổng Thanh Toán:
+                    span#withship.money 
+    .popup
+        img(src='assets/popup.jpg' alt='ERR')
+include ../blocks/footer
+script(src='./scripts/payment.js' type='module')
+//- script(src='../../build/scripts/main.js')
+script.
+    var indexInit = 0
+    document.querySelector("#sidebar-ct").querySelectorAll("li").forEach((item, index) => {
+        item.addEventListener("click", (e) => {
+            console.log(indexInit);
+            document.querySelector("#sidebar-ct").querySelectorAll("li")[indexInit].classList.remove("active")
+            item.classList.add("active");
+            console.log(index);
+            indexInit = index
+            Page(index)
+
+        })
+    })
+    const Page = (index) => {
+        const page = document.querySelectorAll(".content-page>div")
+        for (let i = 0; i <= 3; i++) {
+            page[i].classList.remove("hide")
+        }
+        document.querySelectorAll(".content-page>div")[index].classList.add("hide")
+
+    }
+    document.querySelector(".btn-primary").addEventListener("click", (e) => {
+        e.preventDefault()
+        document.querySelector(".popup").classList.add("show-popup")
+        window
+    })
+    document.querySelector(".popup").addEventListener("click", (e) => {
+        e.stopPropagation()
+        document.querySelector(".popup").classList.remove("show-popup")
+    })
+    Page(0)
+
+    

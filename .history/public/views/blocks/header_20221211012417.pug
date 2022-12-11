@@ -1,0 +1,84 @@
+header#header
+  input#check(type='checkbox' name='')
+  .nav-left
+    .brand
+      img.brand-img(src='assets/logo.png' alt='')
+      h1.brand-heading
+        a(href='homepage.html') Sun Cake
+  .nav-center(id='navmid')
+    ul.menu-list
+      li.menu-item
+        | Thực đơn
+        i.fa-solid.fa-angle-down
+        // <div class="sub-nav"></div>
+        ul.sub-nav-list
+          .menu-container
+            .menu-content
+              ul.menu-list-1
+                li Bánh mì
+                li Bánh trái cây
+                li Pastry &amp; Pie
+                li Macarons
+                li Cookie
+                li Sandwiches
+              ul.menu-list-2
+                li Donuts
+                li Cupcake
+                li Cloud Cake
+                li Buttercream Cake
+                li Piece Cake
+                li Roll Cake
+                li Brownie
+            .menu-img
+              img(src='https://www.tljus.com/wp-content/uploads/2022/11/Thanksgiving_PR-scaled.jpg')
+              .rectangle
+              a(href='menu.html') Xem tất cả
+              // <hr>
+      li.menu-item
+        a(href='aboutus.html') Giới thiệu
+      li.menu-item
+        | Liên hệ
+        i.fa-solid.fa-angle-down
+        // <div class="sub-nav"></div>
+        .sub-nav-list
+          .grid-container-contact
+            .grid-item-contact
+              h1 Thông tin liên lạc
+            .grid-item-contact
+              p
+                i.fa-solid.fa-envelope
+                | sun_cake@gmail.com
+              p
+                i.fa-solid.fa-phone
+                | 0912345678
+            .grid-item-contact
+              h1 Địa chỉ cửa hàng
+            .grid-item-contact
+              p
+                i.fa-solid.fa-location-dot
+                | Khu phố 6, P.Linh Trung, Tp.Thủ Đức, Tp.Hồ Chí Minh
+  .nav-right
+    .search(id='loginsearch')
+      input.input-search(type='text' placeholder='Tìm kiếm')
+      .search-icon
+        i.fa-solid.fa-magnifying-glass
+    .personal(id='loginpage')
+      i.fa-solid.fa-user
+      .sub-nav-list
+          .account
+            img(src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Zj3MiSvzX1mJqYZsepbx_DQILWlJOKPqZ8m984Gu0-Z_Zv4OAJi5FLY4JJlEXlgLpjY&usqp=CAU", alt="")
+            p.navlink(id='Username') Tên
+            a(href='myshipment.html')
+              p.navlink(id='userinfo') Chỉnh sửa thông tin
+            .account_button
+              button.log_out.navlink Đăng xuất
+              .log_in
+                button.navlink(id='loginbtn') Đăng nhập
+                button.navlink(id='signupbtn') Đăng ký
+                button.navlink(id='logoutbtn') Đăng xuất
+    a.cart(id='logincart' href='shoppingcart.html')
+      i.fa-solid.fa-cart-shopping
+      span.amount#counter 1
+  .hamburger-menu-container
+    .hamburger-menu
+      div

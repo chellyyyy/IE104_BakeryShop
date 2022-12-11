@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <title>My Shipment</title>
   </head>
   <body>
@@ -92,7 +93,7 @@
               </div>
             </div>
           </div>
-        </div><a class="cart" id="logincart" href="shoppingcart.html"><i class="fa-solid fa-cart-shopping"></i><span class="amount">1</span></a>
+        </div><a class="cart" id="logincart" href="shoppingcart.html"><i class="fa-solid fa-cart-shopping"></i><span class="amount" id="counter"></span></a>
       </div>
       <div class="hamburger-menu-container">
         <div class="hamburger-menu">
@@ -118,11 +119,11 @@
             <li class="userinfo">
               <div>
                 <p class="content"> Người nhận: </p>
-                <div class="userdetail"><span>Họ Và Tên</span></div>
+                <div class="userdetail"><span id="Userfullname">Chưa thêm tên người nhận</span></div>
                 <p class="content"> Địa chỉ:</p>
-                <div class="userdetail"><span>Phường Linh Trung, Thủ Đức, Thành Phố Hồ Chí Minh</span></div>
+                <div class="userdetail"><span id="Useraddress">Chưa thêm địa chỉ</span></div>
                 <p class="content"> SĐT: </p>
-                <div class="userdetail"><span>09123456789  </span></div>
+                <div class="userdetail"><span id="Userphone">Chưa thêm số điện thoại</span></div>
               </div><a href="#popup_address">
                 <button class="button_inside">THAY ĐỔI ĐỊA CHỈ           </button></a>
             </li>
@@ -132,10 +133,10 @@
           <div class="bill"> 
             <h3 class="thanh_toan">THANH TOÁN</h3>
             <div class="list_cart">
-              <div class="bill_content">Tổng Cộng:<span class="money">200.000đ</span></div>
-              <div class="bill_content">Phí Vận Chuyển:<span class="money">10.000đ</span></div>
+              <div class="bill_content">Tổng Cộng:<span class="money" id="noship">200.000đ</span></div>
+              <div class="bill_content">Phí Vận Chuyển:<span class="money">10000đ</span></div>
             </div>
-            <div class="tong_thanh_toan bill_content">Tổng Thanh Toán:<span class="money">210.000đ </span></div><a href="payment.html"> 
+            <div class="tong_thanh_toan bill_content">Tổng Thanh Toán:<span class="money" id="withship"></span></div><a href="payment.html"> 
               <button class="tc" type="button">TIẾP TỤC THANH TOÁN</button></a>
           </div>
         </aside>
@@ -188,5 +189,8 @@
         </div>
       </div>
     </footer>
+    <script src="./scripts/myshipment.js" type="module"></script>
+    <script src="./scripts/navbar.js" type="module"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   </body>
 </html>
