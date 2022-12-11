@@ -2663,6 +2663,14 @@ li {
   text-transform: capitalize;
 }
 
+.incrbtn {
+  width: 55px;
+  height: 52px;
+  border-radius: 4px;
+  font-size: 25px;
+  padding-left: 15px;
+}
+
 @media only screen and (max-width: 414px) {
   .container-menu #head h2 {
     font-size: 25px;

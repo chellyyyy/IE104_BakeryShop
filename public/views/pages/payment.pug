@@ -89,14 +89,16 @@ body
                 h3.thanh_toan THANH TOÁN
                 .list_cart
                     .bill_content Tổng Cộng:
-                        span.money 200.000đ
+                        span#noship.money 
                     .bill_content Phí Vận Chuyển:
-                        span.money 10.000đ
+                        span.money 10000đ
                 .tong_thanh_toan.bill_content Tổng Thanh Toán:
-                    span.money 210.000đ
+                    span#withship.money 
     .popup
         img(src='assets/popup.jpg' alt='ERR')
 include ../blocks/footer
+script(src='./scripts/navbar.js' type='module')
+script(src='./scripts/payment.js' type='module')
 //- script(src='../../build/scripts/main.js')
 script.
     var indexInit = 0
@@ -122,9 +124,13 @@ script.
     document.querySelector(".btn-primary").addEventListener("click", (e) => {
         e.preventDefault()
         document.querySelector(".popup").classList.add("show-popup")
+        
     })
     document.querySelector(".popup").addEventListener("click", (e) => {
         e.stopPropagation()
         document.querySelector(".popup").classList.remove("show-popup")
+        
     })
     Page(0)
+
+    
