@@ -188,7 +188,8 @@
       </div>
     </div>
   </div>
-  <div class="popup"><img src="assets/popup.jpg" alt="ERR"></div>
+  <div class="popup"><a class="popup-content" href="homepage.html"><i class="fa-regular fa-circle-check"></i>
+      <p>Thành công</p></a></div>
 </body>
 <footer>
   <div class="footer_top"><a class="footer_top_left" href="homepage.html">
@@ -241,10 +242,10 @@
       document.querySelector(".popup").classList.add("show-popup")
       
   })
-  document.querySelector(".popup").addEventListener("click", (e) => {
-      e.stopPropagation()
-      document.querySelector(".popup").classList.remove("show-popup")
+  //- document.querySelector(".popup").addEventListener("click", (e) => {
+  //-     e.stopPropagation()
+  //-     document.querySelector(".popup").classList.remove("show-popup")
       
-  })
+  //- })
   Page(0)
 </script>

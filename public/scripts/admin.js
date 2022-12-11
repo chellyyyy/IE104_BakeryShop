@@ -57,7 +57,10 @@ get(child(dbref, `UserList/`))
           <p id = "username">${e.username}</p>
         </td>
         <td id = "email">${e.email}</td>
-        <td><i class = "bx bx-dots-vertical-rounded"></i></td>
+        <td>
+            <a href = "#popup_user"><i class = "bx bxs-user-detail"></i></a>
+            <a href = "#popup_bill"><i class='bx bxs-cart-alt' ></i></a>
+        </td>
       </tr>
       `         
     })

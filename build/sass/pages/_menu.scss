@@ -35,6 +35,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
@@ -70,8 +71,13 @@ li {
     height: 100%;
     object-fit: cover;
 }
+#product .title-price {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #000000;
+}
 #product .title-price p {
-    width: max-content;
     margin-top: 10px;
     a {
         color: black;
@@ -129,7 +135,7 @@ li {
     justify-content: center;
 }
 
-.item>.img {
+.item .img {
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 01px 1px 2px rgb(158, 158, 158);
@@ -263,7 +269,7 @@ li {
     }
     .product-all .product-2 h1 {
         text-transform: uppercase;
-        padding: 1em 0;
+        margin: 1em 0;
         
         /* Danish Pastry */
         font-weight: 500;
@@ -281,13 +287,15 @@ li {
         display: flex;
         align-items: center;
         // letter-spacing: 0.055em;
-        padding-bottom: 1em;
+        margin-bottom: 1em;
         text-align: justify;
         text-justify: inter-word;
     }
     .product-all .Button{
         display: flex;
         gap: 1em;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     .Button .button-1 {
         /* Auto layout */
@@ -297,21 +305,24 @@ li {
         // padding: 14px 20px;
         // gap: 10%;
       
-        height: 55px;
+        // height: 100px;
       
         background: #FFFFFF;
         border: 1px solid #4B6587;
         border-radius: 5px;
-      }
-      .Button .button-1 button,
-      .Button .button-1 #demoInput {
+        font-size: 20px;
+        padding: 3% 0 3% 3%;
+        width: 15%;
+    }
+    .Button .button-1 button,
+    .Button .button-1 #demoInput {
         border: none;
         background-color: white;
         justify-content: center;
         align-content: center;
-      }
-      .Button .button-2 {
-        height: 55px;
+    }
+    .Button .button-2 {
+        // height: 55px;
         background: #4B6587;
         border-radius: 5px;
       
@@ -319,22 +330,25 @@ li {
         color: #FFFFFF;
         font-weight: 500;
         font-size: 20px;
-        line-height: 30px;
+        // line-height: 30px;
       
-        padding: 0 20px;
+        padding: 3%;
         width: fit-content;
         text-transform: capitalize;
-      }
+        i {
+            font-size: 20px;
+        }
+    }
 }
 
-.incrbtn {
-    // background: red;
-    width: 55px;
-    height: 52px;
-    border-radius: 4px;
-    font-size: 25px;
-    padding-left: 15px;
-}
+// .incrbtn {
+//     // background: red;
+//     width: 55px;
+//     // height: 52px;
+//     border-radius: 4px;
+//     font-size: 25px;
+//     padding-left: 15px;
+// }
 // Ipad Mini & Ipad Air
 @media (max-width: 920px) {
     
@@ -366,7 +380,7 @@ li {
       padding: 2% 0;
     }
     .product-all .product-2 p {
-      font-size: 15px;
+      font-size: 20px !important;
     }
   }
   
@@ -378,26 +392,22 @@ li {
     }
     .Button .button-1,
     .Button .button-2 {
-      height: 30px;
-      font-size: 15px;
+        font-size: 15px !important;
+        i {
+            font-size: 15px !important;
+        }
     }
     .product-all .product-2 h1 {
-      font-size: 20px;
+      font-size: 20px !important;
+      line-height: normal !important;
     }
-    .product-all .product-2 p {
-      display: none;
+    .product-all .product-2 .des {
+      display: none !important;
     }
-    .product-all .Button {
-      display: block;
-      margin-top: 10%;
-    }
-    .Button .button-1 {
-      width: max-content;
-      margin-bottom: 5%;
-    }
-    .Button .button-2 {
-      width: 96.781px;
-    }
+    // .product-all .Button {
+    //   display: block;
+    //   margin-top: 10%;
+    // }
     .button-1 .is-form,
     .button-1 .input-qty {
       height: initial;

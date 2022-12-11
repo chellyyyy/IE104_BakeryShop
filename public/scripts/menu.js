@@ -45,10 +45,10 @@ get(child(dbref, `TheCakes/`))
     cakeData.forEach((e)=>{
       document.getElementById('paginated-list').innerHTML += 
       `
-      <li class="item">
+      <li class="item"><a id="Cake${e.ID}" href="#more_info-${e.ID}">
         <div class="img"><img id="URL${e.ID}"src="${e.PicOfCake}" alt="${e.NameOfCake}"></div>
-        <div class="title-price" style="display: flex; justify-content: space-between; align-items: center">
-          <p class="title" style="font-weight: 600; width: 50%;"> <a id="Cake${e.ID}" href="#more_info-${e.ID}">${e.NameOfCake}</a></p>
+        <div class="title-price">
+          <p class="title" style="font-weight: 600;">${e.NameOfCake}</p>
           <p class="price" id="price${e.ID}" style="font-weight: 700; font-size:20px">${e.PriceOfCake}.000&dstrok;</p>
         </div>
         <div class="overlay" id="more_info-${e.ID}">
@@ -58,21 +58,17 @@ get(child(dbref, `TheCakes/`))
               <div class="product-2">
                 <div class="Information">
                   <h1>${e.NameOfCake}</h1>
-                  <p>${e.Descript}</p>
+                  <p class = "des">${e.Descript}</p>
                   <p>${e.PriceOfCake}.000&dstrok;</p>
                 </div>
                 <div class="Button">
-                  <div class="button-1">
-                    
-                    <input class="incrbtn" id="Input${e.ID}" type="number" min="1" value="1">
-                    
-                  </div>
+                  <input class="incrbtn button-1" id="Input${e.ID}" type="number" min="1" value="1">
                   <button id="${e.ID}" class="button-2"><i class="fa-solid fa-cart-shopping"></i><span>Thêm vào giỏ hàng</span></button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </div></a>
       </li>
       `         
     })

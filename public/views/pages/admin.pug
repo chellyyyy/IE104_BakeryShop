@@ -177,9 +177,8 @@ body
                         #popup_product.overlay
                             .popup_content
                                 a.close(href='#') &times;
-                                .form_title
-                                    h2 Điền thông tin sản phẩm bên dưới
                                 .form_input
+                                    h2 Điền thông tin sản phẩm bên dưới
                                     .input-box
                                         p ID
                                         input(type='number' id='id_pro')
@@ -203,17 +202,50 @@ body
                         #popup_del.overlay
                             .popup_content
                                 //- a.close(href='#') &times;
-                                .form_title
+                                .form_input
                                     h2 Xóa sản phẩm
-                                .btncontainer
                                     .form_button
                                         a(href='#')
-                                            button.button-confirm#Yesbtn Đồng ý
-                                    .form_button
+                                            button.button-login#Yesbtn Đồng ý
                                         a(href='#')
-                                            button.button-confirm#Nobtn Từ chối
-                                            
-                                        //- button.button-login(id='Insbtn') Thêm
+                                            button.button-login#Nobtn Từ chối
+
+                        #popup_user.overlay
+                            .popup_content
+                                a.close(href='#') &times;
+                                .form_input
+                                    h2 Thông tin khác hàng
+                                    .input-box
+                                        p Tên
+                                        input(type='text' id='')
+                                    .input-box
+                                        p Email
+                                        input(type='text' id='')
+                                    .input-box
+                                        p Địa chỉ
+                                        input(type='text' id='')
+                                    .input-box
+                                        p Số điện thoại
+                                        input(type='number' id='')
+
+                        #popup_bill.overlay
+                            .popup_content
+                                a.close(href='#') &times;
+                                .form_input
+                                    h2 Thông tin đơn hàng
+                                    .input-box
+                                        p Tên bánh
+                                        input(type='text' id='')
+                                    .input-box
+                                        p Số lượng
+                                        input(type='number' id='')
+                                    .input-box
+                                        p Số tiền
+                                        input(type='number' id='')
+                                    .form_button
+                                        button.button-login#Isnbtn Xóa
+                                    
+
         script(src='./scripts/admin.js' type='module')
         //- script(src='./scripts/addproduct.js' type='module')
             // MAIN

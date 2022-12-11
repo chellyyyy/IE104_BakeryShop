@@ -95,7 +95,9 @@ body
                 .tong_thanh_toan.bill_content Tổng Thanh Toán:
                     span#withship.money 
     .popup
-        img(src='assets/popup.jpg' alt='ERR')
+        a.popup-content(href = "homepage.html")
+            i.fa-regular.fa-circle-check
+            p Thành công
 include ../blocks/footer
 script(src='./scripts/navbar.js' type='module')
 script(src='./scripts/payment.js' type='module')
@@ -126,11 +128,11 @@ script.
         document.querySelector(".popup").classList.add("show-popup")
         
     })
-    document.querySelector(".popup").addEventListener("click", (e) => {
-        e.stopPropagation()
-        document.querySelector(".popup").classList.remove("show-popup")
+    //- document.querySelector(".popup").addEventListener("click", (e) => {
+    //-     e.stopPropagation()
+    //-     document.querySelector(".popup").classList.remove("show-popup")
         
-    })
+    //- })
     Page(0)
 
     
