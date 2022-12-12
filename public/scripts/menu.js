@@ -48,8 +48,8 @@ get(child(dbref, `TheCakes/`))
       <li class="item"><a id="Cake${e.ID}" href="#more_info-${e.ID}">
         <div class="img"><img id="URL${e.ID}"src="${e.PicOfCake}" alt="${e.NameOfCake}"></div>
         <div class="title-price">
-          <p class="title" style="font-weight: 600;">${e.NameOfCake}</p>
-          <p class="price" id="price${e.ID}" style="font-weight: 700; font-size:20px">${e.PriceOfCake}.000&dstrok;</p>
+          <p class="title">${e.NameOfCake}</p>
+          <p class="price" id="price${e.ID}">${e.PriceOfCake}.000&dstrok;</p>
         </div>
         <div class="overlay" id="more_info-${e.ID}">
           <div class="popup_content"><a class="close" href="#">&times;</a>
@@ -59,7 +59,7 @@ get(child(dbref, `TheCakes/`))
                 <div class="Information">
                   <h1>${e.NameOfCake}</h1>
                   <p class = "des">${e.Descript}</p>
-                  <p>${e.PriceOfCake}.000&dstrok;</p>
+                  <p class="price" style = "font-weight: 700;">${e.PriceOfCake}.000&dstrok;</p>
                 </div>
                 <div class="Button">
                   <input class="incrbtn button-1" id="Input${e.ID}" type="number" min="1" value="1">

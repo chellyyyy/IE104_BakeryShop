@@ -79,12 +79,16 @@ li {
 }
 #product .title-price p {
     margin-top: 10px;
+    font-size: 20px;
+    &.price {
+        font-weight: 700;
+    }
     a {
         color: black;
         text-transform: capitalize;
-    }
-    a:hover {
-        color: #4B6587;
+        &:hover {
+            color: #4B6587;
+        }
     }
 }
 
@@ -269,20 +273,20 @@ li {
     }
     .product-all .product-2 h1 {
         text-transform: uppercase;
-        margin: 1em 0;
+        margin: 0 0 1em;
         
         /* Danish Pastry */
         font-weight: 500;
-        font-size: 36px;
-        line-height: 44px;
+        font-size: 30px;
+        line-height: 40px;
         /* identical to box height */
-        display: flex;
+        // display: flex;
         letter-spacing: 0.055em;
         }
         .product-all .product-2 p {
         /* Thông tin bổ sung */
         font-weight: 400;
-        font-size: 24px;
+        font-size: 20px;
         // line-height: 29px;
         display: flex;
         align-items: center;
@@ -359,8 +363,8 @@ li {
     .container-menu #head h2 {
         font-size: 25px;
     }
-    #product .title-price p.price {
-        display: none;
+    #product .title-price p {
+        font-size: 12px;
     }
     .item .icon,
     .icon > span,
@@ -375,17 +379,14 @@ li {
     .Button .button-2 > span {
       display: none;
     }
-    .product-all .product-2 h1 {
-      font-size: 25px;
-      padding: 2% 0;
-    }
-    .product-all .product-2 p {
-      font-size: 20px !important;
-    }
+    // .product-all .product-2 h1 {
+    //   font-size: 25px;
+    //   padding: 2% 0;
+    // }
   }
   
   // Smartph30px
-  @media only screen and (max-width: 414px) {
+@media only screen and (max-width: 414px) {
     .prev, .next {font-size: 11px}
     .product-all {
       grid-template-columns: 50% 50%;
@@ -398,11 +399,15 @@ li {
         }
     }
     .product-all .product-2 h1 {
-      font-size: 20px !important;
+      font-size: 15px !important;
       line-height: normal !important;
+      margin: 0 25px 0 0 !important;
     }
     .product-all .product-2 .des {
       display: none !important;
+    }
+    .product-all .product-2 p {
+        font-size: 12px !important;
     }
     // .product-all .Button {
     //   display: block;
@@ -412,4 +417,4 @@ li {
     .button-1 .input-qty {
       height: initial;
     }
-  }
+}

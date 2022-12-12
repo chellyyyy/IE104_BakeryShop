@@ -74,7 +74,7 @@ button.gh {
 
     /* quay lại MUA hàng */
     font-weight: 300;
-    font-size: 16.2px;
+    // font-size: 16.2px;
     line-height: 20px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -88,12 +88,13 @@ button.gh {
 }
 
 .content {
-    font-weight: 200;
-    font-size: 25px;
+    // font-weight: 200;
+    font-size: 20px;
     line-height: 40px;
+    font-weight: 700;
     /* identical to box height, or 137% */
     letter-spacing: 0.06em;
-    text-transform: capitalize;
+    text-transform: uppercase;
 
 }
 
@@ -271,6 +272,7 @@ div.tien {
     .popup_content h2 {
         font-weight: 500;
         font-size: 18px;
+        margin-right: 20px;
     }
     .popup_content .close {
         position: absolute;
@@ -375,6 +377,8 @@ div.tien {
         grid-template-rows: auto;
         // transform: translateX(-3%);
     }
-
+    .container_pay .popup_content {
+        width: 80%;
+    }
     
 }

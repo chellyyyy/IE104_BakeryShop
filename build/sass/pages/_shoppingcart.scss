@@ -358,16 +358,17 @@ li.main-product div.img {
 @media only screen and (max-width: 820px){
     main.grid {
         margin-top: 5%;
+        justify-content: center;
         p {
             margin-bottom: 10%;
         }
 
-        .main-product {
-            span.money {
-                margin-top: 5%;
-                margin-bottom: 30%;
-            }
-        }
+        // .main-product {
+        //     span.money {
+        //         margin-top: 5%;
+        //         margin-bottom: 30%;
+        //     }
+        // }
 
     }
     .container_pay {
@@ -381,7 +382,7 @@ li.main-product div.img {
     main.grid {
         grid-template-columns: none;
         grid-template-rows: auto;
-        transform: translateX(-3%);
+        // transform: translateX(-3%);
     }
 
     .container_pay {
@@ -391,16 +392,16 @@ li.main-product div.img {
         margin-bottom: 10px;
     }
 
-    span.money {
-        position: relative;
-        left: 10%;
-        margin: 6px 0 55px 10px;
-        // font-size: 16px;
-    }
+    // span.money {
+    //     position: relative;
+    //     left: 10%;
+    //     margin: 6px 0 55px 10px;
+    //     // font-size: 16px;
+    // }
 
-    .bill_content span.money {
-        left: 1px;
-    }
+    // .bill_content span.money {
+    //     left: 1px;
+    // }
 
     div.voucher {
         margin-bottom: 3%;
