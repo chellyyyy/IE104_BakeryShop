@@ -74,93 +74,48 @@
               <tbody id="account"></tbody>
             </table>
           </div>
-          <div class="todo">
+          <div class="todo" id="todo">
             <div class="head">
               <h3>Thông tin sản phẩm</h3><a class="button" href="#popup_product"><i class="bx bx-plus"></i></a>
             </div>
             <ul class="todo-list" id="product"></ul>
-            <div class="overlay" id="popup_product">
-              <div class="popup_content"><a class="close" href="#">&times;</a>
-                <div class="form_input">
-                  <h2>Điền thông tin sản phẩm bên dưới</h2>
-                  <div class="input-box">
-                    <p>ID</p>
-                    <input type="number" id="id_pro">
-                  </div>
-                  <div class="input-box">
-                    <p>Tên</p>
-                    <input type="text" id="name_pro" placeholder="Bánh">
-                  </div>
-                  <div class="input-box">
-                    <p>Giá</p>
-                    <input type="number" id="price_pro" placeholder="50">
-                  </div>
-                  <div class="input-box">
-                    <p>Hình ảnh</p>
-                    <input type="text" id="pic_pro" placeholder="https://...">
-                  </div>
-                  <div class="input-box">
-                    <p>Mô tả</p>
-                    <input type="text" id="desc_pro">
-                  </div>
-                  <div class="form_button">
-                    <button class="button-login" id="Isnbtn">Thêm</button>
-                  </div>
-                </div>
+          </div>
+          <div class="overlay" id="popup_del">
+            <div class="popup_content">
+              <div class="form_input">
+                <h2>Xóa sản phẩm</h2>
+                <div class="form_button"><a href="#">
+                    <button class="button-login" id="Yesbtn">Đồng ý</button></a><a href="#">
+                    <button class="button-login" id="Nobtn">Từ chối</button></a></div>
               </div>
             </div>
-            <div class="overlay" id="popup_del">
-              <div class="popup_content">
-                <div class="form_input">
-                  <h2>Xóa sản phẩm</h2>
-                  <div class="form_button"><a href="#">
-                      <button class="button-login" id="Yesbtn">Đồng ý</button></a><a href="#">
-                      <button class="button-login" id="Nobtn">Từ chối</button></a></div>
+          </div>
+          <div class="overlay" id="popup_product">
+            <div class="popup_content"><a class="close" href="#">&times;</a>
+              <div class="form_input">
+                <h2>Điền thông tin sản phẩm bên dưới</h2>
+                <div class="input-box">
+                  <p>ID</p>
+                  <input type="number" id="id_pro">
                 </div>
-              </div>
-            </div>
-            <div class="overlay" id="popup_user">
-              <div class="popup_content"><a class="close" href="#">&times;</a>
-                <div class="form_input">
-                  <h2>Thông tin khác hàng</h2>
-                  <div class="input-box">
-                    <p>Tên</p>
-                    <input type="text" id="">
-                  </div>
-                  <div class="input-box">
-                    <p>Email</p>
-                    <input type="text" id="">
-                  </div>
-                  <div class="input-box">
-                    <p>Địa chỉ</p>
-                    <input type="text" id="">
-                  </div>
-                  <div class="input-box">
-                    <p>Số điện thoại</p>
-                    <input type="number" id="">
-                  </div>
+                <div class="input-box">
+                  <p>Tên</p>
+                  <input type="text" id="name_pro" placeholder="Bánh">
                 </div>
-              </div>
-            </div>
-            <div class="overlay" id="popup_bill">
-              <div class="popup_content"><a class="close" href="#">&times;</a>
-                <div class="form_input">
-                  <h2>Thông tin đơn hàng</h2>
-                  <div class="input-box">
-                    <p>Tên bánh</p>
-                    <input type="text" id="">
-                  </div>
-                  <div class="input-box">
-                    <p>Số lượng</p>
-                    <input type="number" id="">
-                  </div>
-                  <div class="input-box">
-                    <p>Số tiền</p>
-                    <input type="number" id="">
-                  </div>
-                  <div class="form_button">
-                    <button class="button-login" id="Isnbtn">Xóa</button>
-                  </div>
+                <div class="input-box">
+                  <p>Giá</p>
+                  <input type="number" id="price_pro" placeholder="50">
+                </div>
+                <div class="input-box">
+                  <p>Hình ảnh</p>
+                  <input type="text" id="pic_pro" placeholder="https://...">
+                </div>
+                <div class="input-box">
+                  <p>Mô tả</p>
+                  <input type="text" id="desc_pro">
+                </div>
+                <div class="form_button">
+                  <button class="button-login" id="Isnbtn">Thêm</button>
                 </div>
               </div>
             </div>

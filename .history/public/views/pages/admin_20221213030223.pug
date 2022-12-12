@@ -1,0 +1,273 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  // Boxicons
+  link(href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet')
+  // My CSS
+  link(rel='stylesheet' href='./styles/styles.css')
+    //- script(src='../build/scripts/addproduct.js')
+  
+  script(src='https://kit.fontawesome.com/64d58efce2.js' crossorigin='anonymous')
+  title Admin SunCake
+body
+    #admin
+        // SIDEBAR
+        section#sidebar
+            a.brand(href='#')
+                i.bx.bxs-smile
+                span.text Admin
+            ul.side-menu.top
+                li.active
+                    a(href='#')
+                        i.bx.bxs-dashboard
+                        span.text Dashboard
+                li
+                    a(href='homepage.html')
+                        i.bx.bxs-cake
+                        span.text Trang chủ
+                //- li
+                //-     a(href='#')
+                //-         i.bx.bxs-doughnut-chart
+                //-         span.text Thống kê
+                //- li
+                //-     a(href='#')
+                //-         i.bx.bxs-message-dots
+                //-         span.text Tin nhắn
+                //- li
+                //-     a(href='#')
+                //-         i.bx.bxs-group
+                //-         span.text Khách hàng
+            ul.side-menu.bottom
+                li
+                    a(href='#')
+                        i.bx.bxs-cog
+                        span.text Cài đặt
+                li#adminLogout
+                    a.logout(href='#')
+                        i.bx.bxs-log-out-circle
+                        span.text Đăng xuất
+        // SIDEBAR
+        // CONTENT
+        section#content
+            // NAVBAR
+            nav
+                //- i.bx.bx-menu
+                //- a.nav-link(href='#') Categories
+                form(action='#')
+                    .form-input
+                            input(type='search' placeholder='Tìm kiếm...')
+                            button#test.search-btn(type='submit')
+                                i.bx.bx-search
+                //- input#switch-mode(type='checkbox' hidden='')
+                //- label.switch-mode(for='switch-mode')
+                //- a.notification(href='#')
+                //-     i.bx.bxs-bell
+                //-     span.num 8
+                a.profile(href='#')
+                    img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Zj3MiSvzX1mJqYZsepbx_DQILWlJOKPqZ8m984Gu0-Z_Zv4OAJi5FLY4JJlEXlgLpjY&usqp=CAU')
+            // NAVBAR
+            // MAIN
+            main
+                .head-title
+                    .left
+                        h1 Dashboard
+                        ul.breadcrumb
+                            li
+                                a(href='#') Dashboard
+                            li
+                                i.bx.bx-chevron-right
+                            li
+                                a.active(href='#') Home
+                    //- a.btn-download(href='#')
+                    //-     i.bx.bxs-cloud-download
+                    //-     span.text Download PDF
+                ul.box-info
+                    li
+                        i.bx.bxs-calendar-check
+                        span.text
+                            h3 1020
+                            p Đơn hàng
+                    li
+                        i.bx.bxs-group
+                        span.text
+                            h3 2834
+                            p Khách hàng
+                    li
+                        i.bx.bxs-dollar-circle
+                        span.text
+                            h3 2 tỷ VNĐ
+                            p Lợi nhuận
+                .table-data
+                    .order
+                        .head
+                            h3 Thông tin người dùng
+                            //- button#Search
+                            i.bx.bx-search
+                            //- i.bx.bx-filter
+                        table
+                            thead
+                                tr
+                                    th Người dùng
+                                    th Email
+                                    th Chi tiết
+                            tbody#account
+                                //- tr
+                                //-     td
+                                //-         //- img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Zj3MiSvzX1mJqYZsepbx_DQILWlJOKPqZ8m984Gu0-Z_Zv4OAJi5FLY4JJlEXlgLpjY&usqp=CAU')
+                                //-         p John Doe
+                                //-     td 01-10-2021
+                                //-     td
+                                //-         //- span.status.completed Completed
+                                //-         i.bx.bx-dots-vertical-rounded
+                                //- tr
+                                //-     td
+                                //-         //- img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Zj3MiSvzX1mJqYZsepbx_DQILWlJOKPqZ8m984Gu0-Z_Zv4OAJi5FLY4JJlEXlgLpjY&usqp=CAU')
+                                //-         p John Doe
+                                //-     td 01-10-2021
+                                //-     td
+                                //-         span.status.pending Pending
+                                //- tr
+                                //-     td
+                                //-         //- img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Zj3MiSvzX1mJqYZsepbx_DQILWlJOKPqZ8m984Gu0-Z_Zv4OAJi5FLY4JJlEXlgLpjY&usqp=CAU')
+                                //-         p John Doe
+                                //-     td 01-10-2021
+                                //-     td
+                                //-         span.status.process Process
+                                //- tr
+                                //-     td
+                                //-         //- img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Zj3MiSvzX1mJqYZsepbx_DQILWlJOKPqZ8m984Gu0-Z_Zv4OAJi5FLY4JJlEXlgLpjY&usqp=CAU')
+                                //-         p John Doe
+                                //-     td 01-10-2021
+                                //-     td
+                                //-         span.status.pending Pending
+                                //- tr
+                                //-     td
+                                //-         //- img(src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Zj3MiSvzX1mJqYZsepbx_DQILWlJOKPqZ8m984Gu0-Z_Zv4OAJi5FLY4JJlEXlgLpjY&usqp=CAU')
+                                //-         p John Doe
+                                //-     td 01-10-2021
+                                //-     td
+                                //-         span.status.completed Completed
+                    .todo#todo
+                        .head
+                            h3 Thông tin sản phẩm
+                            a.button(href='#popup_product')
+                                i.bx.bx-plus
+                            //- i.bx.bx-filter
+                        ul.todo-list#product
+                            //-     span.status.completed Xóa
+                            //-     i.bx.bx-dots-vertical-rounded
+                            //-         ul.list_items
+                            //-             li.item Giá cả: 50đ
+                            //-             li.item Mô tả: 
+                            //- li.completed
+                            //-     p Todo List
+                            //-     i.bx.bx-dots-vertical-rounded
+                            //- li.not-completed
+                            //-     p Todo List
+                            //-     i.bx.bx-dots-vertical-rounded
+                            //- li.completed
+                            //-     p Todo List
+                            //-     i.bx.bx-dots-vertical-rounded
+                            //- li.not-completed
+                            //-     p Todo List
+                            //-     i.bx.bx-dots-vertical-rounded
+
+                        //- POP UP
+                        #popup_product.overlay
+                            .popup_content
+                                a.close(href='#') &times;
+                                .form_input
+                                    h2 Điền thông tin sản phẩm bên dưới
+                                    .input-box
+                                        p ID
+                                        input(type='number' id='id_pro')
+                                    .input-box
+                                        p Tên
+                                        input(type='text' id='name_pro' placeholder='Bánh')
+                                    .input-box
+                                        p Giá
+                                        input(type='number' id='price_pro' placeholder='50')
+                                    .input-box
+                                        p Hình ảnh
+                                        input(type='text' id='pic_pro' placeholder='https://...')
+                                    .input-box
+                                        p Mô tả
+                                        input(type='text' id='desc_pro')
+                                    
+                                    .form_button
+                                        button.button-login#Isnbtn Thêm
+                                        //- button.button-login(id='Insbtn') Thêm
+
+                        #popup_del.overlay
+                            .popup_content
+                                //- a.close(href='#') &times;
+                                .form_input
+                                    h2 Xóa sản phẩm
+                                    .form_button
+                                        a(href='#')
+                                            button.button-login#Yesbtn Đồng ý
+                                        a(href='#')
+                                            button.button-login#Nobtn Từ chối
+
+                        #popup_user.overlay
+                            .popup_content
+                                a.close(href='#') &times;
+                                .form_input
+                                    h2 Thông tin khách hàng
+                                    .input-box
+                                        p Tên
+                                        p#Username
+                                    .input-box
+                                        p Email
+                                        p#Useremail
+                                    .input-box
+                                        p Địa chỉ
+                                        p.Useraddress
+                                    .input-box
+                                        p Số điện thoại
+                                        input(type='number' id='')
+
+                        #popup_bill.overlay
+                            .popup_content
+                                a.close(href='#') &times;
+                                .form_input
+                                    h2 Thông tin đơn hàng
+                                    .input-box
+                                        p Tên bánh
+                                        p#Billdetail
+                                        //- input(type='text' id='Billdetail')
+                                    .input-box
+                                        p Số lượng
+                                        input(type='number' id='Billnumber')
+                                    .input-box
+                                        p Số tiền
+                                        input(type='number' id='Billmoney')
+                                    .form_button
+                                        button.button-login#Isnbtn Xóa
+                                    
+
+        script(src='./scripts/admin.js' type='module')
+        //- script(src='./scripts/addproduct.js' type='module')
+            // MAIN
+        // CONTENT
+    
+          
+
+    
+    
+    
+        
+//- script.
+//-     var indexInit = 0
+//-     document.querySelector("#sidebar .side-menu").querySelectorAll("li").forEach((item, index) => {
+//-         item.addEventListener("click", (e) => {
+//-             console.log(indexInit);
+//-             document.querySelector("#sidebar .side-menu").querySelectorAll("li")[indexInit].classList.remove("active")
+//-             item.classList.add("active");
+//-             console.log(index);
+//-             indexInit = index
+//-             Page(index)
+
+//-         })
+//-     })

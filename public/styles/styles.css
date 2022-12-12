@@ -1405,6 +1405,16 @@ li i {
 #admin #content main .box-info li .text p {
   color: var(--dark);
 }
+#admin #popup_product {
+  background: rgba(0, 0, 0, 0.7) !important;
+  transition: opacity 500ms !important;
+  border-radius: 0 !important;
+}
+#admin #popup_del {
+  background: rgba(0, 0, 0, 0.7) !important;
+  transition: opacity 500ms !important;
+  border-radius: 0 !important;
+}
 #admin #content main .table-data {
   display: flex;
   flex-wrap: wrap;
@@ -1552,7 +1562,7 @@ li i {
 }
 #admin #popup_product .popup_content,
 #admin #popup_user .popup_content,
-#admin #popup_bill .popup_content {
+#admin #todo .popup_content {
   width: 40%;
 }
 #admin .popup_content h2 {
