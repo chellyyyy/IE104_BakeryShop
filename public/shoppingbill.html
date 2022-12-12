@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <title>Menu</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Gi&#x1ECF; h&agrave;ng</title>
   </head>
-  <body> 
+  <body>
     <header id="header">
       <input id="check" type="checkbox" name="">
       <div class="nav-left">
@@ -101,35 +98,52 @@
         </div>
       </div>
     </header>
-    <div class="container-menu">
-      <div id="head">
-        <h2>Thực đơn</h2>
-        <div class="span"></div>
+    <div class="container_pay">
+      <div class="content-header">
+        <h2>Hóa đơn</h2>
+        <div class="under_line"></div>
       </div>
-      <div id="product">
-        <ul id="paginated-list" aria-live="polite"></ul>
-        <nav class="pagination-container">
-          <button class="pagination-button" id="prev-button" title="Previous page" aria-label="Previous page">&lt;</button>
-          <div id="pagination-numbers"></div>
-          <button class="pagination-button" id="next-button" title="Next page" aria-label="Next page"></button>&gt;
-        </nav>
-      </div>
+      <button class="btn btn-light" type="button" onclick="QUAY_LẠI_MUA_HÀNG()"><i class="fa-solid fa-chevron-left" style="margin-right: 5px;"></i>QUAY LẠI</button>
+      <script>
+        function QUAY_LẠI_MUA_HÀNG() {
+            history.back();
+        }
+      </script>
+      <main class="grid">
+        <section>
+          <ul id="containerCart">
+            <li class="emptycart" id="empty"><img src="https://www.pngitem.com/pimgs/m/265-2658111_transparent-cash-icon-png-receipts-png-png-download.png">
+              <p class="emtycart">hóa đơn trống</p>
+            </li>
+          </ul>
+        </section>
+        <aside id="rightpanel">
+          <div class="bill"> 
+            <h3 class="thanh_toan">THANH TOÁN</h3>
+            <div class="list_cart">
+              <div class="bill_content">Tổng Cộng:<span class="money" id="noship"></span></div>
+              <div class="bill_content">Phí Vận Chuyển:<span class="money">10.000đ</span></div>
+            </div>
+            <div class="tong_thanh_toan bill_content">Tổng Thanh Toán:<span class="money" id="withship"></span></div>
+          </div>
+        </aside>
+      </main>
     </div>
+    <footer>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.2311711962143!2d106.80086541496097!3d10.870014160431205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527587e9ad5bf%3A0xafa66f9c8be3c91!2sUniversity%20of%20Information%20Technology%20-%20VNUHCM!5e0!3m2!1sen!2s!4v1670865872717!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="footer_top"><a class="footer_top_left" href="homepage.html">
+          <div class="icon"><img src="assets/logo.png"></div><span>Sun Cake</span></a>
+        <div class="footer_top_right">
+          <ul>
+            <li> <a href="menu.html">THỰC ĐƠN</a></li>
+            <li><a href="aboutus.html">GIỚI THIỆU</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script src="./scripts/navbar.js" type="module"></script>
-    <script src="./scripts/menu.js" type="module"></script>
+    <script src="./scripts/shoppingcart.js" type="module"></script>
   </body>
-  <footer>
-    <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.2311711962143!2d106.80086541496097!3d10.870014160431205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527587e9ad5bf%3A0xafa66f9c8be3c91!2sUniversity%20of%20Information%20Technology%20-%20VNUHCM!5e0!3m2!1sen!2s!4v1670865872717!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="footer_top"><a class="footer_top_left" href="homepage.html">
-        <div class="icon"><img src="assets/logo.png"></div><span>Sun Cake</span></a>
-      <div class="footer_top_right">
-        <ul>
-          <li> <a href="menu.html">THỰC ĐƠN</a></li>
-          <li><a href="aboutus.html">GIỚI THIỆU</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
 </html>
