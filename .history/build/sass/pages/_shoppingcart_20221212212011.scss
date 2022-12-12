@@ -1,0 +1,425 @@
+// @font-face {
+//     font-family: "Montserrat";
+//     src: url(https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira-Light.ttf);
+// }
+
+// * {
+//     padding: 0;
+//     margin: 0;
+//     box-sizing: border-box;
+//     font-family: Montserrat;
+// }
+input {
+    border: none;
+}
+
+/* img {
+    max-width: 100%;
+} */
+.emptycart {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    // right: 0;
+    margin-left: 40%;
+}
+.photos {
+    list-style: none;
+    width: 300px;
+    height: 200px;
+}
+
+#tile_cart {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#tile_cart h2 {
+    /* Giỏ hàng */
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#tile_cart hr {
+    /* Rectangle 49 */
+    width: 99px;
+    height: 2px;
+
+    background: #000;
+    /* text-align: center; */
+    margin: auto;
+}
+
+main.grid { 
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 3%;
+    // padding: 20px 10%;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+main.grid section {
+    width: 100%;
+    height: 100%;
+}
+
+aside {
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+}
+
+button.gh {
+    cursor: pointer;
+
+    text-align: center;
+    margin-left: 1;
+    background-color: #fff;
+
+    padding: 15px 35px;
+
+    border: 1px solid #4B6587;
+    border-radius: 5px;
+
+    /* quay lại MUA hàng */
+    font-weight: 300;
+    font-size: 16.2px;
+    line-height: 20px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #4B6587;
+}
+
+/* section>ul {
+    margin-top: 30px;
+} */
+
+li.main-product {
+    border: 1px solid #d6d6d6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // align-items: center;
+    padding: 20px 30px;
+    background: white;
+}
+
+div.tien {
+    display: flex;
+    flex-direction: column;
+}
+
+div.img-product, 
+div.content-product, 
+div.buttons_added, 
+div.tien{
+    width: 100%;
+    height: 100%;
+}
+div.img-product img {    
+    border-radius: 18px;
+    width: 80%;
+}
+div.content-product p {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    text-transform: capitalize;
+    margin: 3%;
+    i {
+        font-size: 15px;
+    }
+}
+div.content-product p > b {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    /* identical to box height, or 137% */
+    letter-spacing: 0.06em;
+    text-transform: capitalize;
+}
+
+.previous_round {
+    text-decoration: none;
+    padding-right: 5px;
+}
+
+a.previous_round {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+}
+
+// .list_cart .tong_cong,
+// .list_cart .pvc,
+// .tong_thanh_toan {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     align-content: center;
+// }
+
+.tien span.money {
+    float: right;
+    /* 100.000đ */
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    letter-spacing: 0.055em;
+    text-transform: capitalize;
+}
+.tien h6 {
+    float: right;
+    /* Xóa */
+    font-weight: 300;
+    font-size: 10.8px;
+    line-height: 20px;
+    /* identical to box height, or 183% */
+    text-align: right;
+    letter-spacing: 0.06em;
+    text-transform: capitalize;
+
+    color: #4B6587;
+    i {
+        font-size: 15px;
+    }
+}
+
+// ul.top, ul.bottom {
+//     border-bottom: 1px solid #d6d6d6;
+// }
+
+// h3.thanh_toan,
+.voucher h3 {
+    /* thanh toán */
+    font-weight: 500;
+    font-size: 16.2px;
+    line-height: 20px;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+// .tong_thanh_toan {
+//     font-weight: 500;
+//     font-size: 16.2px;
+//     line-height: 20px;
+
+//     letter-spacing: 0.06em;
+//     text-transform: capitalize;
+// }
+
+// .bill .list_cart {
+//     border-top: 1px solid #d6d6d6;
+//     border-bottom: 1px solid #d6d6d6;
+//     padding: 10px 0;
+//     margin: 10px 0;
+// }
+
+// div.bill,
+div.voucher {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    padding: 20px;
+    background-color: #F0E5CF;
+    border-radius: 5px;
+    margin-top: 5%;
+
+    /* tổng cộng: */
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height, or 122% */
+    letter-spacing: 0.06em;
+    text-transform: capitalize;
+}
+
+button.tc {
+    cursor: pointer;
+    text-align: center;
+    margin: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    border-color: #4B6587;
+    background-color: #4B6587;
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* section {
+    float: left;
+} */
+
+/* <b:tag name='style'><![CDATA[ */
+.buttons_added {
+    opacity:1;
+    display:inline-block;
+    display:-ms-inline-flexbox;
+    display:inline-flex;
+    white-space:nowrap;
+    vertical-align:top;
+
+    border: 1px solid #4B6587;
+    border-radius: 5px;
+    max-width: fit-content;
+}
+.is-form {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+    color: #4B6587;
+    height:2.2rem;
+    width:1.9rem;
+}
+.is-form:focus,.input-text:focus {
+    outline:none;
+}
+.is-form.minus {
+    border-radius:4px 0 0 4px;
+}
+.is-form.plus {
+    border-radius:0 4px 4px 0;
+}
+.input-qty {
+    background-color:#fff;
+    height:2.2rem;
+    text-align:center;
+    font-size:1rem;
+    display:inline-block;
+    vertical-align:top;
+}
+.input-qty::-webkit-outer-spin-button,.input-qty::-webkit-inner-spin-button {
+    -webkit-appearance:none;
+    margin:0;
+}
+/* ]]> </b:tag> */
+
+input.coupon {
+    border:none;
+    background-color: #F0E5CF;
+    width: 70%;
+}
+
+button.coupon {
+    cursor: pointer;
+    border:none;
+    background-color: #F0E5CF;
+    text-transform: uppercase;
+}
+
+.voucher form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+i::before {
+    padding: 5px;
+}
+
+div.top {
+    height: 50px;
+    padding-top: 10px;
+}
+
+div.bottom {
+    height: 150px;
+    border-top: 1px solid #d6d6d6;
+    padding: 20px 0 0 100px;
+}
+
+div.dm {
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px 0 0;
+    font-size: 13px;
+    text-align: center;
+}
+
+.dm1, .dm2, .dm3 {
+    padding: 0 10px 0 10px;
+}
+
+li.main-product div.img {
+  display: flex;
+  padding: 0 0 0 100px;
+}
+
+// Ipad Mini & Ipad Air
+@media only screen and (max-width: 820px){
+    main.grid {
+        margin-top: 5%;
+        justify-content: center;
+        p {
+            margin-bottom: 10%;
+        }
+
+        // .main-product {
+        //     span.money {
+        //         margin-top: 5%;
+        //         margin-bottom: 30%;
+        //     }
+        // }
+
+    }
+    .container_pay {
+        margin: 5% 7% 10% 5%;
+    }
+
+}
+
+//Smartphone
+@media only screen and (max-width: 414px) {
+    main.grid {
+        grid-template-columns: none;
+        grid-template-rows: auto;
+        // transform: translateX(-3%);
+    }
+
+    .container_pay {
+        margin: 50px 3vh;
+    }
+    div.content-product p > b {
+        margin-bottom: 10px;
+    }
+
+    // span.money {
+    //     position: relative;
+    //     left: 10%;
+    //     margin: 6px 0 55px 10px;
+    //     // font-size: 16px;
+    // }
+
+    // .bill_content span.money {
+    //     left: 1px;
+    // }
+
+    div.voucher {
+        margin-bottom: 3%;
+    }
+
+}
+
+@media only screen and (max-width: 390px) {
+    li.main-product {
+        padding: 20px 19px;
+    }
+}

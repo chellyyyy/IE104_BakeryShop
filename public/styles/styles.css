@@ -2953,6 +2953,18 @@ input {
 /* img {
     max-width: 100%;
 } */
+.emptycart {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin-left: 42%;
+  margin-top: 5%;
+  font-size: 2rem;
+}
+
 .photos {
   list-style: none;
   width: 300px;
