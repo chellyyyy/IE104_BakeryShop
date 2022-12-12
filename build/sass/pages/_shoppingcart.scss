@@ -19,14 +19,24 @@ input {
 .emptycart {
     display: flex;
     flex-direction: column;
-    width: auto;
-    height: auto;
+    // width: auto;
+    // height: auto;
     justify-content: center;
     align-items: center;
     // right: 0;
     margin-left: 42%;
-    margin-top: 5%;
-    font-size: 2rem;
+    // margin-top: 5%;
+    font-size: 30px;
+    text-transform: uppercase;
+    img {
+        width: 222px;
+        height: 222px;
+        object-fit: cover;
+    }
+    p {
+        margin: 0 !important;
+        width: max-content;
+    }
 }
 .photos {
     list-style: none;
@@ -394,6 +404,9 @@ li.main-product div.img {
         grid-template-columns: none;
         grid-template-rows: auto;
         // transform: translateX(-3%);
+    }
+    .emptycart {
+        margin: 0;
     }
 
     .container_pay {
