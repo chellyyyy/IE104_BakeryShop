@@ -72,7 +72,7 @@ get(child(dbref, `UserList/${uid}/Cart`))
     priceSum = Number(priceSum + 10000)
     document.getElementById('withship').innerText = priceSum + 'đ';
     console.log(priceSum)
-    localStorage.setItem('Total', priceSum)
+    localStorage.setItem
 
 })
 .catch(()=>{

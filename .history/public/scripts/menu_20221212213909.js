@@ -181,16 +181,12 @@ get(child(dbref, `TheCakes/`))
                 Url:link,
                 Price:price
               })
-              set(ref(db, `UserList/${uid}/Bill/${cakeID}`),{
+              set(ref(db, `UserList/${uid}/Cart/${cakeID}/Bill`),{
                 Name: cakeName,
                 Amout: change,
-                Price:price,
+                Url:link,
+                Price:price
               })
-              set(ref(db, `UserList/${uid}/Bill/Status`),{
-                Ship: 'Chua ship'
-              })
-
-              
             } else {
               // console.log(cartBase)
               proNumber = Number(cartBase[0] + change)
@@ -199,11 +195,6 @@ get(child(dbref, `TheCakes/`))
                 Name: cakeName,
                 Amout: proNumber,
                 Url:link,
-                Price:price
-              })
-              set(ref(db, `UserList/${uid}/Bill/${cakeID}`),{
-                Name: cakeName,
-                Amout: proNumber,
                 Price:price
               })
               Sum = Sum + proNumber

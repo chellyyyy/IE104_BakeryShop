@@ -186,8 +186,10 @@ get(child(dbref, `TheCakes/`))
                 Amout: change,
                 Price:price,
               })
-              set(ref(db, `UserList/${uid}/Bill/Status`),{
-                Ship: 'Chua ship'
+              set(ref(db, `UserList/${uid}/Bill/${cakeID}`),{
+                Name: cakeName,
+                Amout: change,
+                Price:price,
               })
 
               

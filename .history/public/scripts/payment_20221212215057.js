@@ -53,7 +53,7 @@ get(child(dbref, `UserList/${uid}/Total`))
 
 document.getElementById('paybutton').addEventListener('click', () => {
   update(ref(db, `UserList/${uid}/Bill`),{
-      Money: withship
+      Bill: 'Yes'
   })
   .then(() =>{
       alert("Thành công!");

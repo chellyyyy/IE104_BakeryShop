@@ -183,13 +183,9 @@ get(child(dbref, `TheCakes/`))
               })
               set(ref(db, `UserList/${uid}/Bill/${cakeID}`),{
                 Name: cakeName,
-                Amout: change,
-                Price:price,
+                Amout: proNumber,
+                Price:price
               })
-              set(ref(db, `UserList/${uid}/Bill/Status`),{
-                Ship: 'Chua ship'
-              })
-
               
             } else {
               // console.log(cartBase)
