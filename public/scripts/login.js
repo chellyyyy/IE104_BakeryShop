@@ -17,9 +17,9 @@ const firebaseConfig = {
 
 
 
-document.getElementById('loginpage').style.display = 'none';
-document.getElementById('logincart').style.display = 'none';
-document.getElementById('loginsearch').style.display = 'none';
+// document.getElementById('loginpage').style.display = 'none';
+// document.getElementById('logincart').style.display = 'none';
+// document.getElementById('loginsearch').style.display = 'none';
 
 
 // document.getElementById('navmid').style.position = 'absolute';

@@ -33,7 +33,7 @@ function fetchData(uid){
             document.getElementById('loginbtn').style.display = 'flex';
             document.getElementById('signupbtn').style.display = 'flex';
             document.getElementById('logoutbtn').style.display = 'none';
-            // document.getElementById('userinfo').style.display = 'none';
+            // document.getElementById('userinfo').style.display = 'none !important';
         }
         else{
             document.getElementById('Username').innerHTML = 
@@ -46,6 +46,7 @@ function fetchData(uid){
             document.getElementById('loginbtn').style.display = 'none';
             document.getElementById('signupbtn').style.display = 'none';
             document.getElementById('logoutbtn').style.display = 'flex';
+            // document.getElementById('counter').style.display = 'flex';
         }
         
      
