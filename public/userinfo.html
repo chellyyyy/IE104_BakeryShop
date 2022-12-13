@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <title>Giỏ hàng</title>
+    <title>Thông tin tài khoản</title>
   </head>
   <body>
     <header id="header">
@@ -103,7 +103,7 @@
     </header>
     <div class="container_pay">
       <div class="content-header">
-        <h2>GIỎ HÀNG</h2>
+        <h2>Thông tin tài khoản</h2>
         <div class="under_line"></div>
       </div>
       <button class="btn btn-light" type="button" onclick="QUAY_LẠI_MUA_HÀNG()"><i class="fa-solid fa-chevron-left" style="margin-right: 5px;"></i>QUAY LẠI</button>
@@ -112,8 +112,7 @@
             history.back();
         }
       </script>
-      <p>Địa Chỉ Nhận Hàng:</p>
-      <div class="payment" id="content">
+      <div class="payment information" id="content">
         <section> 
           <ul> 
             <li class="userinfo">
@@ -125,21 +124,10 @@
                 <p class="content"> SĐT: </p>
                 <div class="userdetail"><span id="Userphone">Chưa thêm số điện thoại</span></div>
               </div><a href="#popup_address">
-                <button class="button_inside">THAY ĐỔI ĐỊA CHỈ           </button></a>
+                <button class="button_inside">THAY ĐỔI Thông tin           </button></a>
             </li>
           </ul>
         </section>
-        <aside>
-          <div class="bill"> 
-            <h3 class="thanh_toan">THANH TOÁN</h3>
-            <div class="list_cart">
-              <div class="bill_content">Tổng Cộng:<span class="money" id="noship">200.000đ</span></div>
-              <div class="bill_content">Phí Vận Chuyển:<span class="money">10000đ</span></div>
-            </div>
-            <div class="tong_thanh_toan bill_content">Tổng Thanh Toán:<span class="money" id="withship"></span></div><a href="payment.html"> 
-              <button class="tc" type="button">TIẾP TỤC THANH TOÁN</button></a>
-          </div>
-        </aside>
         <div class="overlay" id="popup_address">
           <div class="popup_content"><a class="close" href="#">&times;</a>
             <div class="form_title">

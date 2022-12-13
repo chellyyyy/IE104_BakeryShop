@@ -20,9 +20,9 @@
         text-decoration: none;
         color: black;
     }
-    .bx {
-        cursor: pointer;
-    }
+    // .bx {
+    //     cursor: pointer;
+    // }
     
     li {
         list-style: none;
@@ -625,7 +625,7 @@
     // }
     
     .popup_content h2 {
-        font-weight: 500;
+        // font-weight: 500;
         font-size: 18px;
         margin-right: 20px;
     }
@@ -668,6 +668,10 @@
         order: 0;
         align-self: stretch;
         flex-grow: 0;
+    }
+    .form_input .input-box .input-box-info {
+        color: black;
+        font-weight: 500;
     }
     .form_input .input-box input {
         /* Input */

@@ -77,11 +77,12 @@ if(count != ''){
             padding: "40px 60px 40px 40px",
             height: "100px",
             width: "400px",
-            background: "linear-gradient(to right, #00b09b, #96c93d)",
-            // background: "white",
-            // color: "black",
+            // background: "linear-gradient(to right, #00b09b, #96c93d)",
+            background: "white",
+            color: "black",
             // border-radius: "5px",
-            // border-left: "#4B6587 solid 8px",                   
+            border: "5px solid #4B6587",         
+            // border: "0 0 0 8px",         
         },
         onClick: function(){} // Callback after click
     }).showToast();

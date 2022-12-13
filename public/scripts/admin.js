@@ -62,7 +62,7 @@ get(child(dbref, `UserList/`))
         <td id = "email${uID}">${e.email}</td>
         <td>
             <a href = "#popup_user${uID}"><i class = "bx bxs-user-detail"></i></a>
-            <a href = "#popup_bill${uID}"><i class='bx bxs-cart-alt' ></i></a>
+            <a href = "#popup_bill${uID}"><i class='bx bxs-cart-alt'></i></a>
         </td>
       </tr>
       `         
@@ -74,19 +74,21 @@ get(child(dbref, `UserList/`))
             <div class="form_input">
             <h2>THÔNG TIN ĐƠN HÀNG</h2>
             <div class="input-box">
-                <p style="color: #9C254D">Tên bánh:</p>
-                <p id="Billdetail${uID}"></p>
+                <p>Tên bánh:</p>
+                <p id="Billdetail${uID}" class="input-box-info"></p>
             </div>
             <div class="input-box">
-                <p style="color: #9C254D">Số lượng:</p>
-                <p id="Billnumber${uID}"></p>
+                <p>Số lượng:</p>
+                <p id="Billnumber${uID}" class="input-box-info"></p>
             </div>
             <div class="input-box">
-                <p style="color: #9C254D">Số tiền:</p>
-                <p id="Billmoney${uID}"></p>
+                <p>Số tiền:</p>
+                <p id="Billmoney${uID}" class="input-box-info"></p>
             </div>
             <div class="form_button">
-                <button class="button-login" id="btn1">Xóa</button>
+                <a href="#">
+                    <button class="button-login" id="btn1">Xóa</button>
+                </a>
             </div>
             </div>
         </div>
@@ -97,20 +99,20 @@ get(child(dbref, `UserList/`))
             <div class="form_input">
                 <h2>THÔNG TIN KHÁCH HÀNG</h2>
                 <div class="input-box">
-                    <p style="color: #9C254D">Tên</p>
-                    <p id="Username${uID}"></p>
+                    <p>Tên</p>
+                    <p id="Username${uID}" class="input-box-info"></p>
                 </div>
                 <div class="input-box">
-                    <p style="color: #9C254D">Email</p>
-                    <p id="Useremail${uID}"></p>
+                    <p>Email</p>
+                    <p id="Useremail${uID}" class="input-box-info"></p>
                 </div>
                 <div class="input-box">
-                    <p style="color: #9C254D">Địa chỉ</p>
-                    <p id="Useraddress${uID}"></p>
+                    <p>Địa chỉ</p>
+                    <p id="Useraddress${uID}" class="input-box-info"></p>
                 </div>
                 <div class="input-box">
-                    <p style="color: #9C254D">Số điện thoại</p>
-                    <p id="Userphone${uID}"></p>
+                    <p>Số điện thoại</p>
+                    <p id="Userphone${uID}" class="input-box-info"></p>
                 </div>
             </div>
         </div>
@@ -181,7 +183,7 @@ get(child(dbref, `UserList/`))
                 document.getElementById(`Billmoney${ID2}`).innerHTML += `${e}đ`
                 if(e != ''){
                     // alert('a')
-                    document.getElementById(`username${ID}`).innerHTML += `<img style="width: 20px; height:20px; margin-left:8px;" src="https://cdn-icons-png.flaticon.com/512/1632/1632646.png">`
+                    document.getElementById(`username${ID}`).innerHTML += `<i class='bx bx-check-circle' style="color:#DD5353;"></i>`
                 }
             })
         })

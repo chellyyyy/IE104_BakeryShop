@@ -1079,9 +1079,6 @@ li i {
   text-decoration: none;
   color: black;
 }
-#admin .bx {
-  cursor: pointer;
-}
 #admin li {
   list-style: none;
 }
@@ -1585,7 +1582,6 @@ li i {
   width: 40%;
 }
 #admin .popup_content h2 {
-  font-weight: 500;
   font-size: 18px;
   margin-right: 20px;
 }
@@ -1625,6 +1621,10 @@ li i {
   order: 0;
   align-self: stretch;
   flex-grow: 0;
+}
+#admin .form_input .input-box .input-box-info {
+  color: black;
+  font-weight: 500;
 }
 #admin .form_input .input-box input {
   /* Input */
@@ -3347,6 +3347,11 @@ aside {
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.information {
+  grid-template-columns: 100%;
+  margin-top: 20px;
 }
 
 button.gh {
