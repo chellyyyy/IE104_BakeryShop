@@ -33,21 +33,22 @@ function fetchData(uid){
             document.getElementById('loginbtn').style.display = 'flex';
             document.getElementById('signupbtn').style.display = 'flex';
             document.getElementById('logoutbtn').style.display = 'none';
-            document.getElementById('userinfo').style.display = 'none';
-            document.getElementById('counter').style.display = 'none';
+            // document.getElementById('userinfo').style.display = 'none';
+            // document.getElementById('counter').style.display = 'none';
             // document.getElementById('counter').innerText = '';
         }
         else{
             document.getElementById('Username').innerHTML = 
             `
             ${uid.username}
-            <a href="userinfo.html"><i class="fa-regular fa-pen-to-square"></i></a>
-            <a href="shoppingbill.html"><i class="fa-regular fa-file-lines"></i></a>
+            <a href="userinfo.html"><i class="fa-regular fa-pen-to-square"></i>Chỉnh sửa thông tin</a>
+            <a href="shoppingbill.html"><i class="fa-regular fa-file-lines"></i>Xem hóa đơn</a>
             `
             // document.getElementById('Username').innerText = snapshot.val().username;
             document.getElementById('loginbtn').style.display = 'none';
             document.getElementById('signupbtn').style.display = 'none';
-            document.getElementById('counter').innerText = cart;
+            document.getElementById('logoutbtn').style.display = 'flex';
+            // document.getElementById('counter').innerText = cart;
         }
     })
     .catch((error)=>{

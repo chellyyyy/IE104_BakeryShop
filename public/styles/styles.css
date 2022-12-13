@@ -661,8 +661,9 @@ a {
 .personal .sub-nav-list {
   /* // position: absolute; */
   width: max-content;
+  border-radius: 0 0 5px 5px;
   /* height: 400px; */
-  padding: 3%;
+  padding: 1em;
   /* // top: 60px; */
   background: #FFFFFF;
   box-shadow: 0px 3.59775px 3.59775px rgba(0, 0, 0, 0.25);
@@ -671,39 +672,46 @@ a {
 
 .personal .sub-nav-list .account {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-around;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 .personal .sub-nav-list .account img {
-  width: 40%;
+  width: 60px;
 }
 .personal .sub-nav-list .account .navlink {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 5px;
+  align-items: flex-start;
+  flex-direction: column;
 }
 .personal .sub-nav-list .account a {
   color: #000;
   font-size: 15px;
+  line-height: 25px;
+  font-weight: 200;
 }
 .personal .sub-nav-list .account a:hover {
   color: #4B6587;
 }
-.personal .sub-nav-list .account .account_button .log_out {
+
+.account_button {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  flex-direction: row;
+  font-size: 15px;
+}
+.account_button #logoutbtn {
   display: none;
 }
-.personal .sub-nav-list .account .account_button .log_in {
-  display: flex;
-  align-items: center;
-  gap: 2%;
-}
-.personal .sub-nav-list .account .account_button button {
+.account_button button {
   cursor: pointer;
   background: #4B6587;
   color: #fff;
-  padding: 2%;
+  padding: 10px;
   border-radius: 5px;
 }
 
@@ -713,6 +721,7 @@ a {
 }
 
 .amount {
+  display: none;
   position: absolute;
   top: 23%;
   right: 22%;

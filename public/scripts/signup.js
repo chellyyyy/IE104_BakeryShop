@@ -28,7 +28,15 @@ function isEmptyOrSpaces(str){
 
 function spaceValidation(){
     if(isEmptyOrSpaces(email.value) || isEmptyOrSpaces(username.value) || isEmptyOrSpaces(password.value)){
-        alert('ko dc de trong');
+        Toastinette.init({
+            position: 'top-right',
+            title: 'Cảnh báo',
+            message: 'Không được để trống',
+            type: 'warning',
+            autoClose: 2500,
+            progress: true
+        });
+        // alert('ko dc de trong');
         return false;
     }
 }
@@ -38,7 +46,15 @@ function ValidateEmail() {
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)){
         return (true)
     }
-        alert("You have entered an invalid email address!")
+    Toastinette.init({
+        position: 'top-right',
+        title: 'Thất bại',
+        message: 'Email không hợp lệ',
+        type: 'error',
+        autoClose: 2500,
+        progress: true
+    });
+        // alert("You have entered an invalid email address!")
         return (false) 
 }
 //SIGNUP----------------------------
@@ -77,7 +93,15 @@ document.getElementById('signup').addEventListener('click',() => {
             const errorCode = error.code;
             const errorMessage = error.message;
 
-            alert('errorMassage');
+            Toastinette.init({
+                position: 'top-right',
+                title: 'Thất bại',
+                message: 'Email đã tồn tại, dùng email khác',
+                type: 'error',
+                autoClose: 2500,
+                progress: true
+            });
+            // alert('errorMassage');
             console.log(errorMessage);
             // console.log(errorMessage)
             // ..
