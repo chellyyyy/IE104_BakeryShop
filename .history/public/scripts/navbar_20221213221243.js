@@ -104,7 +104,7 @@ get(child(dbref, `UserList/${uid}/Cart`))
   if(cartSum == ''){
     document.getElementById('counter').style.display = 'none';
   } else {
-    document.getElementById('counter').style.display = 'flex';
+    document.getElementById('counter').style.display = 'fle';
   }
 
 })

@@ -103,8 +103,6 @@ get(child(dbref, `UserList/${uid}/Cart`))
   console.log(cartSum)
   if(cartSum == ''){
     document.getElementById('counter').style.display = 'none';
-  } else {
-    document.getElementById('counter').style.display = 'flex';
   }
 
 })

@@ -94,7 +94,7 @@ document.getElementById('signupbtn').addEventListener('click', () => {
 const uid = localStorage.getItem('uid')
 const cart = localStorage.getItem('cart')
 
-get(child(dbref, `UserList/${uid}/Cart`))
+get(child(dbref, `UserList/${uid}/Total`))
 .then((snapshot)=>{
   var cartSum = []
   snapshot.forEach(childSnapshot => {
@@ -103,12 +103,8 @@ get(child(dbref, `UserList/${uid}/Cart`))
   console.log(cartSum)
   if(cartSum == ''){
     document.getElementById('counter').style.display = 'none';
-  } else {
-    document.getElementById('counter').style.display = 'flex';
   }
 
 })
-
-
 
 fetchData(uid)

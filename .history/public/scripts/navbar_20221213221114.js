@@ -21,7 +21,18 @@ const auth = getAuth();
 const dbref = ref(db);
 
 
+get(child(dbref, `UserList/${uid}/Cart`))
+.then((snapshot)=>{
+  var cartSum = []
+  snapshot.forEach(childSnapshot => {
+    cartSum.push(childSnapshot.val());
+  })
+  console.log(cartSum)
+  if(cartSum == ''){
+    document.getElementById('counter').style.display = 'none';
+  }
 
+})
 
 //LẤY THÔNG TIN CỦA USER TỪ DATABASE
 function fetchData(uid){
@@ -103,12 +114,8 @@ get(child(dbref, `UserList/${uid}/Cart`))
   console.log(cartSum)
   if(cartSum == ''){
     document.getElementById('counter').style.display = 'none';
-  } else {
-    document.getElementById('counter').style.display = 'flex';
   }
 
 })
-
-
 
 fetchData(uid)
