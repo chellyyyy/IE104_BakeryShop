@@ -1926,6 +1926,24 @@ li i {
   line-height: 150%;
   color: #FFFFFF;
 }
+#admin button.Billbtn {
+  cursor: pointer;
+  padding: 12px 24px;
+  width: 100%;
+  height: 100%;
+  background: #4B6587;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+  border: none;
+  border-radius: 8px;
+  /* Thêm */
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+#admin .uid {
+  font-size: 0.1px;
+}
 #admin .form_button button.button-confirm {
   cursor: pointer;
   padding: 12px 24px;
