@@ -1,3 +1,5 @@
+script(src='scripts/navbar.js' type='module')
+script(src='scripts/toastinette.js')
 header#header
   input#check(type='checkbox' name='')
   .nav-left
@@ -67,11 +69,11 @@ header#header
       .sub-nav-list
           .account
             img(src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Zj3MiSvzX1mJqYZsepbx_DQILWlJOKPqZ8m984Gu0-Z_Zv4OAJi5FLY4JJlEXlgLpjY&usqp=CAU", alt="")
-            p.navlink(id='Username') Tên
-              a(href='userinfo.html')
-                i.fa-regular.fa-pen-to-square
-              a(href='shoppingbill.html')
-                i.fa-regular.fa-file-lines
+            p.navlink(id='Username')
+              //- a(href='userinfo.html')
+              //-   i.fa-regular.fa-pen-to-square
+              //- a(href='shoppingbill.html')
+              //-   i.fa-regular.fa-file-lines
                 //- p.navlink(id='userinfo') Chỉnh sửa thông tin
             .account_button
               button.log_out.navlink Đăng xuất

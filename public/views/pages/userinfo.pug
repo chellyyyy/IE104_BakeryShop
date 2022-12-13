@@ -18,7 +18,8 @@ html(lang="en")
             .content-header
                 h2 Thông tin tài khoản
                 div.under_line
-            include ../blocks/button_return
+            a(href="homepage.html")
+                include ../blocks/button_return
 
             //- CONTENT MAIN
             //- p Địa Chỉ Nhận Hàng:
@@ -70,7 +71,8 @@ html(lang="en")
                                 p Số điện thoại
                                 input(type='number' id='phone_user' placeholder='09123456789')                         
                             .form_button
-                                button.button-login#Isnbtn Hoàn tất
+                                a(href="#")
+                                    button.button-login#Isnbtn Hoàn tất
         include ../blocks/footer
         script(src='./scripts/myshipment.js' type='module')
         script(src='./scripts/navbar.js' type='module')

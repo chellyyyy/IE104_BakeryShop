@@ -1,8 +1,12 @@
+//abstracts
+@import './abstracts/animation';
+@import './abstracts/variable';
+
 //base
 // @import './base/reset';
 @import './base/typo';
 @import './base/cart';
-//abstracts
+@import './base/toastinette';
 
 //components
 @import './components/header';

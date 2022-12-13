@@ -46,16 +46,15 @@ get(child(dbref, `UserList/${uid}/Cart`))
         <div class="img-product"><img src="${e.Url}"></div>
         <div class="content-product">
             <p><b>${e.Name}</b></p>
-            <p><b>Số lượng: ${e.Amout}</b></p>
-            <p><i class="fas fa-calendar-days"></i>04/11/2022</p>
-            <p><i class="fas fa-clock"></i>10 AM</p>
-            <p><i class="fas fa-file-pen"></i>Ghi chú</p>
+            <p>Số lượng: ${e.Amout}</p>
         </div>
         
         <div class="tien">
             <div><span class="money">${e.Price}</span></div>
             <div>
-            <h6>Xóa<i class="fas fa-trash-can"></i></h6>
+              <h6>
+                <a href="#popup_del">Xóa<i class="fas fa-trash-can"></i></a>
+              </h6>
             </div>
         </div>
         </li>

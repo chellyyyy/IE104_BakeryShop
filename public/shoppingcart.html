@@ -10,6 +10,8 @@
     <title>Giỏ hàng</title>
   </head>
   <body>
+    <script src="scripts/navbar.js" type="module"></script>
+    <script src="scripts/toastinette.js"></script>
     <header id="header">
       <input id="check" type="checkbox" name="">
       <div class="nav-left">
@@ -80,7 +82,7 @@
         <div class="personal" id="loginpage"><i class="fa-solid fa-user"></i>
           <div class="sub-nav-list">
             <div class="account"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Zj3MiSvzX1mJqYZsepbx_DQILWlJOKPqZ8m984Gu0-Z_Zv4OAJi5FLY4JJlEXlgLpjY&amp;usqp=CAU" alt="">
-              <p class="navlink" id="Username">Tên<a href="userinfo.html"><i class="fa-regular fa-pen-to-square"></i></a><a href="shoppingbill.html"><i class="fa-regular fa-file-lines"></i></a></p>
+              <p class="navlink" id="Username"></p>
               <div class="account_button">
                 <button class="log_out navlink">Đăng xuất</button>
                 <div class="log_in">
@@ -103,13 +105,13 @@
       <div class="content-header">
         <h2>GIỎ HÀNG</h2>
         <div class="under_line"></div>
-      </div>
-      <button class="btn btn-light" type="button" onclick="QUAY_LẠI_MUA_HÀNG()"><i class="fa-solid fa-chevron-left" style="margin-right: 5px;"></i>QUAY LẠI</button>
-      <script>
-        function QUAY_LẠI_MUA_HÀNG() {
-            history.back();
-        }
-      </script>
+      </div><a href="menu.html">
+        <button class="btn btn-light" type="button" onclick="QUAY_LẠI_MUA_HÀNG()"><i class="fa-solid fa-chevron-left" style="margin-right: 5px;"></i>QUAY LẠI</button>
+        <script>
+          function QUAY_LẠI_MUA_HÀNG() {
+              history.back();
+          }
+        </script></a>
       <main class="grid">
         <section>
           <ul id="containerCart">
@@ -143,6 +145,16 @@
           </div>
         </aside>
       </main>
+    </div>
+    <div class="overlay" id="popup_del">
+      <div class="popup_content">
+        <div class="form_input">
+          <h2>Xóa sản phẩm</h2>
+          <div class="form_button"><a href="#">
+              <button class="button-login" id="Yesbtn">Đồng ý</button></a><a href="#">
+              <button class="button-login" id="Nobtn">Từ chối</button></a></div>
+        </div>
+      </div>
     </div>
     <footer>
       <div class="map">

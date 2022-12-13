@@ -36,7 +36,13 @@ function fetchData(uid){
             document.getElementById('userinfo').style.display = 'none';
         }
         else{
-            document.getElementById('Username').innerText = snapshot.val().username;
+            document.getElementById('Username').innerHTML += 
+            `
+            ${uid.username}
+            <a href="userinfo.html"><i class="fa-regular fa-pen-to-square"></i></a>
+            <a href="shoppingbill.html"><i class="fa-regular fa-file-lines"></i></a>
+            `
+            // document.getElementById('Username').innerText = snapshot.val().username;
             document.getElementById('loginbtn').style.display = 'none';
             document.getElementById('signupbtn').style.display = 'none';
         }
@@ -63,33 +69,46 @@ var count = localStorage.getItem('count');
 
 
 if(count != ''){
-    Toastify({
-        text: "Đăng nhập thành công",
-        duration: 2500,
-        // destination: "https://github.com/apvarun/toastify-js",
-        newWindow: true,
-        close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: false, // Prevents dismissing of toast on hover
-        style: {
-            margin: "20px 10px 0 0",
-            padding: "40px 60px 40px 40px",
-            height: "100px",
-            width: "400px",
-            // background: "linear-gradient(to right, #00b09b, #96c93d)",
-            background: "white",
-            color: "black",
-            // border-radius: "5px",
-            border: "5px solid #4B6587",         
-            // border: "0 0 0 8px",         
-        },
-        onClick: function(){} // Callback after click
-    }).showToast();
+    Toastinette.init({
+        position: 'top-right',
+        title: 'Thành công',
+        message: 'Đăng nhập thành công',
+        // type: 'success',
+        autoClose: 5000,
+        progress: true
+    });
     sleep(500)
     // Reset lại biến count để khi back lại trang chủ mà không phải login thì không hiện toast
     localStorage.setItem('count', '');
 }
+// if(count != ''){
+//     Toastify({
+//         text: "Đăng nhập thành công",
+//         duration: 2500,
+//         // destination: "https://github.com/apvarun/toastify-js",
+//         newWindow: true,
+//         close: true,
+//         gravity: "top", // `top` or `bottom`
+//         position: "right", // `left`, `center` or `right`
+//         stopOnFocus: false, // Prevents dismissing of toast on hover
+//         style: {
+//             margin: "20px 10px 0 0",
+//             padding: "40px 60px 40px 40px",
+//             height: "100px",
+//             width: "400px",
+//             // background: "linear-gradient(to right, #00b09b, #96c93d)",
+//             background: "white",
+//             color: "black",
+//             // border-radius: "5px",
+//             border: "5px solid #4B6587",         
+//             // border: "0 0 0 8px",         
+//         },
+//         onClick: function(){} // Callback after click
+//     }).showToast();
+//     sleep(500)
+//     // Reset lại biến count để khi back lại trang chủ mà không phải login thì không hiện toast
+//     localStorage.setItem('count', '');
+// }
 
 
 // if(uid != ''){

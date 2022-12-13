@@ -56,12 +56,28 @@ document.getElementById('paybutton').addEventListener('click', () => {
       Money: withship
   })
   .then(() =>{
-      alert("Thành công!");
+    Toastinette.init({
+        position: 'top-right',
+        title: 'Thành công',
+        message: 'Mua hàng thành công',
+        // type: 'success',
+        autoClose: 5000,
+        progress: true
+    });
+      // alert("Thành công!");
       document.getElementById('counter').style.display = 'none';
       
   })
   .catch((error)=>{
-      alert("Không thành công, lỗi " + error);
+    Toastinette.init({
+        position: 'top-right',
+        title: 'Thất bại',
+        message: 'Mua hàng không thành công',
+        type: 'error',
+        autoClose: false,
+        // progress: true
+    });
+      // alert("Không thành công, lỗi " + error);
   });
 })
 

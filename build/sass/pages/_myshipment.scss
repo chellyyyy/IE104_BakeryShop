@@ -137,40 +137,6 @@ div.tien {
     height: 100%;
 }
 
-// .list_cart .tong_cong,
-// .list_cart .pvc,
-// .tong_thanh_toan {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-between;
-//     align-content: center;
-//     margin-bottom: 10px;
-// }
-
-.tien span.money {
-    float: right;
-    /* 100.000đ */
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    /* identical to box height */
-    letter-spacing: 0.055em;
-    text-transform: capitalize;
-}
-.tien h6 {
-    float: right;
-    /* Xóa */
-    font-weight: 300;
-    font-size: 10.8px;
-    line-height: 20px;
-    /* identical to box height, or 183% */
-    text-align: right;
-    letter-spacing: 0.06em;
-    text-transform: capitalize;
-
-    color: #4B6587;
-}
-
 // h3.thanh_toan,
 .voucher h3 {
     /* thanh toán */

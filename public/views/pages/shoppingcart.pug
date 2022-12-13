@@ -16,7 +16,8 @@ html(lang='en')
             .content-header
                 h2 GIỎ HÀNG
                 div.under_line
-            include ../blocks/button_return
+            a(href="menu.html")
+                include ../blocks/button_return
 
             //- CONTENT MAIN
             main.grid
@@ -72,6 +73,16 @@ html(lang='en')
                                 input.coupon(type='text' name='Coupon' placeholder='Nhập mã Coupon')
                                 div
                                     button.coupon(type='button') &Aacute;P D&#x1EE4;NG
+        #popup_del.overlay
+            .popup_content
+                //- a.close(href='#') &times;
+                .form_input
+                    h2 Xóa sản phẩm
+                    .form_button
+                        a(href='#')
+                            button.button-login#Yesbtn Đồng ý
+                        a(href='#')
+                            button.button-login#Nobtn Từ chối
 
         include ../blocks/footer
         script(src='./scripts/navbar.js' type='module')
