@@ -316,9 +316,10 @@ a {
 .personal .sub-nav-list{
     /* // position: absolute; */
     width: max-content;
+    border-radius: 0 0 5px 5px;
 
     /* height: 400px; */
-    padding: 3%;
+    padding: 1em;
     // left: 70%;
     // right: 10%;
     /* // top: 60px; */
@@ -328,42 +329,47 @@ a {
 }
 .personal .sub-nav-list .account {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
     img{
-        width: 40%;
+        width: 60px;
     }
     .navlink {
         display: flex;
         justify-content: center;
-        align-items: center;
-        gap: 5px;
+        align-items: flex-start;
+        // gap: 5px;
+        flex-direction: column;
     }
     a {
         color: #000;
         font-size: 15px;
-        // line-height: normal;
+        line-height: 25px;
+        font-weight: 200;
         &:hover {
             color: #4B6587;
         }
     }
-    .account_button {
-        .log_out {
-            display: none;
-        }
-        .log_in {
-            display: flex;
-            align-items: center;
-            gap: 2%;
-        }
-        button {
-            cursor: pointer;
-            background: #4B6587;
-            color: #fff;
-            padding: 2%;
-            border-radius: 5px;
-        }
+}
+.account_button {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    flex-direction: row;
+    font-size: 15px;
+    #logoutbtn {
+        display: none;
+    }
+    button {
+        cursor: pointer;
+        background: #4B6587;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        // width: 100%;
     }
 }
 

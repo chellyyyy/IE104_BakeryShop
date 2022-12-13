@@ -46,6 +46,9 @@ function ValidateEmail() {
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)){
         return (true)
     }
+<<<<<<< HEAD
+        alert("Email sai")
+=======
     Toastinette.init({
         position: 'top-right',
         title: 'Thất bại',
@@ -55,6 +58,7 @@ function ValidateEmail() {
         progress: true
     });
         // alert("You have entered an invalid email address!")
+>>>>>>> f22b3dce7689b7dad59a72a5f416a94e3530c802
         return (false) 
 }
 //SIGNUP----------------------------
