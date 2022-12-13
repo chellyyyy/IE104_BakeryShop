@@ -216,10 +216,8 @@ get(child(dbref, `UserList/`))
             
             uid2 = document.getElementById(`ad${Billdetail}`).innerText
             console.log(uid2)
-            remove(ref(db, `UserList/${uid2}/Bill/`));
-            remove(ref(db, `UserList/${uid2}/Total/Money/`));
-            alert('ok')
-            location.reload();
+            // remove(ref(db, `UserList/${uid2}/Bill/`));
+            // remove(ref(db, `UserList/${uid2}/Total/Money/`));
 
             
 

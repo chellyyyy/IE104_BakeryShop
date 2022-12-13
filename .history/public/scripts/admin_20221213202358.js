@@ -218,8 +218,6 @@ get(child(dbref, `UserList/`))
             console.log(uid2)
             remove(ref(db, `UserList/${uid2}/Bill/`));
             remove(ref(db, `UserList/${uid2}/Total/Money/`));
-            alert('ok')
-            location.reload();
 
             
 

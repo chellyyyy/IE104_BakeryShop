@@ -219,7 +219,7 @@ get(child(dbref, `UserList/`))
             remove(ref(db, `UserList/${uid2}/Bill/`));
             remove(ref(db, `UserList/${uid2}/Total/Money/`));
             alert('ok')
-            location.reload();
+            lcoal
 
             
 

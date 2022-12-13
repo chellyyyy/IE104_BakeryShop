@@ -211,15 +211,12 @@ get(child(dbref, `UserList/`))
     document.querySelectorAll('.Billbtn').forEach(e => {
         e.addEventListener('click', ()=>{
             
-            Billdetail = e.id.replace('bill','')
-            // console.log(Billdetail)
+            // Billdetail = e.id.replace('bill','')
             
             uid2 = document.getElementById(`ad${Billdetail}`).innerText
-            console.log(uid2)
-            remove(ref(db, `UserList/${uid2}/Bill/`));
-            remove(ref(db, `UserList/${uid2}/Total/Money/`));
-            alert('ok')
-            location.reload();
+            // console.log(uid2)
+            // remove(ref(db, `UserList/${uid2}/Bill/`));
+            // remove(ref(db, `UserList/${uid2}/Total/Money/`));
 
             
 
