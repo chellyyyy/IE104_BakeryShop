@@ -28,7 +28,7 @@ function isEmptyOrSpaces(str){
 
 function spaceValidation(){
     if(isEmptyOrSpaces(email.value) || isEmptyOrSpaces(username.value) || isEmptyOrSpaces(password.value)){
-        alert('Bạn chưa nhập đủ thông tin');
+        alert('ko dc de trong');
         return false;
     }
 }
@@ -38,7 +38,7 @@ function ValidateEmail() {
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)){
         return (true)
     }
-        alert("Email sai")
+        alert("Email")
         return (false) 
 }
 //SIGNUP----------------------------

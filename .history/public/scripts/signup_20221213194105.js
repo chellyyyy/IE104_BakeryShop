@@ -28,7 +28,7 @@ function isEmptyOrSpaces(str){
 
 function spaceValidation(){
     if(isEmptyOrSpaces(email.value) || isEmptyOrSpaces(username.value) || isEmptyOrSpaces(password.value)){
-        alert('Bạn chưa nhập đủ thông tin');
+        alert('Bạn chưa nhẫ');
         return false;
     }
 }
