@@ -57,7 +57,7 @@ get(child(dbref, `UserList/${uid}/`))
         snapshot.forEach(childSnapshot => {
             cakeData.push(childSnapshot.val());
         });
-        // console.log(cakeData[1])
+        // console.log(cakeData)
         if(cakeData == ''){
           document.getElementById('rightpanel').style.display = 'none';
         } else {
@@ -131,7 +131,7 @@ get(child(dbref, `UserList/${uid}/`))
                   Price: updatemoney,
                   Url: updateurl
                 })
-                set(ref(db, `UserList/${uid}/Bill/${e.id}/`),{
+                set(ref(db, `UserList/${uid}//${e.id}/`),{
                   Amout: afterchange,
                   Name: updatename,
                   Price: updatemoney,

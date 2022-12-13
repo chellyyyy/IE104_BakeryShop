@@ -57,7 +57,7 @@ get(child(dbref, `UserList/${uid}/`))
         snapshot.forEach(childSnapshot => {
             cakeData.push(childSnapshot.val());
         });
-        // console.log(cakeData[1])
+        console.log(cakeData[3])
         if(cakeData == ''){
           document.getElementById('rightpanel').style.display = 'none';
         } else {

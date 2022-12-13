@@ -58,7 +58,7 @@ get(child(dbref, `UserList/${uid}/`))
             cakeData.push(childSnapshot.val());
         });
         // console.log(cakeData[1])
-        if(cakeData == ''){
+        if(cakeData != ''){
           document.getElementById('rightpanel').style.display = 'none';
         } else {
           document.getElementById('empty').style.display = 'none';

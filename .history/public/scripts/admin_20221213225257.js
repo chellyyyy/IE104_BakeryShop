@@ -46,11 +46,11 @@ var uid2
 var uID = 0;
 get(child(dbref, `UserList/`))
 .then((snapshot)=>{
-    var userData = []; //Data của người dùng lấy từ database
+    var userData = []; //Data của sản phẩm lấy từ database
     snapshot.forEach(childSnapshot => {
         userData.push(childSnapshot.val());
     });
-//Thêm popup theo id để dễ hiện thông tin
+
     userData.forEach((e)=>{
         uID += 1
       document.getElementById('account').innerHTML += 
@@ -185,14 +185,14 @@ get(child(dbref, `UserList/`))
                 if(e != ''){
                     // alert('a')
                     document.getElementById(`username${ID}`).innerHTML += `<i class='bx bx-check-circle' style="color:#DD5353;"></i>`
-                }      //Icon có đơn hàng
+                }
             })
         })
         
     
 
     ID3 += 1
-    // Gán userdata vào popup userdata
+    // console.log(e.fullname)
     document.getElementById(`Username${ID3}`).innerHTML = e.fullname
     document.getElementById(`Useremail${ID3}`).innerHTML = e.email
     document.getElementById(`Useraddress${ID3}`).innerHTML = e.address
@@ -201,7 +201,7 @@ get(child(dbref, `UserList/`))
         
     
     })
-    //Xóa bill
+    //
     document.querySelectorAll('.Billbtn').forEach(e => {
         e.addEventListener('click', ()=>{
             
@@ -413,7 +413,44 @@ function DeleteUser(){
 
 document.getElementById('Isnbtn').addEventListener('click', InsertData);
 document.getElementById('Yesbtn').addEventListener('click', DeleteData);
+// document.getElementById('Delbtn').addEventListener('click', DeleteData);
+// User
+// document.getElementById('Deluser').addEventListener('click', DeleteUser);
 
+
+
+
+
+
+
+
+// document.getElementById('test').addEventListener('click', () => {
+//     alert('22')
+// })
+
+
+
+
+// var x = document.querySelectorAll('.detect');
+// function a() {
+    
+//     alert(x)
+//     console.log(x)
+// }
+
+
+
+// function sleep(ms) {
+//     return new Promise(resolve => setTimeout(resolve, ms));
+// }
+
+
+
+
+//Lấy ID của sản phẩm khi click vào
+// document.addEventListener('click', function(e) {
+//     alert( e.target.id );
+// }, false);
 
 
 

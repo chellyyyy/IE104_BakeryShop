@@ -72,7 +72,8 @@ document.getElementById('login').addEventListener('click',() => {
         .then((userCredential) => {
             // Signed in 
             const user = userCredential.user;
-         
+
+            
 
             localStorage.setItem("uid", user.uid);
             localStorage.setItem("count", '1');

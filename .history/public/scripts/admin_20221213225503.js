@@ -201,7 +201,7 @@ get(child(dbref, `UserList/`))
         
     
     })
-    //Xóa bill
+    //
     document.querySelectorAll('.Billbtn').forEach(e => {
         e.addEventListener('click', ()=>{
             
@@ -413,7 +413,44 @@ function DeleteUser(){
 
 document.getElementById('Isnbtn').addEventListener('click', InsertData);
 document.getElementById('Yesbtn').addEventListener('click', DeleteData);
+// document.getElementById('Delbtn').addEventListener('click', DeleteData);
+// User
+// document.getElementById('Deluser').addEventListener('click', DeleteUser);
 
+
+
+
+
+
+
+
+// document.getElementById('test').addEventListener('click', () => {
+//     alert('22')
+// })
+
+
+
+
+// var x = document.querySelectorAll('.detect');
+// function a() {
+    
+//     alert(x)
+//     console.log(x)
+// }
+
+
+
+// function sleep(ms) {
+//     return new Promise(resolve => setTimeout(resolve, ms));
+// }
+
+
+
+
+//Lấy ID của sản phẩm khi click vào
+// document.addEventListener('click', function(e) {
+//     alert( e.target.id );
+// }, false);
 
 
 
