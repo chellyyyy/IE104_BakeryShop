@@ -36,7 +36,7 @@ function fetchData(uid){
             document.getElementById('userinfo').style.display = 'none';
         }
         else{
-            document.getElementById('Username').innerHTML += 
+            document.getElementById('Username').innerHTML = 
             `
             ${uid.username}
             <a href="userinfo.html"><i class="fa-regular fa-pen-to-square"></i></a>
@@ -53,7 +53,15 @@ function fetchData(uid){
         //   document.getElementById('overview--phone').innerText = snapshot.val()._phone;
     })
     .catch((error)=>{
-        alert("LỖI" + error);
+        Toastinette.init({
+            position: 'top-right',
+            title: 'Lỗi',
+            message: 'Bạn chưa đăng nhập',
+            type: 'error',
+            autoClose: 5000,
+            progress: true
+        });
+        // alert("LỖI" + error);
     });
 }
 
@@ -74,7 +82,7 @@ if(count != ''){
         title: 'Thành công',
         message: 'Đăng nhập thành công',
         // type: 'success',
-        autoClose: 5000,
+        autoClose: 2500,
         progress: true
     });
     sleep(500)

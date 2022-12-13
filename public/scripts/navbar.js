@@ -38,7 +38,7 @@ function fetchData(uid){
             // document.getElementById('counter').innerText = '';
         }
         else{
-            document.getElementById('Username').innerHTML += 
+            document.getElementById('Username').innerHTML = 
             `
             ${uid.username}
             <a href="userinfo.html"><i class="fa-regular fa-pen-to-square"></i></a>
@@ -51,7 +51,15 @@ function fetchData(uid){
         }
     })
     .catch((error)=>{
-        alert("LỖI" + error);
+        Toastinette.init({
+            position: 'top-right',
+            title: 'Lỗi',
+            message: 'Bạn chưa đăng nhập',
+            type: 'error',
+            autoClose: 5000,
+            progress: true
+        });
+        // alert("LỖI" + error);
     });
 }
 

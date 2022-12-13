@@ -56,14 +56,14 @@ document.getElementById('paybutton').addEventListener('click', () => {
       Money: withship
   })
   .then(() =>{
-    Toastinette.init({
-        position: 'top-right',
-        title: 'Thành công',
-        message: 'Mua hàng thành công',
-        // type: 'success',
-        autoClose: 5000,
-        progress: true
-    });
+    // Toastinette.init({
+    //     position: 'top-right',
+    //     title: 'Thành công',
+    //     message: 'Mua hàng thành công',
+    //     // type: 'success',
+    //     autoClose: 5000,
+    //     progress: true
+    // });
       // alert("Thành công!");
       document.getElementById('counter').style.display = 'none';
       
