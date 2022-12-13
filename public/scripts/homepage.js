@@ -25,6 +25,7 @@ const dbref = ref(db);
 
 //LẤY THÔNG TIN CỦA USER TỪ DATABASE
 function fetchData(uid){
+    
     get(child(dbref, `UserList/${uid}`))
     .then((snapshot)=>{
         if(uid==''){
@@ -33,7 +34,7 @@ function fetchData(uid){
             document.getElementById('loginbtn').style.display = 'flex';
             document.getElementById('signupbtn').style.display = 'flex';
             document.getElementById('logoutbtn').style.display = 'none';
-            document.getElementById('counter').style.display = 'none';
+            // document.getElementById('counter').style.display = 'flex';
             // document.getElementById('userinfo').style.display = 'none !important';
         }
         else{
@@ -47,11 +48,9 @@ function fetchData(uid){
             document.getElementById('loginbtn').style.display = 'none';
             document.getElementById('signupbtn').style.display = 'none';
             document.getElementById('logoutbtn').style.display = 'flex';
-            // document.getElementById('counter').style.display = 'flex';
         }
-        
-     
     })
+
     .catch((error)=>{
         Toastinette.init({
             position: 'top-right',

@@ -720,6 +720,10 @@ a {
   position: relative;
 }
 
+#counter {
+  display: none;
+}
+
 .amount {
   position: absolute;
   top: 23%;

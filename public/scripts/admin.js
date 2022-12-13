@@ -218,11 +218,15 @@ get(child(dbref, `UserList/`))
             console.log(uid2)
             remove(ref(db, `UserList/${uid2}/Bill/`));
             remove(ref(db, `UserList/${uid2}/Total/Money/`));
-            alert('ok')
+            // Toastinette.init({
+            //     position: 'top-right',
+            //     title: 'Thành công',
+            //     message: 'Xóa thành công',
+            //     autoClose: 2500,
+            //     progress: true
+            // });
+            // alert('ok')
             location.reload();
-
-            
-
         })
     })
 })
