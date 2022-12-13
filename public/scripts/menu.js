@@ -131,6 +131,15 @@ get(child(dbref, `TheCakes/`))
     // TĂNG CON SỐ NHỎ TRÊN BIỂU TƯỢNG GIỎ HÀNG KHI THÊM SẢN PHẨM
     document.querySelectorAll('.button-2').forEach(e => {
       e.addEventListener('click' , ()=> {
+        // HIỆN THÔNG BÁO KHI THÊM THÀNH CÔNG
+        Toastinette.init({
+          position: 'top-right',
+          title: 'Thành công',
+          message: 'Thêm sản phẩm thành công',
+          autoClose: 2500,
+          progress: true
+        });
+
           // localCount = Number(document.getElementById('counter').innerText);
           detected = e.id
           inputID = 'Input' + e.id
@@ -249,8 +258,3 @@ get(child(dbref, `TheCakes/`))
 document.getElementById('logoutbtn').addEventListener('click', () => {
   localStorage.setItem('cart', '')
 })
-
-
-
-
-

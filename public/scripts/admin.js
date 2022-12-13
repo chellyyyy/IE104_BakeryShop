@@ -277,7 +277,15 @@ function InsertData(){
         Descript: desc.value
     })
     .then(() =>{
-        alert("Thành công!");
+        Toastinette.init({
+            position: 'top-right',
+            title: 'Thành công',
+            message: 'Thêm sản phẩm thành công',
+            // type: 'success',
+            autoClose: 5000,
+            progress: true
+        });
+        // alert("Thành công!");
         name.value = "";
         price.value = "";
         pic.value = "";
@@ -333,10 +341,26 @@ function DeleteData(){
     remove(ref(db, "TheCakes/"+ detected),{
     })
     .then(() =>{
-        alert("Xóa thành công!");
+        Toastinette.init({
+            position: 'top-right',
+            title: 'Thành công',
+            message: 'Xóa sản phẩm thành công',
+            // type: 'success',
+            autoClose: 2500,
+            progress: true
+        });
+        // alert("Xóa thành công!");
     })
     .catch((error)=>{
-        alert("Không thành công, lỗi " + error);
+        Toastinette.init({
+            position: 'top-right',
+            title: 'Lỗi',
+            message: 'Xóa sản phẩm không thành công, lỗi ' + error,
+            type: 'error',
+            autoClose: 2500,
+            progress: true
+        });
+        // alert("Không thành công, lỗi " + error);
     });
     // location.reload();
 }

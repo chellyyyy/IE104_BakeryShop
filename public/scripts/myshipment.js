@@ -54,25 +54,32 @@ function fetchData(uid){
     get(child(dbref, `UserList/${uid}`))
     .then((snapshot)=>{
         if(uid==''){
-            
-            Toastify({
-                text: "Bạn chưa đăng nhập, ấn vào thông báo này để đăng nhập",
-                duration: 10000,
-                destination: "login.html",
-                newWindow: false,
-                close: true,
-                gravity: "top", // `top` or `bottom`
-                position: "right", // `left`, `center` or `right`
-                stopOnFocus: false, // Prevents dismissing of toast on hover
-                style: {
-                    margin: "60px 10px 0 0",
-                    padding: "30px 40px 40px 40px",
-                    height: "100px",
-                    width: "400px",
-                    background: "linear-gradient(to right, #00b09b, #96c93d)",
-                },
-                onClick: function(){} // Callback after click
-            }).showToast();
+            Toastinette.init({
+                position: 'top-right',
+                title: 'Lỗi',
+                message: 'Bạn chưa đăng nhập',
+                type: 'error',
+                autoClose: 10000,
+                progress: true
+            });
+            // Toastify({
+            //     text: "Bạn chưa đăng nhập, ấn vào thông báo này để đăng nhập",
+            //     duration: 10000,
+            //     destination: "login.html",
+            //     newWindow: false,
+            //     close: true,
+            //     gravity: "top", // `top` or `bottom`
+            //     position: "right", // `left`, `center` or `right`
+            //     stopOnFocus: false, // Prevents dismissing of toast on hover
+            //     style: {
+            //         margin: "60px 10px 0 0",
+            //         padding: "30px 40px 40px 40px",
+            //         height: "100px",
+            //         width: "400px",
+            //         background: "linear-gradient(to right, #00b09b, #96c93d)",
+            //     },
+            //     onClick: function(){} // Callback after click
+            // }).showToast();
         }
         else{
             
